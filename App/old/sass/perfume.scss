@@ -1,0 +1,347 @@
+//----------------------------------    [Color]
+$cn:black;
+$cb: white;
+$cg: #f2f6f7;
+$cg1: #dbdbdb;
+$cg2: #fafafa;
+$cg3: #9e9e9e;
+$ca1:#bf0069;
+$ca2:#0a6f94;
+$ca3:#dde7ec;
+$cv1:#26803e;
+$cv2:#74a93a;
+$cv3:#9dbb40;
+$cmo:#803d8b;
+$cna:#e3b022;
+$cfu:#be2e7e;
+
+
+$cp1:#119cc0;
+$cp2:#32ccb7;
+$cp3:#f9fcfe;
+
+$cFace: #3b5998;
+$cTwee: #9AE4E8;
+$cYoutube: #B50505;
+$cReportes: #E49A39;
+
+//--------------------------------------    [Fonts]
+$f1:'movistar_headlinebold';
+$f2:'movistar_headlineregular';
+$f3:'movistar_textregular';
+$f4:'movistar_textbold';
+$f5:'movistar_textitalic';
+$f6:'movistar_marketregular';
+
+body{
+          background: url("../images/bg1.png");
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  max-width: 90%;
+  margin: 20px auto;
+}
+#cont-perfumeria{
+          max-width: 1024px;
+          width: 100%;
+          text-align: center;
+
+.encabezado{
+          text-align: left;
+.logo{
+img{
+          width:20%;
+}
+}
+}
+.cont-1{
+.table{
+          text-align: left;
+td:nth-child(odd){
+          font-weight:bold;
+          width:30%;
+
+}
+}
+}
+.cont-2{
+.table{
+          text-align: left;
+td:nth-child(odd){
+          font-weight:bold;
+          width:20%;
+
+}
+}
+}
+// ..................................................................................................................... [ Titulos ]
+.titu-1{
+            color:$ca2;
+            font-size:1em;
+            display: block;
+            text-align: left;
+            padding: 20px 0;
+            margin: 0;
+
+}
+.titu-2{
+            color:$ca2;
+            font-size: 1em;
+            font-weight: normal;
+            margin: 0;
+}
+.titu-3{
+            color:$ca1;
+            font-size: 1em;
+            font-weight: normal;
+            margin:0 0 10px;
+}
+.titu-4{
+            background:url(../images/sprite1.png) repeat-x 0 -82px;
+            box-shadow:0 1px 2px $cn;
+            color:$cb;
+            font-size: 1em;
+            font-weight: normal;
+            text-shadow:0 1px 2px #0071a1;
+            margin:0;
+            padding:10px;
+}
+.titu-5{
+            background: $cp2;
+            color:$cb;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin:0;
+            padding:10px;
+}
+// ..................................................................................................................... [ Parrafos ]
+.par-1{
+            font-size: 0.9em;
+            text-align: justify;
+            height: auto;
+            min-height: 50px;
+}
+// ..................................................................................................................... [ Botones ]
+.btn-1{
+          background: $ca1;
+          border: none;
+          border-radius: 20px;
+          color: $cb;
+          display: block;
+          padding: 7px 10px;
+          width: 70%;
+          margin: 0 auto;
+}
+// ..................................................................................................................... [ Imagenes ]
+
+// ..................................................................................................................... [ Formularios ]
+.login{
+            background:$cg2;
+            width: 400px;
+            margin: 0 auto;
+}
+.form-1{
+            padding:20px;
+            width: 100%;
+.input-1{
+            border:none;
+            display: block;
+            margin: 10px;
+            padding: 5px;
+            width: 90%;
+
+}
+}
+// ..................................................................................................................... [ Estructura ]
+
+
+
+
+
+
+
+
+}
+
+//.................................................................................................................................................................................................................. 1046px
+@media (max-width: 1046px) {
+#cont-appMerk{
+
+.box-cont{
+             // width: 18.9%;
+              width: 32%;
+}
+.box-cont:nth-last-child(1){
+               width: 48.5%;
+}
+.box-cont:nth-last-child(2){
+                 width: 48.5%;
+}
+}
+
+}
+//.................................................................................................................................................................................................................. 1046px
+@media (max-width: 800px) {
+#cont-appMerk{
+
+.box-cont{
+             // width: 18.9%;
+               width: 48.5%;
+}
+.box-cont:nth-last-child(1){
+               width: 98%;
+}
+}
+}
+
+//.................................................................................................................................................................................................................. 1046px
+@media (max-width: 768px) {
+#cont-appMerk{
+.box-cont{
+               width: 98%;
+}
+.box-cont:nth-last-child(2){
+               width: 98%;
+}
+.box-cont:nth-last-child(1){
+               width: 98%;
+}
+}
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

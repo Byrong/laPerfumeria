@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Perfumeria Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/jquery.circliful.css" rel="stylesheet">
+  <link href="css/perfumeria.css" rel="stylesheet">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+</head>
+  <body>
+<div id="cont-perfumeria" class="container-fluid">
+  <h2>Contenido</h2>
+          {% block parrafo %}    {% endblock %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 box-cont">
+                    <h2 class="titu-4">Lunes</h2>
+                    {% block post_Lunes %}             {% endblock %}
+      </div>
+       <div class="col-xs-12 col-sm-2 box-cont">
+                    <h2 class="titu-4">Martes</h2>
+                    {% block post_Martes %}             {% endblock %}
+      </div>
+      <div class="col-xs-12 col-sm-2 box-cont">
+                    <h2 class="titu-4">Miercoles</h2>
+                    {% block post_Miercoles %}             {% endblock %}
+      </div>
+      <div class="col-xs-12 col-sm-2 box-cont">
+                    <h2 class="titu-4">Jueves</h2>
+                    {% block post_Jueves %}             {% endblock %}
+      </div>
+       <div class="col-xs-12 col-sm-2 box-cont">
+                    <h2 class="titu-4">Viernes</h2>
+                    {% block post_Viernes %}             {% endblock %}
+      </div>
+        </div>
+       <footer>{% block btnVerificar %}{% endblock %}</footer>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/holder.min.js"></script>
+<script src="js/jquery.circliful.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/appmerk.js"></script>
+
+  <body>
+</html>

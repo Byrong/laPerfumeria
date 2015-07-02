@@ -1,0 +1,211 @@
+{% extends "base.twig.html" %}
+
+{# ------------------------------ [ Aqui mostramos los post ] #}
+
+{% block post_Lunes %}
+    {% for m in datos %}
+        {% if m.dia == 'lunes' %}
+                  <div class="box-post e{{m.tipo_post}} ">
+                      <div class="msnRepor hover-{{ m.id }} col-xs-12">
+                                        <label class="titu-2">Deje su observación </label><span class="glyphicon glyphicon-comment pull-right"> </span>
+                                        <textarea id="comentario-{{m.id}}" class="box-msn" name="comentario"></textarea>
+                                        <button type="button" class="btn btn-default btn-sm pull-right" onclick="aprobarPost('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-sm pull-left " onclick="cerrar('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-chevron-up"></span>
+                                      </button>
+                                      <div style="clear:both"></div>
+                      </div>
+                  <header>
+                            <span  class="label label-{{m.red_social}}">id{{ m.id}} | {{m.red_social}} </span>
+                            <div class="aprobado pull-right">
+                                    <span class="titu-1">Aprobado:</span>
+                                  <div class="btn-group">
+                                           <button type="button" class="btn btn-default btn-sm btn-aprobado">
+                                            <input type="hidden" name="estado" value="1">
+                                            <span class="glyphicon glyphicon-ok"><input name="aprobado" type="radio" value="s"  onclick="aprobarPost('{{ m.id }}')"></span>
+                                          </button>
+                                          <button type="button" class="btn btn-default btn-sm btn-obser" onclick="observacion('{{ m.id }}')">
+                                            <span class="glyphicon glyphicon-remove"><input name="aprobado" type="radio" value="n"></span>
+                                         </button>
+                                 </div>
+                            </div>
+                  </header>
+                  <figure class="img1">  <img src="admin/imagenes/{{ m.imagen }}"  style="width:100%"></figure>
+                  <h3 class="titu-3"><span class="glyphicon glyphicon-bullhorn"></span> {{m.tipo_post}} </h3>
+                  <p class="par-1">
+                    {{m.descripcion}}
+                  </p>
+              </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block post_Martes%}
+    {% for m in datos %}
+        {% if m.dia == 'martes' %}
+                  <div class="box-post e{{m.tipo_post}} ">
+                      <div class="msnRepor hover-{{ m.id }} col-xs-12">
+                                        <label class="titu-2">Deje su observación </label><span class="glyphicon glyphicon-comment pull-right"> </span>
+                                        <textarea id="comentario-{{m.id}}" class="box-msn" name="comentario"></textarea>
+                                        <button type="button" class="btn btn-default btn-sm pull-right" onclick="aprobarPost('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-sm pull-left " onclick="cerrar('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-chevron-up"></span>
+                                      </button>
+                                      <div style="clear:both"></div>
+                      </div>
+                  <header>
+                            <span  class="label label-{{m.red_social}}">id{{ m.id}} | {{m.red_social}} </span>
+                            <div class="aprobado pull-right">
+                                    <span class="titu-1">Aprobado:</span>
+                                  <div class="btn-group">
+                                           <button type="button" class="btn btn-default btn-sm btn-aprobado">
+                                            <input type="hidden" name="estado" value="1">
+                                            <span class="glyphicon glyphicon-ok"><input name="aprobado" type="radio" value="s"  onclick="aprobarPost('{{ m.id }}')"></span>
+                                          </button>
+                                          <button type="button" class="btn btn-default btn-sm btn-obser" onclick="observacion('{{ m.id }}')">
+                                            <span class="glyphicon glyphicon-remove"><input name="aprobado" type="radio" value="n"></span>
+                                         </button>
+                                 </div>
+                            </div>
+                  </header>
+                  <figure class="img1">  <img src="admin/imagenes/{{ m.imagen }}"  style="width:100%"></figure>
+                  <h3 class="titu-3"><span class="glyphicon glyphicon-bullhorn"></span> {{m.tipo_post}} </h3>
+                  <p class="par-1">
+                    {{m.descripcion}}
+                  </p>
+              </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block post_Miercoles%}
+    {% for m in datos %}
+        {% if m.dia == 'miercoles' %}
+                  <div class="box-post e{{m.tipo_post}} ">
+                      <div class="msnRepor hover-{{ m.id }} col-xs-12">
+                                        <label class="titu-2">Deje su observación </label><span class="glyphicon glyphicon-comment pull-right"> </span>
+                                        <textarea id="comentario-{{m.id}}" class="box-msn" name="comentario"></textarea>
+                                        <button type="button" class="btn btn-default btn-sm pull-right" onclick="aprobarPost('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-sm pull-left " onclick="cerrar('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-chevron-up"></span>
+                                      </button>
+                                      <div style="clear:both"></div>
+                      </div>
+                  <header>
+                            <span  class="label label-{{m.red_social}}">id{{ m.id}} | {{m.red_social}} </span>
+                            <div class="aprobado pull-right">
+                                    <span class="titu-1">Aprobado:</span>
+                                  <div class="btn-group">
+                                           <button type="button" class="btn btn-default btn-sm btn-aprobado">
+                                            <input type="hidden" name="estado" value="1">
+                                            <span class="glyphicon glyphicon-ok"><input name="aprobado" type="radio" value="s"  onclick="aprobarPost('{{ m.id }}')"></span>
+                                          </button>
+                                          <button type="button" class="btn btn-default btn-sm btn-obser" onclick="observacion('{{ m.id }}')">
+                                            <span class="glyphicon glyphicon-remove"><input name="aprobado" type="radio" value="n"></span>
+                                         </button>
+                                 </div>
+                            </div>
+                  </header>
+                  <figure class="img1">  <img src="admin/imagenes/{{ m.imagen }}"  style="width:100%"></figure>
+                  <h3 class="titu-3"><span class="glyphicon glyphicon-bullhorn"></span> {{m.tipo_post}} </h3>
+                  <p class="par-1">
+                    {{m.descripcion}}
+                  </p>
+              </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block post_Jueves%}
+    {% for m in datos %}
+        {% if m.dia == 'jueves' %}
+                  <div class="box-post e{{m.tipo_post}} ">
+                      <div class="msnRepor hover-{{ m.id }} col-xs-12">
+                                        <label class="titu-2">Deje su observación </label><span class="glyphicon glyphicon-comment pull-right"> </span>
+                                        <textarea id="comentario-{{m.id}}" class="box-msn" name="comentario"></textarea>
+                                        <button type="button" class="btn btn-default btn-sm pull-right" onclick="aprobarPost('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-sm pull-left " onclick="cerrar('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-chevron-up"></span>
+                                      </button>
+                                      <div style="clear:both"></div>
+                      </div>
+                  <header>
+                            <span  class="label label-{{m.red_social}}">id{{ m.id}} | {{m.red_social}} </span>
+                            <div class="aprobado pull-right">
+                                    <span class="titu-1">Aprobado:</span>
+                                  <div class="btn-group">
+                                           <button type="button" class="btn btn-default btn-sm btn-aprobado">
+                                            <input type="hidden" name="estado" value="1">
+                                            <span class="glyphicon glyphicon-ok"><input name="aprobado" type="radio" value="s"  onclick="aprobarPost('{{ m.id }}')"></span>
+                                          </button>
+                                          <button type="button" class="btn btn-default btn-sm btn-obser" onclick="observacion('{{ m.id }}')">
+                                            <span class="glyphicon glyphicon-remove"><input name="aprobado" type="radio" value="n"></span>
+                                         </button>
+                                 </div>
+                            </div>
+                  </header>
+                  <figure class="img1">  <img src="admin/imagenes/{{ m.imagen }}"  style="width:100%"></figure>
+                  <h3 class="titu-3"><span class="glyphicon glyphicon-bullhorn"></span> {{m.tipo_post}} </h3>
+                  <p class="par-1">
+                    {{m.descripcion}}
+                  </p>
+              </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block post_Viernes%}
+    {% for m in datos %}
+        {% if m.dia == 'viernes' %}
+                  <div class="box-post e{{m.tipo_post}} ">
+                      <div class="msnRepor hover-{{ m.id }} col-xs-12">
+                                        <label class="titu-2">Deje su observación </label><span class="glyphicon glyphicon-comment pull-right"> </span>
+                                        <textarea id="comentario-{{m.id}}" class="box-msn" name="comentario"></textarea>
+                                        <button type="button" class="btn btn-default btn-sm pull-right" onclick="aprobarPost('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-floppy-saved"></span>Guardar
+                                      </button>
+                                      <button type="button" class="btn btn-default btn-sm pull-left " onclick="cerrar('{{ m.id }}')">
+                                                <span class="glyphicon glyphicon-chevron-up"></span>
+                                      </button>
+                                      <div style="clear:both"></div>
+                      </div>
+                  <header>
+                            <span  class="label label-{{m.red_social}}">id{{ m.id}} | {{m.red_social}} </span>
+                            <div class="aprobado pull-right">
+                                    <span class="titu-1">Aprobado:</span>
+                                  <div class="btn-group">
+                                           <button type="button" class="btn btn-default btn-sm btn-aprobado">
+                                            <input type="hidden" name="estado" value="1">
+                                            <span class="glyphicon glyphicon-ok"><input name="aprobado" type="radio" value="s"  onclick="aprobarPost('{{ m.id }}')"></span>
+                                          </button>
+                                          <button type="button" class="btn btn-default btn-sm btn-obser" onclick="observacion('{{ m.id }}')">
+                                            <span class="glyphicon glyphicon-remove"><input name="aprobado" type="radio" value="n"></span>
+                                         </button>
+                                 </div>
+                            </div>
+                  </header>
+                  <figure class="img1">  <img src="admin/imagenes/{{ m.imagen }}"  style="width:100%"></figure>
+                  <h3 class="titu-3"><span class="glyphicon glyphicon-bullhorn"></span> {{m.tipo_post}} </h3>
+                  <p class="par-1">
+                    {{m.descripcion}}
+                  </p>
+              </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+
+
+{% block  btnVerificar%}
+        {% if m.id %}
+              <h2>Entro</h2>
+        {% endif %}
+{% endblock %}
