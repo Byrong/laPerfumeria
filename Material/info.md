@@ -9,24 +9,24 @@
 *Frontend*
 
 1. Login
-> *Sección con dos campos uno de usuario que siempre estará por defecto y el de password que pertenecera al id único que tendra cada una de nuestras Aromas.*
+	`Sección con dos campos uno de usuario que siempre estará por defecto y el de password que pertenecera al id único que tendra cada una de nuestras Aromas.`
 2. Inicio
 3. ¿Qué es?
 4. Membresias
-> *Sección con los tres tipos diferentes de membresias a manejar.*
+	`Sección con los tres tipos diferentes de membresias a manejar.`
 5. Aromas
 	/ Ver Aroma
-> *Sección con el listado de cada una de las Aromas y llevara a una interna que tendra los datos especificos de la Aroma seleccionada.*
+	`Sección con el listado de cada una de las Aromas y llevara a una interna que tendra los datos especificos de la Aroma seleccionada`
 6. Nuestras politicas
 
 *Backend*
 
 1. Login
-> *Acceso al panel administrativo.*
+	`Acceso al panel administrativo`
 2. Registro de las Aromas*
-> *Formulario de registro para cada Aroma.*
+	`Formulario de registro para cada Aroma.
 3. Validación de las Aromas*
-> *Una vez que la nueva Aroma haiga realizado el proceso de inscripción se valida la información (Ya presentado el casting) y se determina las tarifa de su servicio.*
+	`Una vez que la nueva Aroma haiga realizado el proceso de inscripción se valida la información (Ya presentado el casting) y se determina las tarifa de su servicio.`
 4. Actualización de datos
 5. Eliminar Aroma
 6. Buscador de Aromas
@@ -46,7 +46,7 @@
 + ciudad  [ varchar ]
 + registro  [ date ]
 + estado  [ boolean ]
-> *Las Aromas no se darán de alta hasta haber pasado el casting*
+	`Las Aromas no se darán de alta hasta haber pasado el casting`
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Perfil_Aroma  
 
@@ -63,11 +63,11 @@
 + tatuajes [ boolean ]
 + operaciones [ boolean ]
 + lugarOperacion [ varchar ]
-> *Listado con las siguientes opciones (Naríz,Labios, Senos, Abdomen, Cola)*
+	`Listado con las siguientes opciones (Naríz,Labios, Senos, Abdomen, Cola)`
 + actividadSexual [ varchar ]
-> *Porcetanje de la actividad sexual dentro de un mes (1 - 2, 3 - 5 , 5 - 8, 8 - 10, 10 - 15) relaciones*
+	`Porcetanje de la actividad sexual dentro de un mes (1 - 2, 3 - 5 , 5 - 8, 8 - 10, 10 - 15) relaciones`
 + soy [ varchar ]
-> *Descripción personal de la Aroma en menos de 150 letras*
+	`Descripción personal de la Aroma en menos de 150 letras`
 + experiencia [ boolean ]
 + tiempoExperiencia [ int ]
 + sexOral [ boolean ]
@@ -82,7 +82,7 @@
 + baile [ boolean ]
 + masajes [ boolean ]
 + encuentro [ varchar ]
-> *Solo dos sitio de encuentro (Hotel,Domicilio)*
+	`Solo dos sitio de encuentro (Hotel,Domicilio)`
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Tarifas_Aromas  
 
@@ -95,5 +95,11 @@
 
 ---
 
+**Librerias**
 
-[I'm an inline-style link](https://www.google.com)
+[RangeSlider](http://andreruffert.github.io/rangeslider.js/)
+[ScrollTo and Localscroll ](http://www.adriantomic.se/development/jquery-localscroll-tutorial/)
+[W2UI ](http://w2ui.com/web/docs/form)
+[jQuery](https://jquery.com/)
+
+`renders`
