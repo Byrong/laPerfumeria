@@ -22,7 +22,7 @@
 *Backend*
 
 1. Login
-	`Acceso al panel administrativo`
+	Acceso al panel administrativo`
 2. Registro de las Aromas*
 	`Formulario de registro para cada Aroma.
 3. Validación de las Aromas*
