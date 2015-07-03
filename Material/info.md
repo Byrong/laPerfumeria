@@ -22,9 +22,9 @@
 *Backend*
 
 1. Login
-	Acceso al panel administrativo`
+	`Acceso al panel administrativo`
 2. Registro de las Aromas*
-	`Formulario de registro para cada Aroma.
+	`Formulario de registro para cada Aroma.`
 3. Validación de las Aromas*
 	`Una vez que la nueva Aroma haiga realizado el proceso de inscripción se valida la información (Ya presentado el casting) y se determina las tarifa de su servicio.`
 4. Actualización de datos
@@ -36,7 +36,7 @@
 
 *Registro de las Aromas*
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Aroma  
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Aroma`  
 
 + idAroma  [ PK, auto increment ]
 + nombre [ varchar ]
@@ -44,11 +44,11 @@
 + correo [ varchar, unique ]
 + celular [ int, unique ]
 + ciudad  [ varchar ]
-+ registro  [ date ]
 + estado  [ boolean ]
 	`Las Aromas no se darán de alta hasta haber pasado el casting`
++ registro  [ date ]
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Perfil_Aroma  
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Perfil_Aroma`    
 
 + idPerfilAroma  [ PK, auto increment ]
 + idAroma  [ FK, auto increment ]
@@ -61,8 +61,7 @@
 + colPiel [ varchar ]
 + colFavorito [ varchar ]
 + tatuajes [ boolean ]
-+ operaciones [ boolean ]
-+ lugarOperacion [ varchar ]
++ operaciones* [ boolean ]
 	`Listado con las siguientes opciones (Naríz,Labios, Senos, Abdomen, Cola)`
 + actividadSexual [ varchar ]
 	`Porcetanje de la actividad sexual dentro de un mes (1 - 2, 3 - 5 , 5 - 8, 8 - 10, 10 - 15) relaciones`
@@ -70,6 +69,12 @@
 	`Descripción personal de la Aroma en menos de 150 letras`
 + experiencia [ boolean ]
 + tiempoExperiencia [ int ]
++ registro  [ date ]
+
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Servicio_Aroma`  
+
++ idServicio  [ PK, auto increment ]
++ idAroma  [ FK, auto increment ]
 + sexOral [ boolean ]
 + sexAnal [ boolean ]
 + sexHombre [ boolean ]
@@ -83,8 +88,20 @@
 + masajes [ boolean ]
 + encuentro [ varchar ]
 	`Solo dos sitio de encuentro (Hotel,Domicilio)`
++ registro  [ date ]
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Tarifas_Aromas  
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Operacion`  
+
++ idOperacion  [ PK, auto increment ]
++ idAroma  [ FK, auto increment ]
++ Nariz  [ varchar ]
++ Labios  [ varchar ]
++ Senos  [ varchar ]
++ Abdomen  [ varchar ]
++ Cola  [ varchar ]
++ registro  [ date ]
+
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Tarifa_Aroma`  
 
 + idTarifas  [ PK, auto increment ]
 + idAroma  [ FK, auto increment ]
@@ -92,6 +109,7 @@
 + valor2Hora [ int ]
 + valor3Hora [ int ]
 + valorDía [ int ]
++ registro  [ date ]
 
 ---
 

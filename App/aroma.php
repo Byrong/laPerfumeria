@@ -11,7 +11,7 @@
   $template = $twig->loadTemplate('verAroma.twig.html');
 
 // Cod-bg
- include "admin/conecion.php";
+include "admin/conecion.php";
 
 //mysql_select_db('desarrp0_perfumeria', $conecion);
 mysql_select_db('perfumeria', $conecion);
