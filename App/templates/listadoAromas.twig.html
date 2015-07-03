@@ -1,0 +1,28 @@
+                <div class="container relative">
+                    <h2 class="tituloH1B mb-70 mb-sm-40">
+                      Nuestras Aromas
+                    </h2>
+                    <div class="section-text mb-50 mb-sm-20">
+                        <div class="row principal">
+                        {% block listadoAromas %}
+                            {% for m in datos %}
+                            <div class="col-md-3 box-aromas">
+                                <header>
+                                    <img class="{{ m.ciudad}}" src="admin/imagenes/aromas/{{ m.imagen }}">
+                                    <h2 class="text-3">{{m.aroma}}</h2>
+                                </header>
+                                <section>
+                                    <a href="aroma.php?aroma={{ m.id }}" class="btn-2">Ver perfil</a>
+                                </section>
+                            </div>
+                               {% endfor %}
+                        {% endblock %}
+                            
+                        </div>
+                    </div>
+                </div>
+                    <div class="local-scroll">
+                        <a href="#planes" class="scroll-down">
+                                    <img src="images/icoArrow.png" alt="" class="fa fa-angle-down scroll-down-icon">    
+                        </a>
+                    </div>

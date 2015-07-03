@@ -8,15 +8,16 @@
                  'cache' => 'cache',
                  'debug' => 'true'));
 
-  $template = $twig->loadTemplate('verAromas.twig.html');
+  $template = $twig->loadTemplate('index.twig.html');
 
 // Cod-bg
  include "admin/conecion.php";
-
-mysql_select_db('perfumeria', $conecion);
+  mysql_select_db('perfumeria', $conecion);
+  mysql_set_charset('utf8');
 
 $consulta_Aroma    = "SELECT Aroma.id,
                             Aroma.nomAroma,
+                            Aroma.definicion,
                             Aroma.sexo,
                             Aroma.edad,
                             Aroma.ciudad,
@@ -51,7 +52,7 @@ $consulta_Aroma    = "SELECT Aroma.id,
                             Tarifa.dia,
                             Tarifa.encuentro
                           FROM Aroma INNER JOIN Servicio ON Aroma.idAroma = Servicio.idAroma
-                             INNER JOIN Tarifa ON Servicio.idAroma = Tarifa.idAroma
+                             INNER JOIN Tarifa ON Servicio.idAroma = Tarifa.idAroma ORDER BY rand()
                              #WHERE Post_cliente.dia = 'viernes'
                              " ;
 $resultado  = mysql_query($consulta_Aroma , $conecion);
@@ -67,6 +68,7 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
   // Descomponemos nuestro Array en Objetos
                               $datos [$cont]->id= $fila['id'];
                               $datos [$cont]->aroma= $fila['nomAroma'];
+                              $datos [$cont]->definicion= $fila['definicion'];
                               $datos [$cont]->imagen= $fila['foto1'];
                               $datos [$cont]->edad= $fila['edad'];
                               $datos [$cont]->orientacion= $fila['orientacionSexual'];
@@ -83,6 +85,6 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
   }
 
 mysql_close($conecion);
-printVar($datos,'consulta Aromas');
+//printVar($datos,'consulta Aromas');
 // Usamos un array para mostrar los datos
   echo $template->render(array('datos' => $datos));

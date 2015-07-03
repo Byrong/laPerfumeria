@@ -1,23 +1,14 @@
-{% extends "base.twig.html" %}
+{% extends "mainLayer.twig.html" %}
 
-{% block subtitulo %}
-  Página principal
+{% block home %}
+	{% include "home.twig.html" %}
 {% endblock %}
-
-{% block contenido %}
-  <p>
-    Esta es la página principal de nuestra
-  </p>
+{% block queEs %}
+	{% include "queEs.twig.html" %}
 {% endblock %}
-
-{% block parrafo2 %}
-  <p>
-    Esta es la página principal de nuestra 2
-  </p>
+{% block aromas %}
+	{% include "listadoAromas.twig.html" %}
 {% endblock %}
-
-{% block parrafo3 %}
-  <p>
-    Esta es la página principal de nuestra 3
-  </p>
+{% block membresia %}
+	{% include "membresias.twig.html" %}
 {% endblock %}

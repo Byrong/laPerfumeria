@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : laboratorio
  Source Server Type    : MySQL
- Source Server Version : 50534
+ Source Server Version : 50542
  Source Host           : localhost
  Source Database       : perfumeria
 
  Target Server Type    : MySQL
- Target Server Version : 50534
+ Target Server Version : 50542
  File Encoding         : utf-8
 
- Date: 06/10/2015 18:04:08 PM
+ Date: 06/11/2015 00:04:19 AM
 */
 
 SET NAMES utf8;
@@ -89,10 +89,10 @@ COMMIT;
 DROP TABLE IF EXISTS `Tarifa`;
 CREATE TABLE `Tarifa` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `hora1` int(30) DEFAULT NULL,
-  `hora2` int(30) DEFAULT NULL,
-  `hora3` int(30) DEFAULT NULL,
-  `dia` int(30) DEFAULT NULL,
+  `hora1` text,
+  `hora2` text,
+  `hora3` text,
+  `dia` text,
   `encuentro` varchar(50) DEFAULT NULL,
   `idAroma` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -103,7 +103,7 @@ CREATE TABLE `Tarifa` (
 --  Records of `Tarifa`
 -- ----------------------------
 BEGIN;
-INSERT INTO `Tarifa` VALUES ('1', '150', '280', '350', '1000000', 'Hotel', 'lau@hotmail.com'), ('2', '300', '550', '800', '1800000', 'Hotel / Apartamento', 'estefan@gmail.com');
+INSERT INTO `Tarifa` VALUES ('1', '150.000', '280.000', '370.000', '1.000.000', 'Hotel', 'lau@hotmail.com'), ('2', '300.000', '550.000', '800.000', '1.800.000', 'Hotel / Apartamento', 'estefan@gmail.com');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -1,18 +1,10 @@
-{% extends "aromas.twig.html" %}
+{% extends "mainlayer.twig.html" %}
 
 {# ------------------------------ [ Aqui mostramos el perfil de la  Aroma selecionada ] #}
 
 {% block perfilAroma %}
     {% for m in datos %}
-                  <div class="box-aroma e{{m.tipo_post}} ">
-                  <header>
-                            <span  class="label-{{m.ciudad}}">{{ m.ciudad}}</span>
-                            <div class="aprobado pull-right">
-                                    <span class="titu-1">Disponible Hoy:</span>
-                                    <span class="titu-2">Si</span>
-                            </div>
-                  </header>
-              </div>
+    <h2>Soy una nueva Aroma</h2>
         <section class="row cont-1">
         <div class="slider-1 col-md-5">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -27,13 +19,13 @@
                          <img src="admin/imagenes/aromas/{{ m.imagen }}"  style="width:100%">
         </div>
         <div class="item">
-                <img src="admin/imagenes/aromas/{{ m.imagen }}"  style="width:100%">
+                <img src="admin/imagenes/aromas/{{ m.imagen2 }}"  style="width:100%">
         </div>
         <div class="item">
-                <img src="admin/imagenes/aromas/{{ m.imagen }}"  style="width:100%">
+                <img src="admin/imagenes/aromas/{{ m.imagen3 }}"  style="width:100%">
         </div>
         <div class="item">
-                <img src="admin/imagenes/aromas/{{ m.imagen }}"  style="width:100%">
+                <img src="admin/imagenes/aromas/{{ m.imagen4 }}"  style="width:100%">
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -47,6 +39,7 @@
     </div>
       </div>
       <div class="col-md-7">
+      <h2 class="titu-1">Perfil</h2>
         <div class="table-responsive">
           <table class="table">
             <tr><td>Aroma:</td><td>{{m.aroma}}</td></tr>
@@ -68,7 +61,7 @@
       <div class="col-md-7">
         <h2 class="titu-1">Servicios</h2>
         <div class="table-responsive">
-          <table class="table">
+          <table class="table table-2">
             <tr><td>Orientación Sexual:</td><td>{{m.orientacion}}</td></tr>
             <tr><td>Sexo Oral:</td><td>{{m.sexoOral}}</td></tr>
             <tr><td>Sexo Oral Mutuo:</td><td>{{m.sexoOral2}}</td></tr>
@@ -87,16 +80,16 @@
       <div class="col-md-5">
         <h2 class="titu-1">Tarifas</h2>
         <div class="table-responsive">
-          <table class="table">
+          <table class="table-3">
             <tr><td>1 Hora:</td><td>${{m.hora1}}</td></tr>
             <tr><td>2 Hora:</td><td>${{m.hora2}}</td></tr>
             <tr><td>Día:</td><td>${{m.dia}}</td></tr>
             <tr><td>Encuentro:</td><td>{{m.encuentro}}</td></tr>
           </table>
         </div>
-        <a class="btn btn-lg btn-primary open-popup-link" href="#test-popup" role="button">Solicitar</a>
+        <a class="btn-1 btn-lg btn-primary open-popup-link" href="#test-popup" role="button">Solicitar</a>
         <p class="par-1">
-        En La Perfumería Club encontrarás información detallada de cada una de nuestras dulces y sensuales Aromas contando con fotografías profesionales de alta calidad, actuales y 100% reales, garantizando así que al momento del encuentro la modelo sea la deseada. Son las más selectas y todas nuestras acompañantes son mayores de edad, modelos o universitarias, que realizan la actividad de escorts de forma voluntaria, discreta y esporádica.
+        En La Perfumería Club encontrarás información detallada de cada una de nuestras dulces y sensuales Aromas contando con fotografías profesionales de alta calidad, actuales y 100% reales, garantizando así que al momento del encuentro la modelo sea la deseada. Son las más selectas y todas nuestras dulces Aromas son mayores de edad, modelos o universitarias, que realizan la actividad de escorts de forma voluntaria, discreta y esporádica.
       </p>
       </div>
     </section>

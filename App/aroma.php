@@ -13,7 +13,10 @@
 // Cod-bg
  include "admin/conecion.php";
 
+//mysql_select_db('desarrp0_perfumeria', $conecion);
 mysql_select_db('perfumeria', $conecion);
+mysql_set_charset('utf8');
+
 
 $aroma=$_GET['aroma'];
 $consulta_Aroma    = "SELECT Aroma.id,
@@ -69,6 +72,9 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
                               $datos [$cont]->id= $fila['id'];
                               $datos [$cont]->aroma= $fila['nomAroma'];
                               $datos [$cont]->imagen= $fila['foto1'];
+                              $datos [$cont]->imagen2= $fila['foto2'];
+                              $datos [$cont]->imagen3= $fila['foto3'];
+                              $datos [$cont]->imagen4= $fila['foto4'];
                               $datos [$cont]->edad= $fila['edad'];
                               $datos [$cont]->estatura= $fila['estatura'];
                               $datos [$cont]->cabello= $fila['cabello'];
@@ -99,6 +105,6 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
   }
 
 mysql_close($conecion);
-printVar($datos,'consulta Aroma');
+//printVar($datos,'consulta Aroma');
 // Usamos un array para mostrar los datos
-  echo utf8_decode ($template->render(array('datos' => $datos)));
+  echo $template->render(array('datos' => $datos));

@@ -10,10 +10,8 @@ class __TwigTemplate_8327e75230952cc69c154a745bc7b935467bfb7d8eaa31fa03eca91131f
         $this->parent = false;
 
         $this->blocks = array(
-            'parrafo' => array($this, 'block_parrafo'),
             'listadoAromas' => array($this, 'block_listadoAromas'),
             'perfilAroma' => array($this, 'block_perfilAroma'),
-            'btnVerificar' => array($this, 'block_btnVerificar'),
         );
     }
 
@@ -33,29 +31,31 @@ class __TwigTemplate_8327e75230952cc69c154a745bc7b935467bfb7d8eaa31fa03eca91131f
 </head>
   <body>
 <div id=\"cont-perfumeria\" class=\"container-fluid\">
-          ";
-        // line 14
-        $this->displayBlock('parrafo', $context, $blocks);
-        // line 15
-        echo "      <div class=\"row\">
+      <header class=\"encabezado\">
+      <h1 class=\"logo\"><img src=\"images/logo_perfumeria.png\" alt=\"La Perfumeria Club\"></h1>
+      <nav class=\"menu-1\">
+        <div class=\"cont-a\">
+          <a href=\"#\">Inicio</a>
+          <a href=\"#\">Aromas</a>
+          <a href=\"#\">Politicas</a>
+          <a href=\"#\">Contacto</a>
+        </div>
+      </nav>
+    </header>
+      <div class=\"row\">
         <div class=\"col-xs-12 col-sm-2 box-cont\">
                     ";
-        // line 17
+        // line 27
         $this->displayBlock('listadoAromas', $context, $blocks);
-        // line 18
+        // line 28
         echo "      </div>
       <div class=\"col-xs-12 col-sm-2 box-cont\">
                     ";
-        // line 20
+        // line 30
         $this->displayBlock('perfilAroma', $context, $blocks);
-        // line 21
+        // line 31
         echo "      </div>
         </div>
-       <footer>";
-        // line 23
-        $this->displayBlock('btnVerificar', $context, $blocks);
-        echo "</footer>
-
 </div>
 
 <script src=\"js/jquery-1.11.1.min.js\"></script>
@@ -69,27 +69,16 @@ class __TwigTemplate_8327e75230952cc69c154a745bc7b935467bfb7d8eaa31fa03eca91131f
 ";
     }
 
-    // line 14
-    public function block_parrafo($context, array $blocks = array())
-    {
-        echo "    ";
-    }
-
-    // line 17
+    // line 27
     public function block_listadoAromas($context, array $blocks = array())
     {
         echo "             ";
     }
 
-    // line 20
+    // line 30
     public function block_perfilAroma($context, array $blocks = array())
     {
         echo "             ";
-    }
-
-    // line 23
-    public function block_btnVerificar($context, array $blocks = array())
-    {
     }
 
     public function getTemplateName()
@@ -99,6 +88,6 @@ class __TwigTemplate_8327e75230952cc69c154a745bc7b935467bfb7d8eaa31fa03eca91131f
 
     public function getDebugInfo()
     {
-        return array (  91 => 23,  85 => 20,  79 => 17,  73 => 14,  56 => 23,  52 => 21,  50 => 20,  46 => 18,  44 => 17,  40 => 15,  38 => 14,  23 => 1,);
+        return array (  79 => 30,  73 => 27,  57 => 31,  55 => 30,  51 => 28,  49 => 27,  21 => 1,);
     }
 }

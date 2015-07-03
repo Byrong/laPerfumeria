@@ -2,21 +2,21 @@
 
 {# ------------------------------ [ Aqui mostramos el listado de Aromas disponible ] #}
 
-{% block listadoAromas %}
+{% block listadoAromas2%}
     {% for m in datos %}
                   <div class="box-aroma e{{m.tipo_post}} ">
                   <header>
-                            <span  class="label-{{m.ciudad}}">{{ m.ciudad}}</span>
-                            <div class="aprobado pull-right">
-                                    <span class="titu-1">Disponible Hoy:</span>
-                                    <span class="titu-2">Si</span>
-                            </div>
+                            <span  class="label">{{ m.ciudad}}</span>
                   </header>
-                  <figure class="img1">
-                    <img src="admin/imagenes/aromas/{{ m.imagen }}"  style="width:100%">
+                  <figure>
+                    <div class="box-ver">
+                            ¡Disfruta de un grán placer!
+                    </div>
+                    <img src="admin/imagenes/aromas/{{ m.imagen }}">
                   </figure>
                   <article class="cont-info">
                     <h2>{{m.aroma}}</h2>
+                    <h3>{{m.definicion}}</h3>
                     <a href="aroma.php?aroma={{ m.id }}" class="btn-1">Ver aroma</a>
                   </article>
               </div>

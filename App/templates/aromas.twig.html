@@ -11,7 +11,17 @@
 </head>
   <body>
 <div id="cont-perfumeria" class="container-fluid">
-          {% block parrafo %}    {% endblock %}
+      <header class="encabezado">
+      <h1 class="logo"><img src="images/logo_perfumeria.png" alt="La Perfumeria Club"></h1>
+      <nav class="menu-1">
+        <div class="cont-a">
+          <a href="#">Inicio</a>
+          <a href="#">Aromas</a>
+          <a href="#">Politicas</a>
+          <a href="#">Contacto</a>
+        </div>
+      </nav>
+    </header>
       <div class="row">
         <div class="col-xs-12 col-sm-2 box-cont">
                     {% block listadoAromas%}             {% endblock %}
@@ -20,8 +30,6 @@
                     {% block perfilAroma%}             {% endblock %}
       </div>
         </div>
-       <footer>{% block btnVerificar %}{% endblock %}</footer>
-
 </div>
 
 <script src="js/jquery-1.11.1.min.js"></script>

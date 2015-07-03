@@ -37,28 +37,29 @@ class __TwigTemplate_8fa0a6e02f71e49af8caf19bbbd3bc5fa4cc6385bf026eedf410497129a
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "tipo_post", array()), "html", null, true);
             echo " \">
                   <header>
-                            <span  class=\"label-";
+                            <span  class=\"label\">";
             // line 9
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "ciudad", array()), "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "ciudad", array()), "html", null, true);
             echo "</span>
-                            <div class=\"aprobado pull-right\">
-                                    <span class=\"titu-1\">Disponible Hoy:</span>
-                                    <span class=\"titu-2\">Si</span>
-                            </div>
                   </header>
-                  <figure class=\"img1\">
+                  <figure>
+                    <div class=\"box-ver\">
+                            ¡Disfruta de un grán placer!
+                    </div>
                     <img src=\"admin/imagenes/aromas/";
-            // line 16
+            // line 15
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "imagen", array()), "html", null, true);
-            echo "\"  style=\"width:100%\">
+            echo "\">
                   </figure>
                   <article class=\"cont-info\">
                     <h2>";
-            // line 19
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "aroma", array()), "html", null, true);
             echo "</h2>
+                    <h3>";
+            // line 19
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "definicion", array()), "html", null, true);
+            echo "</h3>
                     <a href=\"aroma.php?aroma=";
             // line 20
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "id", array()), "html", null, true);
@@ -84,6 +85,6 @@ class __TwigTemplate_8fa0a6e02f71e49af8caf19bbbd3bc5fa4cc6385bf026eedf410497129a
 
     public function getDebugInfo()
     {
-        return array (  64 => 20,  60 => 19,  54 => 16,  42 => 9,  36 => 7,  31 => 6,  28 => 5,);
+        return array (  65 => 20,  61 => 19,  57 => 18,  51 => 15,  42 => 9,  36 => 7,  31 => 6,  28 => 5,);
     }
 }

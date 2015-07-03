@@ -7,19 +7,19 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("base.twig.html");
+        $this->parent = $this->env->loadTemplate("mainLayer.twig.html");
 
         $this->blocks = array(
-            'subtitulo' => array($this, 'block_subtitulo'),
-            'contenido' => array($this, 'block_contenido'),
-            'parrafo2' => array($this, 'block_parrafo2'),
-            'parrafo3' => array($this, 'block_parrafo3'),
+            'home' => array($this, 'block_home'),
+            'queEs' => array($this, 'block_queEs'),
+            'aromas' => array($this, 'block_aromas'),
+            'membresia' => array($this, 'block_membresia'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.twig.html";
+        return "mainLayer.twig.html";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -28,41 +28,35 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
     }
 
     // line 3
-    public function block_subtitulo($context, array $blocks = array())
+    public function block_home($context, array $blocks = array())
     {
         // line 4
-        echo "  Página principal
-";
+        echo "\t";
+        $this->env->loadTemplate("home.twig.html")->display($context);
     }
 
-    // line 7
-    public function block_contenido($context, array $blocks = array())
+    // line 6
+    public function block_queEs($context, array $blocks = array())
     {
-        // line 8
-        echo "  <p>
-    Esta es la página principal de nuestra
-  </p>
-";
+        // line 7
+        echo "\t";
+        $this->env->loadTemplate("queEs.twig.html")->display($context);
     }
 
-    // line 13
-    public function block_parrafo2($context, array $blocks = array())
+    // line 9
+    public function block_aromas($context, array $blocks = array())
     {
-        // line 14
-        echo "  <p>
-    Esta es la página principal de nuestra 2
-  </p>
-";
+        // line 10
+        echo "\t";
+        $this->env->loadTemplate("listadoAromas.twig.html")->display($context);
     }
 
-    // line 19
-    public function block_parrafo3($context, array $blocks = array())
+    // line 12
+    public function block_membresia($context, array $blocks = array())
     {
-        // line 20
-        echo "  <p>
-    Esta es la página principal de nuestra 3
-  </p>
-";
+        // line 13
+        echo "\t";
+        $this->env->loadTemplate("membresias.twig.html")->display($context);
     }
 
     public function getTemplateName()
@@ -77,6 +71,6 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
 
     public function getDebugInfo()
     {
-        return array (  62 => 20,  59 => 19,  52 => 14,  49 => 13,  42 => 8,  39 => 7,  34 => 4,  31 => 3,);
+        return array (  58 => 13,  55 => 12,  50 => 10,  47 => 9,  42 => 7,  39 => 6,  34 => 4,  31 => 3,);
     }
 }
