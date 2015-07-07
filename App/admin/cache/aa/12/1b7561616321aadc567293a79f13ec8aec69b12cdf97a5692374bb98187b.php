@@ -28,8 +28,7 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
     public function block_solicitudes($context, array $blocks = array())
     {
         // line 4
-        echo "
-      <header class=\"encabezado-1\">
+        echo "      <header class=\"encabezado-1\">
         <h2>SOLICITUDES PENDIENTE</h2>
         <span class=\"ico-solicitudes\">&nbsp;</span>
       </header>
@@ -79,8 +78,6 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
           </article>
         </li>
       </ul>
-
-
 ";
     }
 

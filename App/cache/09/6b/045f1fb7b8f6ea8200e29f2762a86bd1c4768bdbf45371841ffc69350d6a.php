@@ -119,7 +119,7 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
         ";
         // line 90
         $this->displayBlock('scripts', $context, $blocks);
-        // line 115
+        // line 107
         echo "
 <!-- [ End Scripts ] .......................................................................................................................................................................................................  -->
     </body>
@@ -130,7 +130,7 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
     // line 4
     public function block_titulo($context, array $blocks = array())
     {
-        echo " La Perfumeria Club ";
+        echo " La Perfumeria Club ee";
     }
 
     // line 19
@@ -139,9 +139,9 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
         // line 20
         echo "        <link rel=\"stylesheet\" href=\"css/bootstrap.min.css\">
         <link rel=\"stylesheet\" href=\"css/style-responsive.css\">
-        <link rel=\"stylesheet\" href=\"css/animate.min.css\">
-        <link rel=\"stylesheet\" href=\"css/vertical-rhythm.min.css\">
-        <link rel=\"stylesheet\" href=\"css/owl.carousel.css\">
+        <!-- <link rel=\"stylesheet\" href=\"css/animate.min.css\"> -->
+        <!-- <link rel=\"stylesheet\" href=\"css/vertical-rhythm.min.css\"> -->
+        <!-- <link rel=\"stylesheet\" href=\"css/owl.carousel.css\"> -->
         <link rel=\"stylesheet\" href=\"css/fonts_movi.css\">        
         <link rel=\"stylesheet\" href=\"css/magnific-popup.css\">        
         <link rel=\"stylesheet\" href=\"css/style.css\">
@@ -197,22 +197,14 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
         <script type=\"text/javascript\" src=\"js/jquery.scrollTo.min.js\"></script>
         <script type=\"text/javascript\" src=\"js/jquery.localScroll.min.js\"></script>
         <script type=\"text/javascript\" src=\"js/jquery.viewport.mini.js\"></script>
-        <script type=\"text/javascript\" src=\"js/jquery.countTo.js\"></script>
-        <script type=\"text/javascript\" src=\"js/jquery.appear.js\"></script>
-        <script type=\"text/javascript\" src=\"js/jquery.sticky.js\"></script>
+        <!-- Para mantener cualquiel elemento del Dom Visibile mientras se hace Scroll * 
+            <script type=\"text/javascript\" src=\"js/jquery.sticky.js\"></script> 
+            -->
         <script type=\"text/javascript\" src=\"js/jquery.parallax-1.1.3.js\"></script>
         <script type=\"text/javascript\" src=\"js/jquery.fitvids.js\"></script>
-        <script type=\"text/javascript\" src=\"js/owl.carousel.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/isotope.pkgd.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/imagesloaded.pkgd.min.js\"></script>
+        <!-- <script type=\"text/javascript\" src=\"js/owl.carousel.min.js\"></script> -->
         <script type=\"text/javascript\" src=\"js/jquery.magnific-popup.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/wow.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/masonry.pkgd.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/jquery.simple-text-rotator.min.js\"></script>
         <script type=\"text/javascript\" src=\"js/scripts.js\"></script>
-        <script type=\"text/javascript\" src=\"js/descargas-form.js\"></script>
-        <script type=\"text/javascript\" src=\"js/jquery.ajaxchimp.min.js\"></script>       
-        <!--[if lt IE 10]><script type=\"text/javascript\" src=\"js/placeholder.js\"></script><![endif]-->
         ";
     }
 
@@ -223,6 +215,6 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
 
     public function getDebugInfo()
     {
-        return array (  193 => 91,  190 => 90,  186 => 81,  183 => 80,  177 => 75,  173 => 76,  170 => 75,  167 => 74,  163 => 71,  160 => 70,  155 => 41,  152 => 40,  140 => 20,  137 => 19,  131 => 4,  123 => 115,  121 => 90,  111 => 82,  109 => 80,  104 => 77,  102 => 74,  98 => 72,  96 => 70,  67 => 43,  65 => 40,  52 => 29,  50 => 19,  32 => 4,  27 => 1,);
+        return array (  193 => 91,  190 => 90,  186 => 81,  183 => 80,  177 => 75,  173 => 76,  170 => 75,  167 => 74,  163 => 71,  160 => 70,  155 => 41,  152 => 40,  140 => 20,  137 => 19,  131 => 4,  123 => 107,  121 => 90,  111 => 82,  109 => 80,  104 => 77,  102 => 74,  98 => 72,  96 => 70,  67 => 43,  65 => 40,  52 => 29,  50 => 19,  32 => 4,  27 => 1,);
     }
 }
