@@ -1,0 +1,27 @@
+{% extends "mainAdmin.twig.html" %}
+
+{% block titulo%}
+	Administración
+{% endblock%}
+
+{% block contenido %}
+<section id="app" class="row">
+	<header class="top-1 container-fluid">
+		<h2 class="titu-1">La Perfumería Club</h2>
+		<div class="cuenta"><img src="../images/avatar.png" alt=""><span class="ico-flecha">+</span></div>
+	</header>
+	<section class="wrapper container-fluid">
+		<div class="col-md-4 col-sm-4 col-xs-12 listado">
+			{% block solicitudes %}
+			{% endblock %}
+		</div>
+		<div class="col-md-8 col-sm-8 col-xs-12">
+			Modo Visión
+		</div>
+	</section>
+</section>
+{% endblock %}
+
+{% block scripst %}
+<script src="../js/admin.js"></script>
+{% endblock %}

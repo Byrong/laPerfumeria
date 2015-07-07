@@ -24,55 +24,26 @@
                 scrollTop: hash_offset
             });
         }
+      
     $(document).ready(function(){
- // ...................................................   [ Script Videos ]
-        $('.box-video').click(function(){
-                var lector = $(this).attr('data');
-                $('#contReprod').attr('src', lector);
-                //console.log(titulo);
-        });
- // ...................................................   [ Script Planes ]
-        function acordion (pos){
-                var pos;
-                $('.verList-' + pos).slideToggle("speed");
-                    var texto = $('.ver-'+pos).text();
-                    if(texto == "Ver más +")
-                    {
-                        $('.ver-'+ pos).text('Ver menos -');
-                    }else{
-                        $('.ver-'+ pos).text('Ver más +');
-                    }
-        }
-
-        $('.ver-1').click(function(){
-                 acordion (1);
-        });
-         $('.ver-2').click(function(){
-                 acordion (2);
-        });
-         $('.ver-3').click(function(){
-                 acordion (3);
-        });
+        function verAroma(data){
+                              var parametros = {
+                                      "aromaSeleccionada" : data,
+                              };
+                              $.ajax({
+                                      data:  parametros,
+                                      url:   'aromaSeleccionada.php',
+                                      type:  'post',
+                                      beforeSend: function () {
+                                              $("#resultado").html("Procesando, espere por favor...");
+                                      },
+                                      success:  function (response) {
+                                              $("#resultado").html(response);
+                                      }
+                              });
+                      } 
+        
 // ...................................................   [ Modal Ventajas ]
-        $('#modVent-1').click(function(){
-                $('#vent-1').fadeIn();
-        });
-         $('#modVent-2').click(function(){
-                $('#vent-2').fadeIn();
-        });
-        $('#modVent-3').click(function(){
-                $('#vent-3').fadeIn();
-        });
-        $('#cerrMod-1').click(function(){
-                $('#vent-1').fadeOut();
-        });
-        $('#cerrMod-2').click(function(){
-                $('#vent-2').fadeOut();
-        });
-        $('#cerrMod-3').click(function(){
-                $('#vent-3').fadeOut();
-        });
-
     });
 
         $(window).trigger("resize");

@@ -1,0 +1,26 @@
+{% extends "mainAdmin.twig.html" %}
+
+{% block titulo%}
+	Administración
+{% endblock%}
+
+{% block contenido %}
+<section class="row">
+	<div class="box-login">
+		<header>
+	          <h2 class="titu-4">Administración</h2>
+		</header>
+		<section class="cont-login">
+			<form id="formLogin" action="#">
+				<p class="par-1">
+					Para acceder a la administración de La Perfumería Club ingrese los siguientes datos.
+				</p>
+				<input class="input-1" type="text" placeholder="Usuario">
+				<input class="input-1" type="password" placeholder="Contraseña">
+				<input class="btn-1"	type="submit" value="Entrar">
+				<a href="#" class="legal">¿Olvidastes tu contraseña?</a>
+			</form>
+		</section>
+	</div>
+</section>
+{% endblock %}

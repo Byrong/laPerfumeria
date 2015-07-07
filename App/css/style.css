@@ -196,9 +196,10 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
         font-size: 1em;
         line-height: 1.3em;
 }
-/* ..................................................................................................................... [ Ventajas ]*/
+/* ..................................................................................................................... [ Aromas ]*/
 #aromas{
         padding-top: 80px;
+        position: relative;
 }
 .box-aromas {
         color: white;
@@ -243,55 +244,55 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
     -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
     transform: rotate(-5deg);
 }
-.principal{
-        position: relative;
+#verAroma .tituloH1B{
+    text-shadow:0 2px 2px #000;
+    font-size: 2em;
+    margin: 5px 5px 20px;
 }
-.verVentajas {
-          position: absolute;
-          margin-bottom: 200px;
-          top: 158px;
-          z-index: 2;
+#verAroma .table{
+          background: rgba(0,0,0,0.3);
+          color:#FFFFFF;
+          max-width: 400px;
+          width: 100%;
 }
-.verVentajas .infoVent{
-          background: white;
-          box-shadow: -2px 0 2px #cdcdcd;
-          margin:0 0 0 -15px;
-          padding: 20px;
-          min-height: 340px;
+#verAroma .table td{
+                border:0;
+                font-weight: 500;
+                padding:8px 20px;
 }
-.verVentajas .infoVent .cerrar-2{
-          color:#0F5077;
-          font-size: 3.5em;
-          position: absolute;
-          text-decoration: none;
-          top:-10px;
-          right: 20px;
+#verAroma .table td:nth-child(odd){
+                background: rgba(0,0,0,0.3);
+                width: 180px;
 }
-.verVentajas .infoVent .titu-5{
-          color:#0F5077;
-          border-bottom: 1px solid #c3c3c3;
-          margin: 0 0 10px;
-          padding: 10px 0 20px;
-          width: 90%;
+#verAroma .table td:nth-child(even){
+                background: rgba(203, 0, 178, 0.3);
+               border-bottom: 1px dotted #000;
+               text-align: right;
 }
-.verVentajas .infoVent .list-2{
-          color:#0F5077;
-          margin:0;
-          padding: 0;
-          font-size: 0.9em;
+#verAroma .table-2 td:nth-child(odd){
+                width: 280px;
 }
-.verVentajas .infoVent .list-2 li{
-          margin:10px 0;
+#verAroma .btn-1{
+                background: white;
+                color: black;
+                padding:10px 20px;
+                border-radius: 7px;
+                text-decoration: none;
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                font-weight: bold;
 }
-.verVentajas .infoVent footer .btn-4{
-          background: #1C8FE5;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          padding:10px 40px;
-          float:right;
-          font-family: 'movistar_headlineregular';
-          margin-right: 30px;
+#verAroma .par-1{
+                background: rgba(0,0,0,0.3);
+                color:#FFFFFF;
+                padding: 20px;
+                width: 100%;
+                font-weight: 500;
+                margin: 20px auto;
+                font-size: 0.8em;
+                line-height: 1.2em;
 }
 /* ..................................................................................................................... [Planes ]*/
 #planes {

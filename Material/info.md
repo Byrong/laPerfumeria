@@ -55,6 +55,7 @@
 + nomAroma [ varchar ]
 + edad [ int ]
 + peso [ int ]
++ busto [ int ]
 + estatura [ int ]
 + colOjos [ varchar ]
 + colCabello [ varchar ]
@@ -99,6 +100,16 @@
 + Senos  [ varchar ]
 + Abdomen  [ varchar ]
 + Cola  [ varchar ]
++ registro  [ date ]
+
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Foto_Aroma`  
+
++ idFoto  [ PK, auto increment ]
++ idAroma  [ FK, auto increment ]
++ foto1 [ int ]
++ foto2 [ int ]
++ foto3 [ int ]
++ foto4 [ int ]
 + registro  [ date ]
 
  `::::::::::::::::::::::::::::::::::::::::::::::::::::: DB Tarifa_Aroma`  

@@ -16,7 +16,8 @@ class __TwigTemplate_dd09f0e455daf315a566063a652444a23dd973c7f5b20554eb1f3db1aa7
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "  <div class=\"container relative\">
+        echo "<section class=\"page-section\" id=\"queEs\" data-background=\"images/full-width-images/bg2.jpg\">
+  <div class=\"container relative\">
                     <div class=\"section-text mb-50 mb-sm-20\">
                         <div class=\"row\">
                             <div class=\"col-md-8 col-1\">
@@ -35,7 +36,8 @@ class __TwigTemplate_dd09f0e455daf315a566063a652444a23dd973c7f5b20554eb1f3db1aa7
                         <a href=\"#ventajas\" class=\"scroll-down scroll-2\">
                                     <img src=\"images/icoArrow2.png\" alt=\"\" class=\"fa fa-angle-down scroll-down-icon\">    
                         </a>
-</div>";
+</div>
+</section>";
     }
 
     public function getTemplateName()

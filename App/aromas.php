@@ -15,44 +15,12 @@
   mysql_select_db('perfumeria', $conecion);
   mysql_set_charset('utf8');
 
-$consulta_Aroma    = "SELECT Aroma.id,
-                            Aroma.nomAroma,
-                            Aroma.definicion,
-                            Aroma.sexo,
-                            Aroma.edad,
-                            Aroma.ciudad,
-                            Servicio.orientacionSexual,
-                            Servicio.sexoOral,
-                            Servicio.sexoOral2,
-                            Servicio.sexoAnal,
-                            Servicio.baileErotico,
-                            Aroma.nombre,
-                            Aroma.estatura,
-                            Aroma.cabello,
-                            Aroma.busto,
-                            Aroma.ojos,
-                            Aroma.piel,
-                            Aroma.caderas,
-                            Aroma.idiomas,
-                            Aroma.tatuajes,
-                            Aroma.foto1,
-                            Aroma.foto2,
-                            Aroma.foto3,
-                            Aroma.foto4,
-                            Servicio.conMujeres,
-                            Servicio.conParejas,
-                            Servicio.trioHMH,
-                            Servicio.jugetes,
-                            Servicio.trioMHM,
-                            Servicio.despedidaSoltero,
-                            Servicio.lluviaDorada,
-                            Tarifa.hora1,
-                            Tarifa.hora2,
-                            Tarifa.hora3,
-                            Tarifa.dia,
-                            Tarifa.encuentro
-                          FROM Aroma INNER JOIN Servicio ON Aroma.idAroma = Servicio.idAroma
-                             INNER JOIN Tarifa ON Servicio.idAroma = Tarifa.idAroma ORDER BY rand()
+$consulta_Aroma    = "SELECT Aroma.idAroma, 
+                              Aroma.ciudad, 
+                              Perfil_Aroma.nomAroma, 
+                              Foto_Aroma.foto1
+                            FROM Aroma INNER JOIN Perfil_Aroma ON Aroma.idAroma = Perfil_Aroma.idAroma
+                               INNER JOIN Foto_Aroma ON Perfil_Aroma.idAroma = Foto_Aroma.idAroma ORDER BY rand()
                              #WHERE Post_cliente.dia = 'viernes'
                              " ;
 $resultado  = mysql_query($consulta_Aroma , $conecion);
@@ -66,20 +34,9 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
   // Dentro de el bucle While recojemos la base de datos
   while ($fila= mysql_fetch_array($resultado )) {
   // Descomponemos nuestro Array en Objetos
-                              $datos [$cont]->id= $fila['id'];
+                              $datos [$cont]->id= $fila['idAroma'];
                               $datos [$cont]->aroma= $fila['nomAroma'];
-                              $datos [$cont]->definicion= $fila['definicion'];
                               $datos [$cont]->imagen= $fila['foto1'];
-                              $datos [$cont]->edad= $fila['edad'];
-                              $datos [$cont]->orientacion= $fila['orientacionSexual'];
-                              $datos [$cont]->sexoOral= $fila['sexoOral'];
-                              $datos [$cont]->sexoOral2= $fila['sexoOral2'];
-                              $datos [$cont]->sexoAnal= $fila['sexoAnal'];
-                              $datos [$cont]->baile= $fila['baileErotico'];
-                              $datos [$cont]->estatura= $fila['estatura'];
-                              $datos [$cont]->cabello= $fila['cabello'];
-                              $datos [$cont]->busto= $fila['busto'];
-                              $datos [$cont]->ojos= $fila['ojos'];
                               $datos [$cont]->ciudad= $fila['ciudad'];
                                $cont++;
   }
