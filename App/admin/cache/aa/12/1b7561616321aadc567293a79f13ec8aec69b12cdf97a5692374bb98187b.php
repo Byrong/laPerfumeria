@@ -7,27 +7,15 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("app.twig.html");
+        $this->parent = false;
 
         $this->blocks = array(
-            'solicitudes' => array($this, 'block_solicitudes'),
         );
-    }
-
-    protected function doGetParent(array $context)
-    {
-        return "app.twig.html";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-    }
-
-    // line 3
-    public function block_solicitudes($context, array $blocks = array())
-    {
-        // line 4
+        // line 1
         echo "      <header class=\"encabezado-1\">
         <h2>SOLICITUDES PENDIENTE</h2>
         <span class=\"ico-solicitudes\">&nbsp;</span>
@@ -35,47 +23,134 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
       <ul class=\"box-solicitud\">
         <li>
           <header class=\"fecha\">
-            <span class=\"dia\">01 JULIO DE 2015</span>
+            <span class=\"dia\">10 JULIO DE 2015</span>
           </header>
-          <article class=\"cont-solicitud\">
-              <div class=\"row-fluid\">
-                <td>Stefany Rodriguez</td>
-                <td>ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </div>
-              <div class=\"row-fluid\">
-                <td>stefanyRodriguez-2015@hotmail.com</td>
-              </div>
-              <div class=\"row-fluid\">
-                <td>Sex: Femenino</td>
-                <td>Cel: 3182567849</td>
-              </div>
-              <div class=\"row-fluid\">
-                <td>Ciudad: Barranquilla</td>
-              </div>
-          </article>
+          <table class=\"cont-solicitud active\">
+              <tr>
+                <td class=\"nombre\">Stefany Rodriguez</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Bogotá</td>
+              </tr>
+          </table>
+        </li>
+        <li>
+          <header class=\"fecha\">
+            <span class=\"dia\">05 JULIO DE 2015</span>
+          </header>
+          <table class=\"cont-solicitud\">
+              <tr>
+                <td class=\"nombre\">Diana Borguez</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Bogotá</td>
+              </tr>
+          </table>
+
+        </li>
+        <li>
+          <header class=\"fecha\">
+            <span class=\"dia\">03 JULIO DE 2015</span>
+          </header>
+          <table class=\"cont-solicitud\">
+              <tr>
+                <td class=\"nombre\">Laura Melgarejo</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
+              </tr>
+          </table>
+          
+        </li>
+        <li>
+          <header class=\"fecha\">
+            <span class=\"dia\">02 JULIO DE 2015</span>
+          </header>
+          <table class=\"cont-solicitud\">
+              <tr>
+                <td class=\"nombre\">Daniela Hernandes</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
+              </tr>
+          </table>
+          
         </li>
         <li>
           <header class=\"fecha\">
             <span class=\"dia\">01 JULIO DE 2015</span>
           </header>
-          <article class=\"cont-solicitud\">
-            <table class=\"tabla-1\">
+          <table class=\"cont-solicitud\">
               <tr>
-                <td>Stefany Rodriguez</td>
-                <td>ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+                <td class=\"nombre\">Karoll Paez</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
               </tr>
               <tr>
-                <td>stefanyRodriguez-2015@hotmail.com</td>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
               </tr>
               <tr>
-                <td>Sex: Femenino</td>
-                <td>Cel: 3182567849</td>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
               </tr>
               <tr>
-                <td>Ciudad: Barranquilla</td>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Medellin</td>
               </tr>
-            </table>
-          </article>
+          </table>
+          
+        </li>
+        <li>
+          <header class=\"fecha\">
+            <span class=\"dia\">01 JULIO DE 2015</span>
+          </header>
+          <table class=\"cont-solicitud\">
+              <tr>
+                <td class=\"nombre\">Sussana Villaloba</td>
+                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\">Sex: Femenino</td>
+                <td class=\"data-1\">Cel: 3182567849</td>
+              </tr>
+              <tr>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
+              </tr>
+          </table>
+          
         </li>
       </ul>
 ";
@@ -86,13 +161,8 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
         return "solicitudesAroma.twig.html";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  19 => 1,);
     }
 }

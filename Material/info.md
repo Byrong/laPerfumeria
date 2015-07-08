@@ -3,6 +3,7 @@
 > *Descripción:*
 > Sitio dedicado a prestar servicios de entretenimiento para adultos
 
+`Tener en cuenta que días a las Aromas le llega el periodo para poder validar los días que no estara disponible`
 
 ** :: Contenido **
 

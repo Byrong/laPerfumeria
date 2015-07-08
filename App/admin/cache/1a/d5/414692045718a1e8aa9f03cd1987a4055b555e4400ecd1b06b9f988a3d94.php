@@ -29,23 +29,29 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         $this->displayBlock('titulo', $context, $blocks);
         echo "</title>
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-";
+\t";
         // line 7
         $this->displayBlock('estilos', $context, $blocks);
         // line 12
         echo "</head>
-<body>
-<div id=\"admin-perfumeria\" class=\"container-fluid\">
-      ";
-        // line 15
-        $this->displayBlock('contenido', $context, $blocks);
-        // line 16
-        echo "</div>
 ";
-        // line 17
-        $this->displayBlock('scripst', $context, $blocks);
-        // line 21
+        // line 13
+        $this->env->loadTemplate("tools.twig.html")->display($context);
+        // line 14
         echo "<body>
+\t<div id=\"admin-perfumeria\" class=\"container-fluid\">
+\t      ";
+        // line 16
+        $this->displayBlock('contenido', $context, $blocks);
+        // line 19
+        echo "\t</div>
+
+";
+        // line 21
+        $this->displayBlock('scripst', $context, $blocks);
+        // line 25
+        echo "
+<body>
 </html>
 ";
     }
@@ -59,22 +65,24 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
     public function block_estilos($context, array $blocks = array())
     {
         // line 8
-        echo "  <link href=\"../css/bootstrap.css\" rel=\"stylesheet\">
-  <link href=\"../css/fonts_movi.css\" rel=\"stylesheet\">
-  <link href=\"../css/adminPerfumeria.css\" rel=\"stylesheet\">
-";
+        echo "\t  <link href=\"../css/bootstrap.css\" rel=\"stylesheet\">
+\t  <link href=\"../css/fonts_movi.css\" rel=\"stylesheet\">
+\t  <link href=\"../css/adminPerfumeria.css\" rel=\"stylesheet\">
+\t";
     }
 
-    // line 15
+    // line 16
     public function block_contenido($context, array $blocks = array())
     {
-        echo "             ";
+        echo "         
+
+\t      ";
     }
 
-    // line 17
+    // line 21
     public function block_scripst($context, array $blocks = array())
     {
-        // line 18
+        // line 22
         echo "    <script src=\"../js/jquery-1.11.1.min.js\"></script>
     <script src=\"../js/bootstrap.min.js\"></script>
 ";
@@ -85,8 +93,13 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         return "mainAdmin.twig.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  78 => 18,  75 => 17,  69 => 15,  62 => 8,  59 => 7,  54 => 5,  48 => 21,  46 => 17,  43 => 16,  41 => 15,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
+        return array (  86 => 22,  83 => 21,  75 => 16,  68 => 8,  65 => 7,  60 => 5,  53 => 25,  51 => 21,  47 => 19,  45 => 16,  41 => 14,  39 => 13,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
     }
 }

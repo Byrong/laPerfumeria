@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <title>{% block titulo %}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{% block estilos %}
-  <link href="../css/bootstrap.css" rel="stylesheet">
-  <link href="../css/fonts_movi.css" rel="stylesheet">
-  <link href="../css/adminPerfumeria.css" rel="stylesheet">
-{% endblock %}
+	{% block estilos %}
+	  <link href="../css/bootstrap.css" rel="stylesheet">
+	  <link href="../css/fonts_movi.css" rel="stylesheet">
+	  <link href="../css/adminPerfumeria.css" rel="stylesheet">
+	{% endblock %}
 </head>
+{% include "tools.twig.html" %}
 <body>
-<div id="admin-perfumeria" class="container-fluid">
-      {% block contenido %}             {% endblock %}
-</div>
+	<div id="admin-perfumeria" class="container-fluid">
+	      {% block contenido %}         
+
+	      {% endblock %}
+	</div>
+
 {% block scripst %}
     <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 {% endblock %}
+
 <body>
 </html>

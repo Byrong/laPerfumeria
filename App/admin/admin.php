@@ -8,5 +8,5 @@
         'debug' => 'true'
 ));
 
-$template = $twig->loadTemplate('solicitudesAroma.twig.html');
+$template = $twig->loadTemplate('app.twig.html');
 echo $template->render(array());
