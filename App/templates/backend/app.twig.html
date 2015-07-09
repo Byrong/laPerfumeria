@@ -7,7 +7,16 @@
 <section id="app" class="row">
 	<header class="top-1 container-fluid">
 		<h2 class="titu-1">La Perfumería Club</h2>
-		<div class="cuenta"><img src="../images/avatar.png" alt=""><span class="ico-flecha">+</span></div>
+		<div class="cuenta">
+			<img src="../images/admin/perfilAdmin.jpg" alt=""><span class="control">+</span>
+			<div class="panelControl">
+				<ul>
+					<li><a href="#">Mi Cuenta</a></li>
+					<li><a href="#">Salir</a></li>
+				</ul>
+				</table>
+			</div>
+		</div>
 	</header>
 	<section class="wrapper container-fluid">
 		<div class="col-md-2 col-sm-3 col-xs-12 menuAdmin">
@@ -29,6 +38,6 @@
 </section>
 {% endblock %}
 
-{% block scripst %}
-<script src="../js/admin.js"></script>
+{% block scripts %}
+	<script src="jsAdmin/admin.js"></script>
 {% endblock %}

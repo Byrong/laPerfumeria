@@ -13,7 +13,7 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
             'titulo' => array($this, 'block_titulo'),
             'estilos' => array($this, 'block_estilos'),
             'contenido' => array($this, 'block_contenido'),
-            'scripst' => array($this, 'block_scripst'),
+            'scripts' => array($this, 'block_scripts'),
         );
     }
 
@@ -46,12 +46,13 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         // line 19
         echo "\t</div>
 
+    <script src=\"../js/jquery-1.11.1.min.js\"></script>
+    <script src=\"../js/bootstrap.min.js\"></script>
 ";
-        // line 21
-        $this->displayBlock('scripst', $context, $blocks);
+        // line 23
+        $this->displayBlock('scripts', $context, $blocks);
         // line 25
-        echo "
-<body>
+        echo "<body>
 </html>
 ";
     }
@@ -79,13 +80,9 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
 \t      ";
     }
 
-    // line 21
-    public function block_scripst($context, array $blocks = array())
+    // line 23
+    public function block_scripts($context, array $blocks = array())
     {
-        // line 22
-        echo "    <script src=\"../js/jquery-1.11.1.min.js\"></script>
-    <script src=\"../js/bootstrap.min.js\"></script>
-";
     }
 
     public function getTemplateName()
@@ -100,6 +97,6 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
 
     public function getDebugInfo()
     {
-        return array (  86 => 22,  83 => 21,  75 => 16,  68 => 8,  65 => 7,  60 => 5,  53 => 25,  51 => 21,  47 => 19,  45 => 16,  41 => 14,  39 => 13,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
+        return array (  84 => 23,  76 => 16,  69 => 8,  66 => 7,  61 => 5,  55 => 25,  53 => 23,  47 => 19,  45 => 16,  41 => 14,  39 => 13,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
     }
 }

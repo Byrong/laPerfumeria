@@ -20,8 +20,8 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
             <span class=\"dia col-md-12\">03 JULIO DE 2015</span>
 </header>
 <section class=\"row\">
-  <h2 class=\"titu-2 col-md-12\">Datos Aromas</h2>
-  <table class=\"table-1 col-md-4\">
+  <h2 class=\"titu-2 col-md-12\"> <span>Datos Aromas</span></h2>
+  <table class=\"table-1 col-md-4 col-xs-12\">
       <tr>
         <td>Nombre:</td><td>Stefany Rodriguez</td>
       </tr>
@@ -29,9 +29,9 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
               <td>Sexo:</td><td>Femenino</td>
       </tr>
   </table>
-  <table class=\"table-1 col-md-6\">
+  <table class=\"table-1 col-md-6 col-xs-12\">
       <tr>
-        <td>Mail:</td><td colspan=\"4\">StefanyRodriguez-2015@hotmail.com</td>
+        <td>Correo:</td><td colspan=\"4\">StefanyRodriguez-2015@hotmail.com</td>
       </tr>
       <tr>
               <td>Celular:</td><td>3182567849</td>
@@ -40,14 +40,14 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
   </table>
 </section>
 <section class=\"row\">
-  <h2 class=\"titu-2 col-md-12\">Descripción Aroma</h2>
+  <h2 class=\"titu-2 col-md-12\"><span>Descripción Aroma</span></h2>
   <p class=\"par-1\">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos modi placeat, alias repudiandae aliquid! Suscipit, molestiae, minima. Provident ducimus velit blanditiis laboriosam labore, minus deserunt molestiae, laborum excepturi voluptate sit.
+    Soy una chica que cuida mucho su cuerpo, me gustas disfrutar al máximo los placeres de la vida y sé que tengo todo los que se necesita para trabajar en un club como este.
   </p>
 </section>
 <section class=\"row\">
-  <h2 class=\"titu-2 col-md-12\">Perfil Aroma</h2>
-  <table class=\"table-1 col-md-4\">
+  <h2 class=\"titu-2 col-md-12\"><span>Perfil Aroma</span></h2>
+  <table class=\"table-1 col-md-6 col-xs-12\">
       <tr>
         <td>Edad:</td><td>20 años</td>
       </tr>
@@ -61,16 +61,16 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
               <td>Píel:</td><td>Morena</td>
       </tr>
       <tr>
-              <td>Color Favorito:</td><td>background del td</td>
+              <td>Operaciones:</td><td>Naríz, Senos, Abdomen, Cola</td>
       </tr>
       <tr>
-              <td colspan=\"2\">Operaciones:</td>
+              <td>Color Favorito:</td><td bgcolor=\"#78cd78\"></td>
       </tr>
       <tr>
-              <td colspan=\"2\">Naríz Senos Abdomen</td>
+              <td>Fecha de nacimiento:</td><td>10 de Agosto del 1993</td>
       </tr>
   </table>
-  <table class=\"table-1 col-md-6\">
+  <table class=\"table-1 col-md-4 col-xs-12\">
       <tr>
           <td>Peso:</td><td>67 Kg</td>
       </tr>
@@ -86,8 +86,8 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
   </table>
 </section>
 <section class=\"row\">
-  <h2 class=\"titu-2 col-md-12\">Pefil Sexual</h2>
-  <table class=\"table-1 col-md-4\">
+  <h2 class=\"titu-2 col-md-12\"><span>Perfil Sexual</span></h2>
+  <table class=\"table-1 col-md-6 col-xs-12\">
       <tr>
         <td>Experiencia:</td><td>Si</td>
       </tr>
@@ -95,19 +95,19 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
             <td>Tiempo:</td><td>2 años</td>
       </tr>
       <tr>
-            <td>Actividad Secual:</td><td>2 a 3 veces al mes</td>
+            <td>Actividad Sexual:</td><td>2 a 3 veces al mes</td>
       </tr>
   </table>
   <div class=\"queEs\">
       <h3 class=\"titu-3 col-md-12\">¿Qué es el sexo?</h3>
       <p class=\"par-1 col-md-12\">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate libero voluptate accusamus molestiae temporibus officia quibusdam rerum, error quisquam non culpa ipsam veniam ab! Porro necessitatibus magnam, vitae soluta nulla?
+          Para mi el sexo es sentir la santifacción de placer en todo el cuerpo, es despertar cada unas de esas emociones que se encuentran en lo más profundo de nuestros deseos carnales.
       </p>    
   </div>
 </section>      
 <section class=\"row\">
-  <h2 class=\"titu-2 col-md-12\">Mis Servicios</h2>
-  <table class=\"table-1 col-md-4\">
+  <h2 class=\"titu-2 col-md-12\"><span>Mis Servicios</span></h2>
+  <table class=\"table-1 col-md-4 col-xs-12\">
       <tr>
         <td>Sexo Oral:</td><td>Si</td>
       </tr>
@@ -115,7 +115,10 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
               <td>Sexo Anal:</td><td>No</td>
       </tr>
       <tr>
-              <td>Servicio a Hombres:</td><td>No</td>
+              <td>Servicio a Hombres:</td><td>Si</td>
+      </tr>
+      <tr>
+              <td>Servicio a Mujeres:</td><td>No</td>
       </tr>
       <tr>
               <td>Lluvía Dorada:</td><td>Si</td>
@@ -124,7 +127,7 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
               <td>Baila:</td><td>Si</td>
       </tr>
   </table>
-  <table class=\"table-1 col-md-6\">
+  <table class=\"table-1 col-md-6 col-xs-12\">
       <tr>
           <td>Tríos:</td><td>Si</td>
       </tr>
@@ -140,11 +143,14 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
        <tr>
               <td>Encuentros:</td><td>Hotel / Residencia</td>
       </tr>
+      <tr>
+              <td>Fuera de servicio:</td><td>del 2 al 5 de cada mes</td>
+      </tr>
   </table>
 </section>
 <section>
-      <a href=\"#\" class=\"btn-2\">Rechazada</a>
-      <a href=\"#\" class=\"btn-3\">Bienvenida al Club</a>
+      <a href=\"#\" class=\"btn-2 col-md-5 col-xs-12\">Rechazada</a>
+      <a href=\"#\" class=\"btn-3 col-md-5 col-xs-12\">Bienvenida al Club</a>
 </section>";
     }
 

@@ -21,138 +21,61 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
         <span class=\"ico-solicitudes\">&nbsp;</span>
       </header>
       <ul class=\"box-solicitud\">
-        <li>
+        ";
+        // line 6
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["datos"]) ? $context["datos"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["m"]) {
+            // line 7
+            echo "        <li>
           <header class=\"fecha\">
-            <span class=\"dia\">10 JULIO DE 2015</span>
-          </header>
-          <table class=\"cont-solicitud active\">
-              <tr>
-                <td class=\"nombre\">Stefany Rodriguez</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Bogotá</td>
-              </tr>
-          </table>
-        </li>
-        <li>
-          <header class=\"fecha\">
-            <span class=\"dia\">05 JULIO DE 2015</span>
+            <span class=\"dia\">";
+            // line 9
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "fecha", array()), "html", null, true);
+            echo "</span>
           </header>
           <table class=\"cont-solicitud\">
               <tr>
-                <td class=\"nombre\">Diana Borguez</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
+                <td class=\"nombre\">";
+            // line 13
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "nombre", array()), "html", null, true);
+            echo "</td>
+                <td class=\"id\">ID: ";
+            // line 14
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "id", array()), "html", null, true);
+            echo "<span class=\"ico-ciudad\">&nbsp;</span></td>
               </tr>
               <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
+                <td class=\"mail\" colspan=\"2\">";
+            // line 17
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "correo", array()), "html", null, true);
+            echo "</td>
               </tr>
               <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
+                <td class=\"data-1\">Sex: ";
+            // line 20
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "sexo", array()), "html", null, true);
+            echo "</td>
+                <td class=\"data-1\">Cel: ";
+            // line 21
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "celular", array()), "html", null, true);
+            echo "</td>
               </tr>
               <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Bogotá</td>
+                <td class=\"data-1\" colspan=\"2\">Ciudad: ";
+            // line 24
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "ciudad", array()), "html", null, true);
+            echo "</td>
               </tr>
           </table>
-
         </li>
-        <li>
-          <header class=\"fecha\">
-            <span class=\"dia\">03 JULIO DE 2015</span>
-          </header>
-          <table class=\"cont-solicitud\">
-              <tr>
-                <td class=\"nombre\">Laura Melgarejo</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
-              </tr>
-          </table>
-          
-        </li>
-        <li>
-          <header class=\"fecha\">
-            <span class=\"dia\">02 JULIO DE 2015</span>
-          </header>
-          <table class=\"cont-solicitud\">
-              <tr>
-                <td class=\"nombre\">Daniela Hernandes</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
-              </tr>
-          </table>
-          
-        </li>
-        <li>
-          <header class=\"fecha\">
-            <span class=\"dia\">01 JULIO DE 2015</span>
-          </header>
-          <table class=\"cont-solicitud\">
-              <tr>
-                <td class=\"nombre\">Karoll Paez</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Medellin</td>
-              </tr>
-          </table>
-          
-        </li>
-        <li>
-          <header class=\"fecha\">
-            <span class=\"dia\">01 JULIO DE 2015</span>
-          </header>
-          <table class=\"cont-solicitud\">
-              <tr>
-                <td class=\"nombre\">Sussana Villaloba</td>
-                <td class=\"id\">ID: 01 <span class=\"ico-ciudad\">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class=\"mail\" colspan=\"2\">stefanyRodriguez-2015@hotmail.com</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\">Sex: Femenino</td>
-                <td class=\"data-1\">Cel: 3182567849</td>
-              </tr>
-              <tr>
-                <td class=\"data-1\" colspan=\"2\">Ciudad: Barranquilla</td>
-              </tr>
-          </table>
-          
-        </li>
-      </ul>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['m'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 29
+        echo "      </ul>
 ";
     }
 
@@ -161,8 +84,13 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
         return "solicitudesAroma.twig.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  78 => 29,  67 => 24,  61 => 21,  57 => 20,  51 => 17,  45 => 14,  41 => 13,  34 => 9,  30 => 7,  26 => 6,  19 => 1,);
     }
 }

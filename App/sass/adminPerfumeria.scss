@@ -48,6 +48,12 @@ $f6:'movistar_marketregular';
 /*
  * Base structure
  */
+.flotar{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+}
+
 .tools{
       background: $cn;
       top: 0;
@@ -79,9 +85,9 @@ span{
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-          background: url('../images/bg-admin-b.jpg');
+          background: url('../images/bg-admin.jpg');
           background-size: cover;
-          padding-top: 50px;
+          padding-top: 10px;
 }
 #admin-perfumeria{
 // .......................................................................................... [ Login ]
@@ -152,8 +158,70 @@ h2{
         float: left;
 }
 .cuenta{
+        cursor: pointer;
         float: right;
-        margin-top: 10px;
+        margin-top: 4px;
+        position: relative;
+        width: 130px;
+        text-align: right;
+        &:hover .control{
+          background:$cr1;
+          color: $cb;
+        }
+img{
+          border-radius: 30px;
+          box-shadow: 0 0 2px $cg3;
+          height: 35px;
+          margin: 0 5px;
+          width: 35px;
+          position: relative;
+}
+.control{
+        background: $cb;
+        border-top-right-radius:10px; 
+        border-bottom-right-radius:10px; 
+        padding:0 5px;
+        margin:5px 0 0 -10px;
+        display:inline-block;
+}
+.panelControl{
+        background: $cr1;
+        left: 0;
+        position: absolute;
+        display: none;
+        top: 40px;
+        width: 130px;
+        z-index: 10;
+        &::before{
+          content:".";
+          background: $cr1;
+          color: $cr1;
+          display: block;
+          text-align: center;
+          position: relative;
+          left: 68%;
+          top: -5px;
+          width: 20px;
+
+          transform:rotate (-50deg);
+          -webkit-transform: rotate(-50deg);
+          -moz-transform: rotate(-50deg);
+          -o-transform: rotate(-50deg);
+        }
+ul{
+        list-style: none;
+        margin: 0;
+        padding:0 10px 5px;
+li{
+        padding: 0;
+a{
+        color:$cb;
+        font-size: 0.8em;
+        padding: 0;
+}  
+}
+}
+}
 }
 }
 .wrapper{
@@ -288,6 +356,70 @@ td{
 // ..................................................................................................................... [ Contenido Datos ]
 .cont-datos{
           background:$cb;
+          padding-bottom: 40px;
+          display: block;
+          height:600px;
+          overflow:scroll; 
+.fecha{
+          font-size: 0.8em;
+          padding: 10px;
+          text-align: right;
+}
+.titu-2{
+           background: url('../images/admin/separator.png') repeat-x 0 5px;
+           padding: 0;
+span{
+          background: $cb;
+          color:$cr2;
+          display: inline;
+          font-weight: bold;
+          padding: 0 20px;
+}
+}
+.par-1{
+        margin: 20px 20px 7px;
+        font-size: 0.9em;
+}
+.queEs{
+.titu-3{
+        color:$cr2;
+        display: inline;
+        font-weight: bold;
+        padding: 0 20px;
+        margin: 0;
+}
+.par-1{
+        margin-top:0px;
+        font-style: italic;
+}
+}
+section{
+          margin-bottom: 10px;
+}
+.table-1{
+          margin: 10px 10px 10px 20px;
+tr{
+td:nth-child(odd){
+          color:$cr2;
+          font-weight:bold;
+          vertical-align: top;
+}  
+}
+}
+.btn-2{
+          background: $cg6;
+          color: $cg8;
+          text-align: center;
+          padding:10px 20px;
+          margin: 10px 5px 0;
+}
+.btn-3{
+          color:$cb;
+          background: $cr1;
+          text-align: center;
+          padding:10px 20px;
+          margin: 10px 5px 0;
+}
 }
 }
 }

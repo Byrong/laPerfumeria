@@ -15,7 +15,7 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
             'menu' => array($this, 'block_menu'),
             'solicitudes' => array($this, 'block_solicitudes'),
             'mostrarDatos' => array($this, 'block_mostrarDatos'),
-            'scripst' => array($this, 'block_scripst'),
+            'scripts' => array($this, 'block_scripts'),
         );
     }
 
@@ -44,67 +44,76 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
         echo "<section id=\"app\" class=\"row\">
 \t<header class=\"top-1 container-fluid\">
 \t\t<h2 class=\"titu-1\">La Perfumería Club</h2>
-\t\t<div class=\"cuenta\"><img src=\"../images/avatar.png\" alt=\"\"><span class=\"ico-flecha\">+</span></div>
+\t\t<div class=\"cuenta\">
+\t\t\t<img src=\"../images/admin/perfilAdmin.jpg\" alt=\"\"><span class=\"control\">+</span>
+\t\t\t<div class=\"panelControl\">
+\t\t\t\t<ul>
+\t\t\t\t\t<li><a href=\"#\">Mi Cuenta</a></li>
+\t\t\t\t\t<li><a href=\"#\">Salir</a></li>
+\t\t\t\t</ul>
+\t\t\t\t</table>
+\t\t\t</div>
+\t\t</div>
 \t</header>
 \t<section class=\"wrapper container-fluid\">
 \t\t<div class=\"col-md-2 col-sm-3 col-xs-12 menuAdmin\">
 \t\t\t";
-        // line 14
+        // line 23
         $this->displayBlock('menu', $context, $blocks);
-        // line 17
+        // line 26
         echo "\t\t</div>
 \t\t<div class=\"col-md-3 col-sm-4 col-xs-12 listado\">
 \t\t\t";
-        // line 19
+        // line 28
         $this->displayBlock('solicitudes', $context, $blocks);
-        // line 22
+        // line 31
         echo "\t\t</div>
 \t\t<div class=\"col-md-7 col-sm-8 col-xs-12 cont-datos\">
 \t\t\t";
-        // line 24
+        // line 33
         $this->displayBlock('mostrarDatos', $context, $blocks);
-        // line 27
+        // line 36
         echo "\t\t</div>
 \t</section>
 </section>
 ";
     }
 
-    // line 14
+    // line 23
     public function block_menu($context, array $blocks = array())
     {
-        // line 15
+        // line 24
         echo "\t\t\t\t";
         $this->env->loadTemplate("menuAdmin.twig.html")->display($context);
-        // line 16
+        // line 25
         echo "\t\t\t";
     }
 
-    // line 19
+    // line 28
     public function block_solicitudes($context, array $blocks = array())
     {
-        // line 20
+        // line 29
         echo "\t\t\t\t";
         $this->env->loadTemplate("solicitudesAroma.twig.html")->display($context);
-        // line 21
+        // line 30
         echo "\t\t\t";
     }
 
-    // line 24
+    // line 33
     public function block_mostrarDatos($context, array $blocks = array())
     {
-        // line 25
+        // line 34
         echo "\t\t\t\t";
         $this->env->loadTemplate("datosSolicitudes.twig.html")->display($context);
-        // line 26
+        // line 35
         echo "\t\t\t";
     }
 
-    // line 32
-    public function block_scripst($context, array $blocks = array())
+    // line 41
+    public function block_scripts($context, array $blocks = array())
     {
-        // line 33
-        echo "<script src=\"../js/admin.js\"></script>
+        // line 42
+        echo "\t<script src=\"jsAdmin/admin.js\"></script>
 ";
     }
 
@@ -120,6 +129,6 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
 
     public function getDebugInfo()
     {
-        return array (  107 => 33,  104 => 32,  100 => 26,  97 => 25,  94 => 24,  90 => 21,  87 => 20,  84 => 19,  80 => 16,  77 => 15,  74 => 14,  67 => 27,  65 => 24,  61 => 22,  59 => 19,  55 => 17,  53 => 14,  44 => 7,  41 => 6,  36 => 4,  33 => 3,);
+        return array (  116 => 42,  113 => 41,  109 => 35,  106 => 34,  103 => 33,  99 => 30,  96 => 29,  93 => 28,  89 => 25,  86 => 24,  83 => 23,  76 => 36,  74 => 33,  70 => 31,  68 => 28,  64 => 26,  62 => 23,  44 => 7,  41 => 6,  36 => 4,  33 => 3,);
     }
 }

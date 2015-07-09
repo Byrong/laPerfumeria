@@ -1,0 +1,1 @@
+function iniciar(){$(".cuenta").on("click",panelControl)}function panelControl(){$(".panelControl").slideToggle()}$(document).on("ready",iniciar);
