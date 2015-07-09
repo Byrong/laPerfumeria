@@ -34,11 +34,8 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         $this->displayBlock('estilos', $context, $blocks);
         // line 12
         echo "</head>
-";
-        // line 13
-        $this->env->loadTemplate("tools.twig.html")->display($context);
-        // line 14
-        echo "<body>
+
+<body>
 \t<div id=\"admin-perfumeria\" class=\"container-fluid\">
 \t      ";
         // line 16
@@ -90,13 +87,8 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         return "mainAdmin.twig.html";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  84 => 23,  76 => 16,  69 => 8,  66 => 7,  61 => 5,  55 => 25,  53 => 23,  47 => 19,  45 => 16,  41 => 14,  39 => 13,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
+        return array (  81 => 23,  73 => 16,  66 => 8,  63 => 7,  58 => 5,  52 => 25,  50 => 23,  44 => 19,  42 => 16,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
     }
 }

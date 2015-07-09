@@ -1,16 +1,8 @@
 <?php
-  require_once '../Twig/Autoloader.php';
 
-  Twig_Autoloader::register();
-  $loader = new Twig_Loader_Filesystem('../templates/backend');
-  $twig = new Twig_Environment($loader, array(
-        'cache' => 'cache',
-        'debug' => 'true'
-));
+// echo json_encode(array("id"=>$_GET[ id ]));
 
-$template = $twig->loadTemplate('app.twig.html');
-// Cod-bg
-
+$solicitud = $_GET ['id'];
 
 // Cod-bg
   include "conecion.php";
@@ -25,7 +17,7 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
 			Aroma.ciudad, 
 			Aroma.registro, 
 			Aroma.estado
-		FROM Aroma" ;
+		FROM Aroma WHERE Aroma.idAroma = $solicitud" ;
 
 $resultado  = mysql_query($consulta_Aroma , $conecion);
 
@@ -56,4 +48,6 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
                              
 
 mysql_close($conecion);
-echo $template->render(array('datos' => $datos));
+printVar($datos, 'Datos Aroma');
+
+?>

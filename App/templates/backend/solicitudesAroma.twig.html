@@ -1,3 +1,6 @@
+      <div class="mensaje">
+          Nuevo Mensaje
+      </div>
       <header class="encabezado-1">
         <h2>SOLICITUDES PENDIENTE</h2>
         <span class="ico-solicitudes">&nbsp;</span>
@@ -8,7 +11,7 @@
           <header class="fecha">
             <span class="dia">{{ m.fecha}}</span>
           </header>
-          <table class="cont-solicitud">
+          <table class="cont-solicitud" data-id="{{m.id}}">
               <tr>
                 <td class="nombre">{{ m.nombre }}</td>
                 <td class="id">ID: {{ m.id }}<span class="ico-ciudad">&nbsp;</span></td>
