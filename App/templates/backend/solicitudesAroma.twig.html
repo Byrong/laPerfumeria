@@ -1,29 +1,29 @@
-      <header class="encabezado-1">
+<header class="encabezado-1">
         <h2>SOLICITUDES PENDIENTE</h2>
         <span class="ico-solicitudes">&nbsp;</span>
-      </header>
-      <ul class="box-solicitud">
+</header>
+<ul class="box-solicitud">
         {% for m in datos %}
-        <li>
-          <header class="fecha">
-            <span class="dia">{{ m.fecha}}</span>
-          </header>
-          <table class="cont-solicitud" data-id="{{m.id}}">
-              <tr>
-                <td class="nombre">{{ m.nombre }}</td>
-                <td class="id">ID: {{ m.id }}<span class="ico-ciudad">&nbsp;</span></td>
-              </tr>
-              <tr>
-                <td class="mail" colspan="2">{{ m.correo}}</td>
-              </tr>
-              <tr>
-                <td class="data-1">Sex: {{ m.sexo }}</td>
-                <td class="data-1">Cel: {{ m.celular}}</td>
-              </tr>
-              <tr>
-                <td class="data-1" colspan="2">Ciudad: {{ m.ciudad }}</td>
-              </tr>
-          </table>
+        <li class="ocultar-{{m.id}}">
+              <header class="fecha">
+                <span class="dia">{{ m.fecha}}</span>
+              </header>
+              <table class="cont-solicitud" data-id="{{m.id}}">
+                  <tr>
+                    <td class="nombre">{{ m.nombre }}</td>
+                    <td class="id">ID: {{ m.id }}<span class="ico-ciudad">&nbsp;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="mail" colspan="2">{{ m.correo}}</td>
+                  </tr>
+                  <tr>
+                    <td class="data-1">Sex: {{ m.sexo }}</td>
+                    <td class="data-1">Cel: {{ m.celular}}</td>
+                  </tr>
+                  <tr>
+                    <td class="data-1" colspan="2">Ciudad: {{ m.ciudad }}</td>
+                  </tr>
+              </table>
         </li>
         {% endfor %}
-      </ul>
+</ul>

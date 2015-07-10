@@ -22,7 +22,7 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
 			Aroma.ciudad, 
 			Aroma.registro, 
 			Aroma.estado
-		FROM Aroma" ;
+		FROM Aroma WHERE Aroma.estado = 0";
 
 $resultado  = mysql_query($consulta_Aroma , $conecion);
 

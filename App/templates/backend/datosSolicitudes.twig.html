@@ -155,8 +155,36 @@
   </table>
 </section>
 <section>
-      <a href="#" class="btn-2 col-md-5 col-xs-12" data-aceptada="No">Rechazada</a>
-      <a href="#" class="btn-3 col-md-5 col-xs-12" data-aceptada="Si">Bienvenida al Club</a>
+      <a href="javascript:;" class="btn-2 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="2">Rechazada</a>
+      <a href="javascript:;" class="btn-3 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="1">Bienvenida al Club</a>
 </section>
 </div>
 {% endfor %}
+<script>
+      $(document).ready(function() {
+// Realizamos el filtro de la solicitud "Aroma Aceptada" - "Aroma Rechazada"
+                $('.filtro').click(function(){
+                      var estado = $(this).data('estado');
+                      var id = $(this).data('id');
+                              $.get( 
+                                  "../admin/filtroSolicitud.php",
+                                  { estado: estado,
+                                    id: id },
+                                  function(data) {
+                                        var respuesta = data;
+                                        console.log(respuesta);
+                                        switch (parseInt(respuesta)){
+                                            case 1: 
+                                                  $('.mensaje').slideDown().html('<h1>Nueva Aroma ingresada al Club, no olvides ingresar su nuevo nombre y los valores de su tarifa</h1>');
+                                                  break;
+                                            case 2: 
+                                                  $('.mensaje').slideDown().html('<h1>Solicitu de Aroma Rechazada</h1>');
+                                                  break;
+                                        }
+                                                  $('.cont-solicitud').removeClass('active');
+                                                  $('.mensaje').removeClass('bounce animated').addClass('bounce animated');
+                                                  $('.ocultar-'+id).slideUp();
+                                        });
+                                  });
+                          });
+</script>

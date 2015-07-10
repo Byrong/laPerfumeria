@@ -309,8 +309,14 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
   </table>
 </section>
 <section>
-      <a href=\"#\" class=\"btn-2 col-md-5 col-xs-12\" data-aceptada=\"No\">Rechazada</a>
-      <a href=\"#\" class=\"btn-3 col-md-5 col-xs-12\" data-aceptada=\"Si\">Bienvenida al Club</a>
+      <a href=\"javascript:;\" class=\"btn-2 filtro col-md-5 col-xs-12\" data-id=\"";
+            // line 158
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "id", array()), "html", null, true);
+            echo "\" data-estado=\"2\">Rechazada</a>
+      <a href=\"javascript:;\" class=\"btn-3 filtro col-md-5 col-xs-12\" data-id=\"";
+            // line 159
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "id", array()), "html", null, true);
+            echo "\" data-estado=\"1\">Bienvenida al Club</a>
 </section>
 </div>
 ";
@@ -318,6 +324,35 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['m'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 163
+        echo "<script>
+      \$(document).ready(function() {
+// Realizamos el filtro de la solicitud \"Aroma Aceptada\" - \"Aroma Rechazada\"
+                \$('.filtro').click(function(){
+                      var estado = \$(this).data('estado');
+                      var id = \$(this).data('id');
+                              \$.get( 
+                                  \"../admin/filtroSolicitud.php\",
+                                  { estado: estado,
+                                    id: id },
+                                  function(data) {
+                                        var respuesta = data;
+                                        console.log(respuesta);
+                                        switch (parseInt(respuesta)){
+                                            case 1: 
+                                                  \$('.mensaje').slideDown().html('<h1>Nueva Aroma ingresada al Club, no olvides ingresar su nuevo nombre y los valores de su tarifa</h1>');
+                                                  break;
+                                            case 2: 
+                                                  \$('.mensaje').slideDown().html('<h1>Solicitu de Aroma Rechazada</h1>');
+                                                  break;
+                                        }
+                                                  \$('.cont-solicitud').removeClass('active');
+                                                  \$('.mensaje').removeClass('bounce animated').addClass('bounce animated');
+                                                  \$('.ocultar-'+id).slideUp();
+                                        });
+                                  });
+                          });
+</script>";
     }
 
     public function getTemplateName()
@@ -332,6 +367,6 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
 
     public function getDebugInfo()
     {
-        return array (  304 => 153,  298 => 150,  292 => 147,  286 => 144,  280 => 141,  274 => 138,  266 => 133,  260 => 130,  254 => 127,  248 => 124,  242 => 121,  236 => 118,  225 => 110,  216 => 104,  210 => 101,  204 => 98,  193 => 90,  187 => 87,  181 => 84,  175 => 81,  167 => 76,  161 => 73,  157 => 71,  153 => 69,  150 => 68,  146 => 66,  139 => 63,  132 => 60,  125 => 57,  118 => 54,  112 => 51,  108 => 49,  106 => 48,  100 => 45,  94 => 42,  88 => 39,  82 => 36,  72 => 29,  62 => 22,  58 => 21,  52 => 18,  44 => 13,  38 => 10,  29 => 4,  26 => 3,  22 => 2,  19 => 1,);
+        return array (  328 => 163,  318 => 159,  314 => 158,  304 => 153,  298 => 150,  292 => 147,  286 => 144,  280 => 141,  274 => 138,  266 => 133,  260 => 130,  254 => 127,  248 => 124,  242 => 121,  236 => 118,  225 => 110,  216 => 104,  210 => 101,  204 => 98,  193 => 90,  187 => 87,  181 => 84,  175 => 81,  167 => 76,  161 => 73,  157 => 71,  153 => 69,  150 => 68,  146 => 66,  139 => 63,  132 => 60,  125 => 57,  118 => 54,  112 => 51,  108 => 49,  106 => 48,  100 => 45,  94 => 42,  88 => 39,  82 => 36,  72 => 29,  62 => 22,  58 => 21,  52 => 18,  44 => 13,  38 => 10,  29 => 4,  26 => 3,  22 => 2,  19 => 1,);
     }
 }

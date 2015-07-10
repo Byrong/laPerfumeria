@@ -32,23 +32,23 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
 \t";
         // line 7
         $this->displayBlock('estilos', $context, $blocks);
-        // line 12
+        // line 13
         echo "</head>
 
 <body>
 \t<div id=\"admin-perfumeria\" class=\"container-fluid\">
 \t      ";
-        // line 16
+        // line 17
         $this->displayBlock('contenido', $context, $blocks);
-        // line 19
+        // line 20
         echo "\t</div>
 
     <script src=\"../js/jquery-1.11.1.min.js\"></script>
     <script src=\"../js/bootstrap.min.js\"></script>
 ";
-        // line 23
+        // line 24
         $this->displayBlock('scripts', $context, $blocks);
-        // line 25
+        // line 26
         echo "<body>
 </html>
 ";
@@ -66,10 +66,11 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
         echo "\t  <link href=\"../css/bootstrap.css\" rel=\"stylesheet\">
 \t  <link href=\"../css/fonts_movi.css\" rel=\"stylesheet\">
 \t  <link href=\"../css/adminPerfumeria.css\" rel=\"stylesheet\">
+\t  <link href=\"../css/animate.css\" rel=\"stylesheet\">
 \t";
     }
 
-    // line 16
+    // line 17
     public function block_contenido($context, array $blocks = array())
     {
         echo "         
@@ -77,7 +78,7 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
 \t      ";
     }
 
-    // line 23
+    // line 24
     public function block_scripts($context, array $blocks = array())
     {
     }
@@ -89,6 +90,6 @@ class __TwigTemplate_1ad5414692045718a1e8aa9f03cd1987a4055b555e4400ecd1b06b9f988
 
     public function getDebugInfo()
     {
-        return array (  81 => 23,  73 => 16,  66 => 8,  63 => 7,  58 => 5,  52 => 25,  50 => 23,  44 => 19,  42 => 16,  36 => 12,  34 => 7,  29 => 5,  23 => 1,);
+        return array (  82 => 24,  74 => 17,  66 => 8,  63 => 7,  58 => 5,  52 => 26,  50 => 24,  44 => 20,  42 => 17,  36 => 13,  34 => 7,  29 => 5,  23 => 1,);
     }
 }
