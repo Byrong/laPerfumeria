@@ -1,69 +1,93 @@
+<div class="mensaje">
+{% for m in verSolicitud %}
 <header class="row fecha">
-            <span class="dia col-md-12">03 JULIO DE 2015</span>
+            <span class="dia col-md-12">{{ m.fecha}}</span>
 </header>
 <section class="row">
   <h2 class="titu-2 col-md-12"> <span>Datos Aromas</span></h2>
   <table class="table-1 col-md-4 col-xs-12">
       <tr>
-        <td>Nombre:</td><td>Stefany Rodriguez</td>
+        <td>Nombre:</td><td>{{m.nombre}}</td>
       </tr>
       <tr>
-              <td>Sexo:</td><td>Femenino</td>
+              <td>Sexo:</td><td>{{m.sexo}}</td>
       </tr>
   </table>
   <table class="table-1 col-md-6 col-xs-12">
       <tr>
-        <td>Correo:</td><td colspan="4">StefanyRodriguez-2015@hotmail.com</td>
+        <td>Correo:</td><td colspan="4">{{m.correo}}</td>
       </tr>
       <tr>
-              <td>Celular:</td><td>3182567849</td>
-              <td>Ciudad:</td><td>Bogotá</td>
+              <td>Celular:</td><td>{{m.celular}}</td>
+              <td>Ciudad:</td><td>{{m.ciudad}}</td>
       </tr>
   </table>
 </section>
 <section class="row">
   <h2 class="titu-2 col-md-12"><span>Descripción Aroma</span></h2>
   <p class="par-1">
-    Soy una chica que cuida mucho su cuerpo, me gustas disfrutar al máximo los placeres de la vida y sé que tengo todo los que se necesita para trabajar en un club como este.
+    {{m.descripcion}}
   </p>
 </section>
 <section class="row">
   <h2 class="titu-2 col-md-12"><span>Perfil Aroma</span></h2>
   <table class="table-1 col-md-6 col-xs-12">
       <tr>
-        <td>Edad:</td><td>20 años</td>
+        <td>Edad:</td><td>{{m.edad}} años</td>
       </tr>
       <tr>
-              <td>Estatura:</td><td>1.60cm</td>
+              <td>Estatura:</td><td>{{m.estatura}} cm</td>
       </tr>
       <tr>
-              <td>Ojos:</td><td>Negro</td>
+              <td>Ojos:</td><td>{{m.ojos}}</td>
       </tr>
       <tr>
-              <td>Píel:</td><td>Morena</td>
+              <td>Píel:</td><td>{{m.piel}}</td>
+      </tr>
+      <tr>   
+              {% if m.operaciones == 'Si' %}
+              <td>Operaciones:</td>
+              <td>
+                  {% if m.nariz == 'Si' %}   
+                    Naríz
+                  {% endif %}
+                  {% if m.labios == 'Si' %}   
+                    Labios
+                  {% endif %}
+                  {% if m.senos == 'Si' %}   
+                    Senos
+                  {% endif %}
+                  {% if m.abdomen == 'Si' %}   
+                    Abdomen
+                  {% endif %}
+                  {% if m.cola == 'Si' %}   
+                    Cola
+                  {% endif %}
+              </td>
+              {% endif %}
+              {% if m.operaciones == 'No' %}
+              <td>Operaciones:</td><td>No</td>
+              {% endif %}
       </tr>
       <tr>
-              <td>Operaciones:</td><td>Naríz, Senos, Abdomen, Cola</td>
+              <td>Color Favorito:</td><td bgcolor="#{{m.colFavorito }}"></td>
       </tr>
       <tr>
-              <td>Color Favorito:</td><td bgcolor="#78cd78"></td>
-      </tr>
-      <tr>
-              <td>Fecha de nacimiento:</td><td>10 de Agosto del 1993</td>
+              <td>Fecha de nacimiento:</td><td>{{m.cumple}}</td>
       </tr>
   </table>
   <table class="table-1 col-md-4 col-xs-12">
       <tr>
-          <td>Peso:</td><td>67 Kg</td>
+          <td>Peso:</td><td>{{m.peso}} Kg</td>
       </tr>
       <tr>
-            <td>Busto:</td><td>32</td>
+            <td>Senos:</td><td>{{m.senos}}</td>
       </tr>
       <tr>
-            <td>Cabello:</td><td>Rubío</td>
+            <td>Cabello:</td><td>{{m.cabello}}</td>
       </tr>
       <tr>
-            <td>Tatuajes:</td><td>No</td>
+            <td>Tatuajes:</td><td>{{m.tatuajes}}</td>
       </tr>
   </table>
 </section>
@@ -71,19 +95,19 @@
   <h2 class="titu-2 col-md-12"><span>Perfil Sexual</span></h2>
   <table class="table-1 col-md-6 col-xs-12">
       <tr>
-        <td>Experiencia:</td><td>Si</td>
+        <td>Experiencia:</td><td>{{m.experiencia}}</td>
       </tr>
       <tr>
-            <td>Tiempo:</td><td>2 años</td>
+            <td>Tiempo:</td><td>{{m.tiempo}}</td>
       </tr>
       <tr>
-            <td>Actividad Sexual:</td><td>2 a 3 veces al mes</td>
+            <td>Actividad Sexual:</td><td>{{m.actividadSexual}}</td>
       </tr>
   </table>
   <div class="queEs">
       <h3 class="titu-3 col-md-12">¿Qué es el sexo?</h3>
       <p class="par-1 col-md-12">
-          Para mi el sexo es sentir la santifacción de placer en todo el cuerpo, es despertar cada unas de esas emociones que se encuentran en lo más profundo de nuestros deseos carnales.
+          {{m.sexoEs}}
       </p>    
   </div>
 </section>      
@@ -91,46 +115,48 @@
   <h2 class="titu-2 col-md-12"><span>Mis Servicios</span></h2>
   <table class="table-1 col-md-4 col-xs-12">
       <tr>
-        <td>Sexo Oral:</td><td>Si</td>
+        <td>Sexo Oral:</td><td>{{m.sexOral}}</td>
       </tr>
       <tr>
-              <td>Sexo Anal:</td><td>No</td>
+              <td>Sexo Anal:</td><td>{{m.sexAnal}}</td>
       </tr>
       <tr>
-              <td>Servicio a Hombres:</td><td>Si</td>
+              <td>Servicio a Hombres:</td><td>{{m.sexHombre}}</td>
       </tr>
       <tr>
-              <td>Servicio a Mujeres:</td><td>No</td>
+              <td>Servicio a Mujeres:</td><td>{{m.sexMujer}}</td>
       </tr>
       <tr>
-              <td>Lluvía Dorada:</td><td>Si</td>
+              <td>Lluvía Dorada:</td><td>{{m.lluviaDorada}}</td>
       </tr>
       <tr>
-              <td>Baila:</td><td>Si</td>
+              <td>Baila:</td><td>{{m.baile}}</td>
       </tr>
   </table>
   <table class="table-1 col-md-6 col-xs-12">
       <tr>
-          <td>Tríos:</td><td>Si</td>
+          <td>Tríos:</td><td>{{m.trios}}</td>
       </tr>
       <tr>
-            <td>Trio HMH:</td><td>Si</td>
+            <td>Trio HMH:</td><td>{{m.trioHMH}}</td>
       </tr>
       <tr>
-            <td>Trio MHM:</td><td>Si</td>
+            <td>Trio MHM:</td><td>{{m.trioMHM}}</td>
       </tr>
       <tr>
-            <td>Masajes:</td><td>Si</td>
+            <td>Masajes:</td><td>{{m.masaje}}</td>
       </tr>
        <tr>
-              <td>Encuentros:</td><td>Hotel / Residencia</td>
+              <td>Encuentros:</td><td>{{m.encuentro}}</td>
       </tr>
       <tr>
-              <td>Fuera de servicio:</td><td>del 2 al 5 de cada mes</td>
+              <td>Fuera de servicio:</td><td>del {{m.desde}} al {{m.hasta}} de cada mes</td>
       </tr>
   </table>
 </section>
 <section>
-      <a href="#" class="btn-2 col-md-5 col-xs-12">Rechazada</a>
-      <a href="#" class="btn-3 col-md-5 col-xs-12">Bienvenida al Club</a>
+      <a href="#" class="btn-2 col-md-5 col-xs-12" data-aceptada="No">Rechazada</a>
+      <a href="#" class="btn-3 col-md-5 col-xs-12" data-aceptada="Si">Bienvenida al Club</a>
 </section>
+</div>
+{% endfor %}

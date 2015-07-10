@@ -10,9 +10,6 @@
 
 $template = $twig->loadTemplate('app.twig.html');
 // Cod-bg
-
-
-// Cod-bg
   include "conecion.php";
   mysql_select_db('perfumeria', $conecion);
   mysql_set_charset('utf8');

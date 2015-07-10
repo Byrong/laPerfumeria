@@ -3,7 +3,19 @@ $(document).on('ready', iniciar);
 function iniciar ()
 {
 	$('.cuenta').on('click', panelControl);
-	$('.cont-solicitud').on('click', cargarSolicitud);
+	//$('.cont-solicitud').on('click', cargarSolicitud);
+
+
+	$('.cont-solicitud').click(function(event){
+	     var id = $(this).data('id');
+               $.get( 
+                  "../admin/cargarSolicitud.php",
+                  { id: id },
+                  function(data) {
+                     $('.mensaje').slideDown().html(data);
+                  }
+               );
+            });
 }
 
 function panelControl ()
@@ -11,17 +23,17 @@ function panelControl ()
 	$('.panelControl').slideToggle();
 }
 
-function cargarSolicitud()
+function cargarSolicitud2()
 {
 	$('.cont-solicitud').removeClass('active');
 	$(this).addClass('active');
 	var id = $(this).data('id');
-
+	var datos = "Byron";
 	$.ajax({
 		url: 	"../admin/cargarSolicitud.php",
-		type: 	"GET",
+		type: 	"POST",
 		async: 	true,
-		data:    id,
+		data:    datos,
 		success: function (data)
                               {
                                $('.cont-datos').html(data);
