@@ -1,3 +1,4 @@
+<article class="contenido fadeIn animated">
 <div class="mensaje">
 {% for m in verSolicitud %}
 <header class="row fecha">
@@ -101,7 +102,7 @@
             <td>Tiempo:</td><td>{{m.tiempo}}</td>
       </tr>
       <tr>
-            <td>Actividad Sexual:</td><td>{{m.actividadSexual}}</td>
+            <td>Actividad Sexual:</td><td>{{m.actividadSexual}} al mes</td>
       </tr>
   </table>
   <div class="queEs">
@@ -160,6 +161,7 @@
 </section>
 </div>
 {% endfor %}
+</article>
 <script>
       $(document).ready(function() {
 // Realizamos el filtro de la solicitud "Aroma Aceptada" - "Aroma Rechazada"
@@ -175,14 +177,14 @@
                                         console.log(respuesta);
                                         switch (parseInt(respuesta)){
                                             case 1: 
-                                                  $('.mensaje').slideDown().html('<h1>Nueva Aroma ingresada al Club, no olvides ingresar su nuevo nombre y los valores de su tarifa</h1>');
+                                                  $('.mensaje').slideDown().html('<span class="alertOk">Aroma ingresada al Club con exito. <br> "No olvides registrar el nombre de Aroma a usar y los valores de su servicio"</span>');
                                                   break;
                                             case 2: 
-                                                  $('.mensaje').slideDown().html('<h1>Solicitu de Aroma Rechazada</h1>');
+                                                  $('.mensaje').slideDown().html('<span class="alertOk">Aroma Rechazada al Club, lo sentimos :(</span>');
                                                   break;
                                         }
                                                   $('.cont-solicitud').removeClass('active');
-                                                  $('.mensaje').removeClass('bounce animated').addClass('bounce animated');
+                                                  $('.mensaje').removeClass('slideInDown animated').addClass('slideInDown animated');
                                                   $('.ocultar-'+id).slideUp();
                                         });
                                   });

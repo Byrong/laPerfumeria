@@ -85,7 +85,7 @@ span{
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-          background: url('../images/bg-admin-b.jpg');
+          background: url('../images/bg-admin.jpg');
           background-size: cover;
           padding-top: 10px;
 }
@@ -148,6 +148,16 @@ h2{
         max-width: 1100px;
         margin: 70px auto;
         width: 100%;
+.alertOk{
+        background: $cr1;
+        border-left: 7px solid $cn;
+        box-shadow: 0 2px 2px $cg3;
+        color: $cb;
+        display: block;
+        margin-top: 10px;
+        padding:10px 20px;
+}
+
 .top-1{
         background: url('../images/admin/head1.jpg') repeat-x;
         border-top-left-radius: 5px;
@@ -310,6 +320,8 @@ li{
         cursor: pointer;
         position: relative;
         width: 100%;
+
+        transition:all 0.7s ease;
         &:hover{
           background:$cr2;
       }
@@ -388,7 +400,7 @@ td{
            padding: 0;
 span{
           background: $cb;
-          color:$cr2;
+          color:$cr1;
           display: inline;
           font-weight: bold;
           padding: 0 20px;

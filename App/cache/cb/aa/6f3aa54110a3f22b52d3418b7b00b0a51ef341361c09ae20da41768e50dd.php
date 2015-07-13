@@ -16,29 +16,44 @@ class __TwigTemplate_cbaa6f3aa54110a3f22b52d3418b7b00b0a51ef341361c09ae20da41768
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "  <div class=\"container relative\">
+        echo "<section class=\"page-section\" id=\"membresias\" data-background=\"images/full-width-images/bg6.jpg\">
+<div class=\"container relative\">
                     <div class=\"section-text mb-50 mb-sm-20\">
                         <div class=\"row\">
-                            <div class=\"col-md-8 col-1\">
+                            <div class=\"col-md-12\">
                             <h2 class=\"tituloH1B mb-70 mb-sm-40\">
-                        ¿Qué es la Perfumería Club?
-                    </h2>
-                                <p class=\"par-1\">
-                                        Somos el único club de placer para adultos VIP, contamos con un amplio catalogo de modelos donde manejamos diferente tipos de Aromas, para saciar ese deseo de placer que hay en ti. <br><br>
-                                        ¡Garantizamos la máxima discreción en cada uno de nuestros servicios!
-                                </p>
+                                    Nuestras Membresias
+                            </h2>
                             </div>
-                            <div class=\"col-md-4 col-22\">
-                                        <img src=\"images/placer2.jpg\" alt=\"\">
+                            <div class=\"col-md-12\">
+                                <div class=\"col-md-4 mebresia\">
+                                    <ul class=\"list-2 black\">
+                                        <li class=\"head\">Cliente Black</li>
+                                        <li class=\"valor\">\$50.000 anual</li>
+                                        <li>Servicios disponibles 24 hora</li>
+                                        <li>Acceso al perfil de cada Aroma</li>
+                                        <li>Acceso VIP por el Club</li>
+                                        <li><a class=\"comprar\" href=\"#\">Comprar</a></li>
+                                    </ul>
+                                </div>
+                                <div class=\"col-md-4 mebresia\">
+                                    <ul class=\"list-2 gold\">
+                                        <li class=\"head\">Cliente Gold</li>
+                                        <li class=\"valor\">\$80.000 anual</li>
+                                        <li>Servicios disponibles 24 hora</li>
+                                        <li>Acceso al perfil de cada Aroma</li>
+                                        <li>Acceso VIP por el Club</li>
+                                        <li>Regalo hot por mas de 5 servicios</li>
+                                        <li>Acceso a Galería premium de las Aromas</li>
+                                        <li>Servicio de agenda online</li>
+                                        <li><a class=\"comprar\" href=\"#\">Comprar</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <div class=\"local-scroll\">
-                        <a href=\"#ventajas\" class=\"scroll-down scroll-2\">
-                                    <img src=\"images/icoArrow2.png\" alt=\"\" class=\"fa fa-angle-down scroll-down-icon\">    
-                        </a>
-</div>";
+</section>";
     }
 
     public function getTemplateName()

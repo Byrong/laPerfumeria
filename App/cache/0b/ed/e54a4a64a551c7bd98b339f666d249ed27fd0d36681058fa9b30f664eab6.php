@@ -32,8 +32,8 @@ class __TwigTemplate_0bede54a4a64a551c7bd98b339f666d249ed27fd0d36681058fa9b30f66
                     </div>
 </div>
 <div class=\"local-scroll\">
-        <a href=\"#planes\" class=\"scroll-down\">
-                    <img src=\"images/icoArrow.png\" alt=\"\" class=\"fa fa-angle-down scroll-down-icon\">    
+        <a href=\"#membresias\" class=\"scroll-down scroll-2\">
+                    <img src=\"images/icoArrow2.png\" alt=\"\" class=\"fa fa-angle-down scroll-down-icon\">    
         </a>
 </div>
 </section>";

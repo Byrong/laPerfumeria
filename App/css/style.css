@@ -95,8 +95,8 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
           margin:0;
           width: 40%;
 }
-#home .par-1{
-          background: rgba(0,0,0,0.2);
+.par-1{
+          background: rgba(0,0,0,0.7);
           color:#FFFFFF;
           font-size: 1.2em;
           line-height: 1.2em;
@@ -118,7 +118,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
           width: 40%;
 }
 #queEs .par-1{
-          background: rgba(0,0,0,0.2);
+          background: rgba(0,0,0,0.7);
           color:#FFFFFF;
           font-size: 1.2em;
           line-height: 1.2em;
@@ -140,41 +140,6 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
           font-size: 3em;
           font-family: 'movistar_textitalic';
           padding-left: 20px;
-}
-/* ..................................................................................................................... [Home ]*/
-.box-promo{
-        border: 1px solid white;
-        padding: 5px;
-        max-width:92%; 
-        width:100%;
-}
-.box-promo .cont-promo{
-        background: #156DA4;
-        color: white;
-        padding:20px;
-        text-align: left;
-}
-.box-promo .cont-promo span{
-        display: block;
-
-}
-.box-promo .cont-promo .text-1{
-        font-family: 'movistar_headlineregular';
-        font-size: 2em;
-        line-height:1em;
-}
-.box-promo .cont-promo .text-2{
-        font-family: 'movistar_headlinebold';
-        font-size: 3.5em;
-        line-height: 1em;
-}
-.box-promo .cont-promo .btn-1{
-        background: white;
-        border-bottom: 2px solid #0F4B96;
-        color: #20A8E9;
-        float: right;
-        margin-top: -35px;
-        padding: 10px 20px;
 }
 /* ..................................................................................................................... [¿Qué es? ]*/
 #queEs{
@@ -294,268 +259,65 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
                 font-size: 0.8em;
                 line-height: 1.2em;
 }
-/* ..................................................................................................................... [Planes ]*/
-#planes {
-        padding-top:40px;
+/* ..................................................................................................................... [Membresias]*/
+#membresias{
+              padding-top: 20px;
 }
-#planes .tituloH1{
-        margin: 0 0 20px;
+#membresias .list-2{
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              text-align: center;
 }
-#planes .col-1 .par-2{
-        font-family: 'movistar_textregular';
-        font-size: 1.1em;
-        line-height: 1.4em;
-        padding: 0;
-        margin: 0 0 20px;
-        width: 90%;
+#membresias .gold .head{
+              background: #000000;
+              color: #FFC910;
+              line-height: 40px;
+              font-size: 1.4em;
+              font-weight: bold;
+              text-align: center;
 }
-#planes .col-1 .legal-1{
-        font-family: 'movistar_textregular';
-        font-size: 0.8em;
-        padding: 0;
-        margin: 0 0 20px;
-        width: 90%;
+#membresias .black .head{
+              background: #000000;
+              color: white;
+              line-height: 40px;
+              font-size: 1.4em;
+              font-weight: bold;
+              text-align: center;
 }
-.box-info{
-        position: relative;
+#membresias .list-2 .valor{
+              background: #D8DEE8;
+              color: #000000;
+              font-size: 1.2em;
+              text-align: center;
 }
-.box-info .img-1{
-        position: relative;
+#membresias .list-2 li{
+              background: white;
+              color: #000000;
+              border-bottom: 1px solid #D8DEE8;
+              font-weight: 400;
+              padding:10px 5px;
 }
-.box-info .box-promo{
-        position: absolute;
-        z-index: 2;
-        top: 150px;
-        right: 25px;
-        width:48%; 
-        max-width:67%; 
-        border: 1px solid #C6C6C6;
-        padding: 5px;
-}
-.box-info .box-promo .cont-promo{
-        background: #1FA2E6;
-        color:white;
-        padding:20px;
-        text-align: left;
-}
-.box-info .box-promo .cont-promo span{
-        display: block;
+#membresias .list-2 li .comprar{
+              background: #D8287D;
+              color: #ffffff;
+              display: block;
+              text-decoration: none;
+              padding:10px 5px;
 
 }
-.box-info .box-promo .cont-promo .text-1{
-        font-family: 'movistar_headlineregular';
-        font-size: 2em;
-        line-height:1em;
+#politicas{
+            padding-top: 70px;
 }
-.box-info .box-promo .cont-promo .text-2{
-        font-family: 'movistar_headlinebold';
-        font-size: 3.5em;
-        line-height: 1em;
+#politicas ol{
+            background: rgba(0,0,0,0.8);
+            color: white;
+            font-size: 0.9em;
+            padding:20px 50px;
+            margin: 0;
 }
-.cont-planes .box-plan{
-        border-bottom: 1px solid #C6C6C6;
-        font-family:'movistar_textregular';
-        padding-bottom: 20px;
-        margin: 10px 0;
-}
-.cont-planes .box-plan header h2{
-        background: #1FA2E6;
-        color:white;
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: top;
-        margin: 0;
-        padding-left:10px;
-        width: 68%;
-        position: relative;
-}
-.cont-planes .box-plan header h2::before{
-        content:url('../images/senal.png');
-        position: absolute;
-        top: 18px;
-}
-.cont-planes .box-plan header .btn-2{
-        background: #115791;
-        color:white;
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: top;
-        line-height: 40px;
-        text-align: center;
-        height:39px;
-        margin-left: -3px;
-        text-decoration: none;
-        width: 31%;
-}
-.cont-planes .box-plan .box-precio{
-        color: #115791;
-        font-family: 'movistar_headlinebold';
-        margin-bottom: -19px;
-}
-.cont-planes .box-plan .valor-1{
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: top;
-        width:55%;
-        margin-top: 5px;
-}
-.cont-planes .box-plan .div{
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: top;
-        font-size: 4em;
-        margin:-15px 30px 0 0px;
-        width:1%;
-}
-.cont-planes .box-plan .valor-2{
-        display: inline-block;
-        box-sizing: border-box;
-        margin-top: 5px;
-        vertical-align: top;
-        width:30%;
-}
-.cont-planes .box-plan .signo{
-        font-size:0.8em;
-        display: inline-block;
-        box-sizing: border-box;
-}
-.cont-planes .box-plan .precio{
-        font-size:1.5em;
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: bottom;
-}
-.cont-planes .box-plan .mes{
-        font-size:0.5em;
-        display: inline-block;
-        box-sizing: border-box;
-        width: 20%;
-}
-.cont-planes .box-plan .cerrar{
-        margin-bottom: 26px;
-        margin-top: -33px;
-}
-.cont-planes .box-plan .cerrar a{
-        color:#1FA2E6;
-        font-size:0.8em;
-        float: right;
-}
-.cont-planes .box-plan .list-1{
-        color:#115791;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-}
-.cont-planes .box-plan .list-1 li{
-        padding: 10px;
-}
-.cont-planes .box-plan .list-1 li span{
-        float: right;
-}
-.cont-planes .box-plan .list-1 li:nth-child(odd){
-        background: #D4EDF7;
-}
-.vidResp{
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-}
-.vidResp iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-}
-/* ..................................................................................................................... [Videos ]*/
-#videos {
-        padding-top: 50px;
-        padding-bottom: 20px;
-}
-#videos .cont-video .video-2{
-          padding:5px;
-          border:1px solid white;
-}
-#videos .cont-video .titu-3{
-          color:white;
-          font-family: 'movistar_textregular';
-          text-align: center;
-}
-#videos .list-video{
-          overflow-y:scroll;
-          height: 577px;
-}
-#videos .list-video .box-video{
-          cursor: pointer;
-          margin: 0 0 20px;
-          width: 90%;
-}
-
-#videos .list-video .titu-4{
-          color:white;
-          font-family: 'movistar_textregular';
-          font-size: 1em;
-          margin:5px 0;
-}
-/* ..................................................................................................................... [Descargas ]*/
-#descargas{
-          padding-top:40px;
-          padding-bottom:0px;
-}
-#descargas .tituloH1{
-            margin-bottom:30px;
-}
-#descargas .box-descarga{
-          background: #0C3E65;
-          color: #FFFFFF;
-          text-align: center;
-          padding: 10px;
-          margin:0 10px;
-          width: 30%;
-          transition:all 0.7s ease;
-}
-#descargas .box-descarga header{
-          background: url('../images/bgLinea.png') no-repeat center 75px;
-          padding: 20px 0 34px;
-}
-#descargas .box-descarga a{
-          color: white;
-          text-decoration: none;
-}
-#descargas .box-descarga:hover{
-          background:#12477E;
-
-}
-#descargas .box-descarga header span{
-          display: inline-block;
-          vertical-align: top;
-}
-#descargas .box-descarga header h2{
-          display: inline-block;
-          font-size: 1.2em;
-          margin: 0;
-          padding: 10px;
-          vertical-align: top;
-}
-#descargas .box-descarga .cont-info .name{
-          display: block;
-          margin-bottom: 0;
-          padding: 0; 
-}
-#descargas .box-descarga .cont-info .info{
-          color: #75C4D8;
-          display: block;
-}
-#descargas  .legal-1{
-           background:#1FA2E6;
-}
-#descargas  .legal-1 .legal-2{
-           color: white;
-           float: right;
-           text-decoration: underline;
-           font-size: 1.2em;
-           padding-top: 20px;
+#politicas ol li{
+            margin-bottom: 7px;
 }
 /* ==============================
    Common styles
@@ -1516,7 +1278,7 @@ a.btn-mod:focus{
 }
 
 .scroll-2:before{
-    background: #20A6EB;
+    background: #B90099;
 }
 .scroll-down-icon{
     display: block;

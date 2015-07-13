@@ -33,7 +33,7 @@ class __TwigTemplate_dd09f0e455daf315a566063a652444a23dd973c7f5b20554eb1f3db1aa7
                     </div>
                 </div>
                     <div class=\"local-scroll\">
-                        <a href=\"#ventajas\" class=\"scroll-down scroll-2\">
+                        <a href=\"#aromas\" class=\"scroll-down scroll-2\">
                                     <img src=\"images/icoArrow2.png\" alt=\"\" class=\"fa fa-angle-down scroll-down-icon\">    
                         </a>
 </div>

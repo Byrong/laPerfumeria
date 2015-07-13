@@ -14,6 +14,7 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
             'queEs' => array($this, 'block_queEs'),
             'aromas' => array($this, 'block_aromas'),
             'membresia' => array($this, 'block_membresia'),
+            'politicas' => array($this, 'block_politicas'),
         );
     }
 
@@ -59,6 +60,14 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
         $this->env->loadTemplate("membresias.twig.html")->display($context);
     }
 
+    // line 15
+    public function block_politicas($context, array $blocks = array())
+    {
+        // line 16
+        echo "\t";
+        $this->env->loadTemplate("politicas.twig.html")->display($context);
+    }
+
     public function getTemplateName()
     {
         return "index.twig.html";
@@ -71,6 +80,6 @@ class __TwigTemplate_fa0c8dd9b8cfcf6a03076d6ecb3368a64000ed91cfc5d19bbbbf185d05d
 
     public function getDebugInfo()
     {
-        return array (  58 => 13,  55 => 12,  50 => 10,  47 => 9,  42 => 7,  39 => 6,  34 => 4,  31 => 3,);
+        return array (  67 => 16,  64 => 15,  59 => 13,  56 => 12,  51 => 10,  48 => 9,  43 => 7,  40 => 6,  35 => 4,  32 => 3,);
     }
 }

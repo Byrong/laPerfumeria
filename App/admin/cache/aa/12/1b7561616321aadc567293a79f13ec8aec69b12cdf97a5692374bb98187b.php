@@ -80,8 +80,7 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['m'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 29
-        echo "</ul>
-";
+        echo "</ul>";
     }
 
     public function getTemplateName()
