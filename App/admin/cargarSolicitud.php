@@ -24,6 +24,7 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
                               Aroma.celular, 
                               Aroma.ciudad, 
                               Aroma.registro, 
+                              Aroma.estado,
                               Perfil_Aroma.soy, 
                               Perfil_Aroma.edad, 
                               Perfil_Aroma.estatura, 
@@ -35,6 +36,7 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
                               Operacion.senos, 
                               Operacion.abdomen, 
                               Operacion.cola, 
+                              Perfil_Aroma.nomAroma, 
                               Perfil_Aroma.colFavorito, 
                               Perfil_Aroma.cumple, 
                               Perfil_Aroma.peso, 
@@ -59,11 +61,21 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
                               Servicio_Aroma.masaje, 
                               Servicio_Aroma.encuentro, 
                               Fuera_Servicio.desde, 
-                              Fuera_Servicio.hasta
+                              Fuera_Servicio.hasta,
+                              Tarifa_Aroma.valorHora, 
+                              Tarifa_Aroma.valor2Hora, 
+                              Tarifa_Aroma.valor3Hora, 
+                              Tarifa_Aroma.valorDia, 
+                              Foto_Aroma.foto1, 
+                              Foto_Aroma.foto2, 
+                              Foto_Aroma.foto3, 
+                              Foto_Aroma.foto4
                             FROM Aroma INNER JOIN Perfil_Aroma ON Aroma.idAroma = Perfil_Aroma.idAroma
                                INNER JOIN Operacion ON Operacion.idAroma = Perfil_Aroma.idAroma
-                               INNER JOIN Servicio_Aroma ON Perfil_Aroma.idAroma = Servicio_Aroma.idAroma
-                               INNER JOIN Fuera_Servicio ON Servicio_Aroma.idAroma = Fuera_Servicio.idAroma
+                               INNER JOIN Fuera_Servicio ON Fuera_Servicio.idAroma = Perfil_Aroma.idAroma
+                               INNER JOIN Tarifa_Aroma ON Perfil_Aroma.idAroma = Tarifa_Aroma.idAroma
+                               INNER JOIN Servicio_Aroma ON Servicio_Aroma.idAroma = Perfil_Aroma.idAroma
+                               INNER JOIN Foto_Aroma ON Perfil_Aroma.idAroma = Foto_Aroma.idAroma
                              WHERE Aroma.idAroma = $solicitud" ;
 
 $resultado  = mysql_query($consulta_Aroma , $conecion);
@@ -82,6 +94,7 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
                               $verSolicitud[$cont] = new StdClass;
                               $verSolicitud [$cont]->id= $fila['idAroma'];
                               $verSolicitud [$cont]->nombre= $fila['nombre'];
+                              $verSolicitud [$cont]->aroma= $fila['nomAroma'];
                               $verSolicitud [$cont]->sexo= $fila['sexo'];
                               $verSolicitud [$cont]->celular= $fila['celular'];
                               $verSolicitud [$cont]->correo= $fila['correo'];
@@ -122,6 +135,15 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
                               $verSolicitud [$cont]->encuentro= $fila['encuentro'];
                               $verSolicitud [$cont]->desde= $fila['desde'];
                               $verSolicitud [$cont]->hasta= $fila['hasta'];
+                              $verSolicitud [$cont]->valor1= $fila['valorHora'];
+                              $verSolicitud [$cont]->valor2= $fila['valor2Hora'];
+                              $verSolicitud [$cont]->valor3= $fila['valor3Hora'];
+                              $verSolicitud [$cont]->valor4= $fila['valorDia'];
+                              $verSolicitud [$cont]->foto1= $fila['foto1'];
+                              $verSolicitud [$cont]->foto2= $fila['foto2'];
+                              $verSolicitud [$cont]->foto3= $fila['foto3'];
+                              $verSolicitud [$cont]->foto4= $fila['foto4'];
+                              $fecha = $verSolicitud [$cont]->estado=$fila['estado'];
                           // Desarmamos la cadena registro y separamos los verSolicitud por año, mes y día. excluimos el signo -
                               $fecha = $verSolicitud [$cont]->registro=$fila['registro'];
                               list($ano,$mes,$dia) = split( '[/.-]', $fecha);

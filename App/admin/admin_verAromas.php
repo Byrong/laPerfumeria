@@ -14,7 +14,7 @@ $template = $twig->loadTemplate('app.twig.html');
   mysql_select_db('perfumeria', $conecion);
   mysql_set_charset('utf8');
 
-$consulta_Aroma    = "SELECT Aroma.idAroma, 
+$consulta_Aroma    = "SELECT Aroma.idAroma,
 			Aroma.nombre, 
 			Aroma.sexo, 
 			Aroma.celular, 
@@ -22,10 +22,11 @@ $consulta_Aroma    = "SELECT Aroma.idAroma,
 			Aroma.ciudad, 
 			Aroma.registro, 
 			Aroma.estado
-		FROM Aroma WHERE Aroma.estado = 0";
+		FROM Aroma WHERE Aroma.estado = 1";
 
 $resultado  = mysql_query($consulta_Aroma , $conecion);
 
+  // Consulta Post
 
   // Creamos una variable tipo Array $datos
   $datos = false;

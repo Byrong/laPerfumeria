@@ -22,11 +22,11 @@ class __TwigTemplate_19181126f0499e051f6e4d9eab7a601c66d65703578f0179535afaa5d6c
       <ul class=\"list-menu\">
         <li>
             <span class=\"ico\">&nbsp;</span>
-            <a href=\"#\">Solicitud Aroma</a>
+            <a href=\"admin.php\">Solicitud Aroma</a>
         </li> 
         <li>
             <span class=\"ico\">&nbsp;</span>
-            <a href=\"#\">Vér Aromas</a>
+            <a href=\"admin_verAromas.php\">Vér Aromas</a>
         </li>
         <li>
             <span class=\"ico\">&nbsp;</span>

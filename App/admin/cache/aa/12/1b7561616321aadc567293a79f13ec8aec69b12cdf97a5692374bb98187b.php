@@ -17,7 +17,7 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
     {
         // line 1
         echo "<header class=\"encabezado-1\">
-        <h2>SOLICITUDES PENDIENTE</h2>
+        <h2>Listado de las Aromas</h2>
         <span class=\"ico-solicitudes\">&nbsp;</span>
 </header>
 <ul class=\"box-solicitud\">
@@ -39,6 +39,8 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
               <table class=\"cont-solicitud\" data-id=\"";
             // line 11
             echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "id", array()), "html", null, true);
+            echo "\" data-estado=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "estado", array()), "html", null, true);
             echo "\">
                   <tr>
                     <td class=\"nombre\">";
@@ -95,6 +97,6 @@ class __TwigTemplate_aa121b7561616321aadc567293a79f13ec8aec69b12cdf97a5692374bb9
 
     public function getDebugInfo()
     {
-        return array (  83 => 29,  72 => 24,  66 => 21,  62 => 20,  56 => 17,  50 => 14,  46 => 13,  41 => 11,  36 => 9,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  85 => 29,  74 => 24,  68 => 21,  64 => 20,  58 => 17,  52 => 14,  48 => 13,  41 => 11,  36 => 9,  30 => 7,  26 => 6,  19 => 1,);
     }
 }

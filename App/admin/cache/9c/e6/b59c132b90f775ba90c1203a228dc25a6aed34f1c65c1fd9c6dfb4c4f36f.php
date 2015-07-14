@@ -51,68 +51,67 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
 \t\t\t\t\t<li><a href=\"#\">Mi Cuenta</a></li>
 \t\t\t\t\t<li><a href=\"#\">Salir</a></li>
 \t\t\t\t</ul>
-\t\t\t\t</table>
 \t\t\t</div>
 \t\t</div>
 \t</header>
 \t<section class=\"wrapper container-fluid\">
 \t\t<div class=\"col-md-2 col-sm-3 col-xs-12 menuAdmin\">
 \t\t\t";
-        // line 23
+        // line 22
         $this->displayBlock('menu', $context, $blocks);
-        // line 26
+        // line 25
         echo "\t\t</div>
 \t\t<div class=\"col-md-3 col-sm-4 col-xs-12 listado\">
 \t\t\t";
-        // line 28
+        // line 27
         $this->displayBlock('solicitudes', $context, $blocks);
-        // line 31
+        // line 30
         echo "\t\t</div>
 \t\t<div class=\"col-md-7 col-sm-8 col-xs-12 cont-datos\">
 \t\t\t";
-        // line 33
+        // line 32
         $this->displayBlock('mostrarDatos', $context, $blocks);
-        // line 36
+        // line 35
         echo "\t\t</div>
 \t</section>
 </section>
 ";
     }
 
-    // line 23
+    // line 22
     public function block_menu($context, array $blocks = array())
     {
-        // line 24
+        // line 23
         echo "\t\t\t\t";
         $this->env->loadTemplate("menuAdmin.twig.html")->display($context);
-        // line 25
+        // line 24
         echo "\t\t\t";
     }
 
-    // line 28
+    // line 27
     public function block_solicitudes($context, array $blocks = array())
     {
-        // line 29
+        // line 28
         echo "\t\t\t\t";
         $this->env->loadTemplate("solicitudesAroma.twig.html")->display($context);
-        // line 30
+        // line 29
         echo "\t\t\t";
     }
 
-    // line 33
+    // line 32
     public function block_mostrarDatos($context, array $blocks = array())
     {
-        // line 34
+        // line 33
         echo "\t\t\t\t";
         $this->env->loadTemplate("datosSolicitudes.twig.html")->display($context);
-        // line 35
+        // line 34
         echo "\t\t\t";
     }
 
-    // line 41
+    // line 40
     public function block_scripts($context, array $blocks = array())
     {
-        // line 42
+        // line 41
         echo "\t<script src=\"jsAdmin/admin.js\"></script>
 ";
     }
@@ -129,6 +128,6 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
 
     public function getDebugInfo()
     {
-        return array (  116 => 42,  113 => 41,  109 => 35,  106 => 34,  103 => 33,  99 => 30,  96 => 29,  93 => 28,  89 => 25,  86 => 24,  83 => 23,  76 => 36,  74 => 33,  70 => 31,  68 => 28,  64 => 26,  62 => 23,  44 => 7,  41 => 6,  36 => 4,  33 => 3,);
+        return array (  115 => 41,  112 => 40,  108 => 34,  105 => 33,  102 => 32,  98 => 29,  95 => 28,  92 => 27,  88 => 24,  85 => 23,  82 => 22,  75 => 35,  73 => 32,  69 => 30,  67 => 27,  63 => 25,  61 => 22,  44 => 7,  41 => 6,  36 => 4,  33 => 3,);
     }
 }

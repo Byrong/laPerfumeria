@@ -1,6 +1,8 @@
 <article class="contenido fadeIn animated">
 <div class="mensaje">
 {% for m in verSolicitud %}
+<!-- Mostramos las solicitudes sin evaluar de las nuevas Aromas -->
+{% if m.estado == 0 %}
 <header class="row fecha">
             <span class="dia col-md-12">{{ m.fecha}}</span>
 </header>
@@ -156,37 +158,202 @@
   </table>
 </section>
 <section>
-      <a href="javascript:;" class="btn-2 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="2">Rechazada</a>
-      <a href="javascript:;" class="btn-3 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="1">Bienvenida al Club</a>
+      <a href="javascript:;" class="btn-2 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="2" onclick="probarAroma()">Rechazada</a>
+      <a href="javascript:;" class="btn-3 filtro col-md-5 col-xs-12" data-id="{{m.id}}" data-estado="1" onclick="probarAroma()">Bienvenida al Club</a>
 </section>
 </div>
+{% endif %}
+<!-- Decimos que solo muestre las Aromas que pasarón a la Perfumería club -->
+{% if m.estado == 1 %}
+<header class="row fecha">
+            <span class="dia col-md-12">Registrada: {{ m.fecha}}</span>
+</header>
+<section class="row">
+     <h2 class="titu-2 col-md-12"> <span>{{ m.aroma}}</span></h2>
+     <div class="col-md-3 col-xs-6">
+            <img src="{{m.foto1}}" alt="">
+     </div>
+     <div class="col-md-3 col-xs-6">
+            <img src="{{m.foto2}}" alt="">
+     </div>
+     <div class="col-md-3 col-xs-6">
+            <img src="{{m.foto3}}" alt="">
+     </div>
+     <div class="col-md-3 col-xs-6">
+            <img src="{{m.foto4}}" alt="">
+     </div>
+</section>
+<section class="row">
+  <h2 class="titu-2 col-md-12"> <span>Datos Aromas</span></h2>
+  <table class="table-1 col-md-4 col-xs-12">
+      <tr>
+        <td>Nombre:</td><td>{{m.nombre}}</td>
+      </tr>
+      <tr>
+              <td>Sexo:</td><td>{{m.sexo}}</td>
+      </tr>
+  </table>
+  <table class="table-1 col-md-6 col-xs-12">
+      <tr>
+        <td>Correo:</td><td colspan="4">{{m.correo}}</td>
+      </tr>
+      <tr>
+              <td>Celular:</td><td>{{m.celular}}</td>
+              <td>Ciudad:</td><td>{{m.ciudad}}</td>
+      </tr>
+  </table>
+</section>
+<section class="row">
+  <h2 class="titu-2 col-md-12"><span>Descripción Aroma</span></h2>
+  <p class="par-1">
+    {{m.descripcion}}
+  </p>
+</section>
+<section class="row">
+  <h2 class="titu-2 col-md-12"><span>Perfil Aroma</span></h2>
+  <table class="table-1 col-md-6 col-xs-12">
+      <tr>
+        <td>Edad:</td><td>{{m.edad}} años</td>
+      </tr>
+      <tr>
+              <td>Estatura:</td><td>{{m.estatura}} cm</td>
+      </tr>
+      <tr>
+              <td>Ojos:</td><td>{{m.ojos}}</td>
+      </tr>
+      <tr>
+              <td>Píel:</td><td>{{m.piel}}</td>
+      </tr>
+      <tr>   
+              {% if m.operaciones == 'Si' %}
+              <td>Operaciones:</td>
+              <td>
+                  {% if m.nariz == 'Si' %}   
+                    Naríz
+                  {% endif %}
+                  {% if m.labios == 'Si' %}   
+                    Labios
+                  {% endif %}
+                  {% if m.senos == 'Si' %}   
+                    Senos
+                  {% endif %}
+                  {% if m.abdomen == 'Si' %}   
+                    Abdomen
+                  {% endif %}
+                  {% if m.cola == 'Si' %}   
+                    Cola
+                  {% endif %}
+              </td>
+              {% endif %}
+              {% if m.operaciones == 'No' %}
+              <td>Operaciones:</td><td>No</td>
+              {% endif %}
+      </tr>
+      <tr>
+              <td>Color Favorito:</td><td bgcolor="#{{m.colFavorito }}"></td>
+      </tr>
+      <tr>
+              <td>Fecha de nacimiento:</td><td>{{m.cumple}}</td>
+      </tr>
+  </table>
+  <table class="table-1 col-md-4 col-xs-12">
+      <tr>
+          <td>Peso:</td><td>{{m.peso}} Kg</td>
+      </tr>
+      <tr>
+            <td>Senos:</td><td>{{m.senos}}</td>
+      </tr>
+      <tr>
+            <td>Cabello:</td><td>{{m.cabello}}</td>
+      </tr>
+      <tr>
+            <td>Tatuajes:</td><td>{{m.tatuajes}}</td>
+      </tr>
+  </table>
+</section>
+<section class="row">
+  <h2 class="titu-2 col-md-12"><span>Perfil Sexual</span></h2>
+  <table class="table-1 col-md-6 col-xs-12">
+      <tr>
+        <td>Experiencia:</td><td>{{m.experiencia}}</td>
+      </tr>
+      <tr>
+            <td>Tiempo:</td><td>{{m.tiempo}}</td>
+      </tr>
+      <tr>
+            <td>Actividad Sexual:</td><td>{{m.actividadSexual}} al mes</td>
+      </tr>
+  </table>
+  <div class="queEs">
+      <h3 class="titu-3 col-md-12">¿Qué es el sexo?</h3>
+      <p class="par-1 col-md-12">
+          {{m.sexoEs}}
+      </p>    
+  </div>
+</section>      
+<section class="row">
+  <h2 class="titu-2 col-md-12"><span>Mis Servicios</span></h2>
+  <table class="table-1 col-md-4 col-xs-12">
+      <tr>
+        <td>Sexo Oral:</td><td>{{m.sexOral}}</td>
+      </tr>
+      <tr>
+              <td>Sexo Anal:</td><td>{{m.sexAnal}}</td>
+      </tr>
+      <tr>
+              <td>Servicio a Hombres:</td><td>{{m.sexHombre}}</td>
+      </tr>
+      <tr>
+              <td>Servicio a Mujeres:</td><td>{{m.sexMujer}}</td>
+      </tr>
+      <tr>
+              <td>Lluvía Dorada:</td><td>{{m.lluviaDorada}}</td>
+      </tr>
+      <tr>
+              <td>Baila:</td><td>{{m.baile}}</td>
+      </tr>
+  </table>
+  <table class="table-1 col-md-6 col-xs-12">
+      <tr>
+          <td>Tríos:</td><td>{{m.trios}}</td>
+      </tr>
+      <tr>
+            <td>Trio HMH:</td><td>{{m.trioHMH}}</td>
+      </tr>
+      <tr>
+            <td>Trio MHM:</td><td>{{m.trioMHM}}</td>
+      </tr>
+      <tr>
+            <td>Masajes:</td><td>{{m.masaje}}</td>
+      </tr>
+       <tr>
+              <td>Encuentros:</td><td>{{m.encuentro}}</td>
+      </tr>
+      <tr>
+              <td>Fuera de servicio:</td><td>del {{m.desde}} al {{m.hasta}} de cada mes</td>
+      </tr>
+  </table>
+</section>
+<section class="row">
+  <h2 class="titu-2 col-md-12"><span>Tarifas</span></h2>
+  <table class="table-1 col-md-4 col-xs-12">
+      <tr>
+        <td>1 hora:</td><td>{{m.valor1}}</td>
+      </tr>
+      <tr>
+            <td>2 horas:</td><td>{{m.valor2}}</td>
+      </tr>
+  </table>
+  <table class="table-1 col-md-4 col-xs-12">
+      <tr>
+        <td>3 hora:</td><td>{{m.valor3}}</td>
+      </tr>
+      <tr>
+            <td>Día:</td><td>{{m.valor4}}</td>
+      </tr>
+  </table>
+</section>
+</div>
+{% endif %}
 {% endfor %}
 </article>
-<script>
-      $(document).ready(function() {
-// Realizamos el filtro de la solicitud "Aroma Aceptada" - "Aroma Rechazada"
-                $('.filtro').click(function(){
-                      var estado = $(this).data('estado');
-                      var id = $(this).data('id');
-                              $.get( 
-                                  "../admin/filtroSolicitud.php",
-                                  { estado: estado,
-                                    id: id },
-                                  function(data) {
-                                        var respuesta = data;
-                                        console.log(respuesta);
-                                        switch (parseInt(respuesta)){
-                                            case 1: 
-                                                  $('.mensaje').slideDown().html('<span class="alertOk">Aroma ingresada al Club con exito. <br> "No olvides registrar el nombre de Aroma a usar y los valores de su servicio"</span>');
-                                                  break;
-                                            case 2: 
-                                                  $('.mensaje').slideDown().html('<span class="alertOk">Aroma Rechazada al Club, lo sentimos :(</span>');
-                                                  break;
-                                        }
-                                                  $('.cont-solicitud').removeClass('active');
-                                                  $('.mensaje').removeClass('slideInDown animated').addClass('slideInDown animated');
-                                                  $('.ocultar-'+id).slideUp();
-                                        });
-                                  });
-                          });
-</script>
