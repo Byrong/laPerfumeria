@@ -123,8 +123,6 @@
 + valorDía [ int ]
 + registro  [ date ]
 
----
-
 **Librerias**
 
 [RangeSlider](http://andreruffert.github.io/rangeslider.js/)
@@ -132,4 +130,31 @@
 [W2UI ](http://w2ui.com/web/docs/form)
 [jQuery](https://jquery.com/)
 
-`renders`
+ **Estrategía de introducción al mercado**
+
+ Para poder posicionar a la Perfumería Club utilizaremos tres metodos basicos.
+
+**1- Vinculación a portales web de citas**  
+
+**2- Porta voz Aroma futuro cliente:**
+ 	Este metodo consiste en que cada Aroma tendra un código de 4 digitos posiblemente sean sus últimos 4 número del celular los cuales serán anotas en una tarjeta de presentación de la Perfumería Club y el cliente una vez que entra a la página debera ingresarlo para poder acceder al contenido de la Perfumeria Club. y así consultar cada una de nuestras membresías.
+**3- Envío de mail a base de datos de visitantes de sitios que buscan parejas:**
+ 	Realizar un DummSql a estos sitios para poder acceder a su DB de usuarios,
+
+**Para la contratación de las Aromas**
+
+**1- Servicio de chulo:**
+ 	Chulo es la persona encargada de gestionar la vinculación de las chicas debido a su personalidad para poder acercarse a las futuras Aromas.
+ 	El chulo debe ser una persona muy sociable y de una muy buena presentación personal.
+
+**2- Vinculación por la web:**
+ 	Formulario de registro para aquella Aromas que le gustaría trabajar con la Perfumería Club. El cual servirá de contacto donde luego se prosigue con una llamada y una citación para el casting, Filtro y toma de Fotos!
+
+**3- Reclutar de web de bajo nivel:**
+ 	Ingresar a web que no tienen tanta presentación profesional pero que cuentan con chica de grán pontencial, ofrecerle vincularse con la Perfumería Club ofreciendoles mejore presentación, mejores servicios y mejor estabilidad economica.
+
+
+
+
+
+

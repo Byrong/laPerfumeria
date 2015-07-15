@@ -12,6 +12,7 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
         $this->blocks = array(
             'titulo' => array($this, 'block_titulo'),
             'contenido' => array($this, 'block_contenido'),
+            'scripts' => array($this, 'block_scripts'),
         );
     }
 
@@ -47,14 +48,62 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
 \t\t\t\t<p class=\"par-1\">
 \t\t\t\t\tPara acceder a la administración de La Perfumería Club ingrese los siguientes datos.
 \t\t\t\t</p>
-\t\t\t\t<input class=\"input-1\" type=\"text\" placeholder=\"Usuario\">
-\t\t\t\t<input class=\"input-1\" type=\"password\" placeholder=\"Contraseña\">
-\t\t\t\t<input class=\"btn-1\"\ttype=\"submit\" value=\"Entrar\">
+\t\t\t\t<input id=\"username\" class=\"input-1\" type=\"text\" placeholder=\"Usuario\">
+\t\t\t\t<input id=\"password\" class=\"input-1\" type=\"password\" placeholder=\"Contraseña\">
+\t\t\t\t<input id=\"login\" class=\"btn-1\"\ttype=\"submit\" value=\"Entrar\">
 \t\t\t\t<a href=\"#\" class=\"legal\">¿Olvidastes tu contraseña?</a>
 \t\t\t</form>
 \t\t</section>
 \t</div>
 </section>
+";
+    }
+
+    // line 28
+    public function block_scripts($context, array $blocks = array())
+    {
+        // line 29
+        echo "<script src=\"jsAdmin/jquery.ui.shake.js\"></script>
+<script>
+\t\$(document).ready(function() 
+{
+
+\$('#login').click(function()
+{
+var username=\$(\"#username\").val();
+var password=\$(\"#password\").val();
+var dataString = 'username='+username+'&password='+password;
+if(\$.trim(username).length>0 && \$.trim(password).length>0)
+{
+\$.ajax({
+type: \"POST\",
+url: \"ajaxLogin.php\",
+data: dataString,
+cache: false,
+beforeSend: function(){ \$(\"#login\").val('Connecting...');},
+success: function(data){
+if(data)
+{
+\$(\"body\").load(\"home.php\").hide().fadeIn(1500).delay(6000);
+//or
+window.location.href = \"home.php\";
+}
+else
+{
+//Shake animation effect.
+\$('#box').shake();
+\$(\"#login\").val('Login')
+\$(\"#error\").html(\"<span style='color:#cc0000'>Error:</span> Invalid username and password.\");
+}
+}
+});
+
+}
+return false;
+});
+
+});
+</script>
 ";
     }
 
@@ -70,6 +119,6 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
 
     public function getDebugInfo()
     {
-        return array (  40 => 8,  37 => 7,  32 => 4,  29 => 3,);
+        return array (  66 => 29,  63 => 28,  41 => 8,  38 => 7,  33 => 4,  30 => 3,);
     }
 }
