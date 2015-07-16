@@ -50,21 +50,23 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
 \t\t\t\t</p>
 \t\t\t\t<input id=\"username\" class=\"input-1\" type=\"text\" placeholder=\"Usuario\">
 \t\t\t\t<input id=\"password\" class=\"input-1\" type=\"password\" placeholder=\"Contraseña\">
-\t\t\t\t<input id=\"login\" class=\"btn-1\"\ttype=\"submit\" value=\"Entrar\">
+\t\t\t\t<input id=\"login\" class=\"btn-1\" type=\"submit\" value=\"Entrar\">
 \t\t\t\t<a href=\"#\" class=\"legal\">¿Olvidastes tu contraseña?</a>
 \t\t\t</form>
 \t\t</section>
+\t\t<div id=\"error\">
+\t\t\t\t
+\t\t</div>
 \t</div>
 </section>
 ";
     }
 
-    // line 28
+    // line 31
     public function block_scripts($context, array $blocks = array())
     {
-        // line 29
-        echo "<script src=\"jsAdmin/jquery.ui.shake.js\"></script>
-<script>
+        // line 32
+        echo "<script>
 \t\$(document).ready(function() 
 {
 
@@ -72,31 +74,29 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
 {
 var username=\$(\"#username\").val();
 var password=\$(\"#password\").val();
-var dataString = 'username='+username+'&password='+password;
+var dataString = 'nnombre='+username+'&npassword='+password;
 if(\$.trim(username).length>0 && \$.trim(password).length>0)
 {
-\$.ajax({
-type: \"POST\",
-url: \"ajaxLogin.php\",
-data: dataString,
-cache: false,
-beforeSend: function(){ \$(\"#login\").val('Connecting...');},
-success: function(data){
-if(data)
-{
-\$(\"body\").load(\"home.php\").hide().fadeIn(1500).delay(6000);
-//or
-window.location.href = \"home.php\";
-}
-else
-{
-//Shake animation effect.
-\$('#box').shake();
-\$(\"#login\").val('Login')
-\$(\"#error\").html(\"<span style='color:#cc0000'>Error:</span> Invalid username and password.\");
-}
-}
-});
+\t\$.ajax({
+\t\ttype: \"POST\",
+\t\turl: \"ajaxLogin.php\",
+\t\tdata: dataString,
+\t\tcache: false,
+\t\tbeforeSend: function(){ \$(\"#login\").val('Connecting...');},
+\t\tsuccess: function(data){
+\t\t\tif(data)
+\t\t\t{
+\t\t\t\t\$(\"body\").load(\"home.php\").hide().fadeIn(1500).delay(6000);
+\t\t\t\t//or window.location.href = \"home.php\";
+
+\t\t\t}
+\t\t\telse
+\t\t\t{
+\t\t\t\t\$(\"#login\").val('Login');
+\t\t\t\t\$(\"#error\").html(\"<span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta\");
+\t\t\t}
+\t\t}
+\t});
 
 }
 return false;
@@ -119,6 +119,6 @@ return false;
 
     public function getDebugInfo()
     {
-        return array (  66 => 29,  63 => 28,  41 => 8,  38 => 7,  33 => 4,  30 => 3,);
+        return array (  69 => 32,  66 => 31,  41 => 8,  38 => 7,  33 => 4,  30 => 3,);
     }
 }

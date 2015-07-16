@@ -2,10 +2,11 @@
 session_start();
 if(!empty($_SESSION['login_user']))
 {
-header('Location: home.php');
+	header('Location: home.php');
 }
 ?>
 //HTML Code
+<h2>Contenido a Mostrar</h2>
 <div id="box">
 <form action="" method="post">
 Username

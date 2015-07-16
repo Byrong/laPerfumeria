@@ -49,7 +49,7 @@ class __TwigTemplate_9ce6b59c132b90f775ba90c1203a228dc25a6aed34f1c65c1fd9c6dfb4c
 \t\t\t<div class=\"panelControl\">
 \t\t\t\t<ul>
 \t\t\t\t\t<li><a href=\"#\">Mi Cuenta</a></li>
-\t\t\t\t\t<li><a href=\"#\">Salir</a></li>
+\t\t\t\t\t<li><a href=\"logout.php\">Salir</a></li>
 \t\t\t\t</ul>
 \t\t\t</div>
 \t\t</div>

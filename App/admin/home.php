@@ -1,10 +1,9 @@
 <?php
 session_start();
-if(empty($_SESSION['login_user']))
+if(empty($_SESSION['usuario']))
 {
-header('Location: index2.php');
+	header('Location:index2.php');
+}else{
+	header('Location:admin.php');
 }
 ?>
-//HTML Code
-Welcome to Home Page
-<a href="logout.php">Logout</a>
