@@ -2,7 +2,7 @@
 session_start();
 if(empty($_SESSION['usuario']))
 {
-	header('Location:index2.php');
+	header('Location:index.php');
 }else{
 	header('Location:admin.php');
 }

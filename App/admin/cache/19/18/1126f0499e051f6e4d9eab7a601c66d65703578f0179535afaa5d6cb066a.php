@@ -30,10 +30,6 @@ class __TwigTemplate_19181126f0499e051f6e4d9eab7a601c66d65703578f0179535afaa5d6c
         </li>
         <li>
             <span class=\"ico\">&nbsp;</span>
-            <a href=\"#\">Tarifas Aromas</a>
-        </li>
-        <li>
-            <span class=\"ico\">&nbsp;</span>
             <a href=\"#\">Buscar Aromas</a>
         </li>
         <li>

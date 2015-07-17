@@ -54,9 +54,9 @@ class __TwigTemplate_a1349a03106cd155094a368e30e4b27a838b8d7ae0c3e278fbd5e0a7c97
 \t\t\t\t<a href=\"#\" class=\"legal\">¿Olvidastes tu contraseña?</a>
 \t\t\t</form>
 \t\t</section>
-\t\t<div id=\"error\">
-\t\t\t\t
-\t\t</div>
+\t</div>
+\t<div id=\"error\">
+\t\t\t
 \t</div>
 </section>
 ";
@@ -93,7 +93,7 @@ if(\$.trim(username).length>0 && \$.trim(password).length>0)
 \t\t\telse
 \t\t\t{
 \t\t\t\t\$(\"#login\").val('Login');
-\t\t\t\t\$(\"#error\").html(\"<span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta\");
+\t\t\t\t\$(\"#error\").html(\"<div class='alerta'><span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta</div>\");
 \t\t\t}
 \t\t}
 \t});

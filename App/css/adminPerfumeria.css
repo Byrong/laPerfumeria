@@ -3,16 +3,19 @@
 /*
  * Base structure
  */
+/* line 51, ../sass/adminPerfumeria.scss */
 .flotar {
   display: inline-block;
   vertical-align: top;
   width: 40%; }
 
+/* line 57, ../sass/adminPerfumeria.scss */
 .tools {
   background: black;
   top: 0;
   position: absolute;
   width: auto; }
+  /* line 62, ../sass/adminPerfumeria.scss */
   .tools span {
     color: white;
     display: inline-block;
@@ -23,49 +26,66 @@
     text-align: center;
     text-shadow: 0 0 3px black;
     width: 30px; }
+  /* line 73, ../sass/adminPerfumeria.scss */
   .tools .c1 {
     background: #f2f6f7; }
+  /* line 74, ../sass/adminPerfumeria.scss */
   .tools .c2 {
     background: #dad5e2; }
+  /* line 75, ../sass/adminPerfumeria.scss */
   .tools .c3 {
     background: #969696; }
+  /* line 76, ../sass/adminPerfumeria.scss */
   .tools .c4 {
     background: #9e9e9e; }
+  /* line 77, ../sass/adminPerfumeria.scss */
   .tools .c5 {
     background: #ebe7f2; }
+  /* line 78, ../sass/adminPerfumeria.scss */
   .tools .c6 {
     background: #dbd7e3; }
+  /* line 79, ../sass/adminPerfumeria.scss */
   .tools .c7 {
     background: #222026; }
+  /* line 80, ../sass/adminPerfumeria.scss */
   .tools .c8 {
     background: #2c2a31; }
+  /* line 81, ../sass/adminPerfumeria.scss */
   .tools .c9 {
     background: #8c8598; }
+  /* line 82, ../sass/adminPerfumeria.scss */
   .tools .c10 {
     background: #c2347c; }
+  /* line 83, ../sass/adminPerfumeria.scss */
   .tools .c11 {
     background: #1f0830; }
+  /* line 84, ../sass/adminPerfumeria.scss */
   .tools .c12 {
     background: #be9bcd; }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
+/* line 87, ../sass/adminPerfumeria.scss */
 body {
-  background: url("../images/bg-admin3.jpg");
+  background: url("../images/bg-admin.jpg");
   background-size: cover;
   padding-top: 10px; }
 
+/* line 94, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .box-login {
   box-shadow: 0 2px 2px #c2347c;
   font-family: "movistar_textregular";
   margin: 120px auto 0;
   width: 400px; }
+  /* line 99, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .box-login header {
     background: #c2347c;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
+    /* line 103, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-login header h2 {
       color: white;
       margin: 0; }
+  /* line 108, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .box-login .cont-login {
     background: white;
     border-bottom-left-radius: 5px;
@@ -73,13 +93,16 @@ body {
     display: block;
     overflow: hidden;
     padding-bottom: 10px; }
+    /* line 115, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-login .cont-login .par-1 {
       color: #dad5e2; }
+    /* line 118, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-login .cont-login .input-1 {
       border: 1px solid #f2f6f7;
       display: block;
       height: 30px;
       width: 90%; }
+    /* line 124, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-login .cont-login .btn-1 {
       background: #c2347c;
       border: 0;
@@ -93,15 +116,27 @@ body {
       margin-right: 20px;
       padding: 10px 20px;
       width: 100px; }
+    /* line 138, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-login .cont-login .legal {
       color: #dad5e2;
       float: left;
       font-size: 0.8em;
       margin: 20px 0 0 20px; }
+/* line 146, ../sass/adminPerfumeria.scss */
+#admin-perfumeria .alerta {
+  color: #FF8200;
+  background: black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px auto;
+  max-width: 400px;
+  width: 100%; }
+/* line 156, ../sass/adminPerfumeria.scss */
 #admin-perfumeria #app {
   max-width: 1100px;
   margin: 70px auto;
   width: 100%; }
+  /* line 160, ../sass/adminPerfumeria.scss */
   #admin-perfumeria #app .alertOk {
     background: #c2347c;
     border-left: 7px solid black;
@@ -110,14 +145,17 @@ body {
     display: block;
     margin-top: 10px;
     padding: 10px 20px; }
+  /* line 170, ../sass/adminPerfumeria.scss */
   #admin-perfumeria #app .top-1 {
     background: url("../images/admin/head1.jpg") repeat-x;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px; }
+    /* line 174, ../sass/adminPerfumeria.scss */
     #admin-perfumeria #app .top-1 .titu-1 {
       color: #2c2a31;
       font-size: 1em;
       float: left; }
+    /* line 179, ../sass/adminPerfumeria.scss */
     #admin-perfumeria #app .top-1 .cuenta {
       cursor: pointer;
       float: right;
@@ -125,9 +163,11 @@ body {
       position: relative;
       width: 130px;
       text-align: right; }
+      /* line 186, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .top-1 .cuenta:hover .control {
         background: #c2347c;
         color: white; }
+      /* line 190, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .top-1 .cuenta img {
         border-radius: 30px;
         box-shadow: 0 0 2px #969696;
@@ -135,6 +175,7 @@ body {
         margin: 0 5px;
         width: 35px;
         position: relative; }
+      /* line 198, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .top-1 .cuenta .control {
         background: white;
         border-top-right-radius: 10px;
@@ -142,6 +183,7 @@ body {
         padding: 0 5px;
         margin: 5px 0 0 -10px;
         display: inline-block; }
+      /* line 206, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .top-1 .cuenta .panelControl {
         background: #c2347c;
         left: 0;
@@ -150,6 +192,7 @@ body {
         top: 40px;
         width: 130px;
         z-index: 10; }
+        /* line 214, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .top-1 .cuenta .panelControl::before {
           content: ".";
           background: #c2347c;
@@ -164,94 +207,118 @@ body {
           -webkit-transform: rotate(-50deg);
           -moz-transform: rotate(-50deg);
           -o-transform: rotate(-50deg); }
+        /* line 230, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .top-1 .cuenta .panelControl ul {
           list-style: none;
           margin: 0;
           padding: 0 10px 5px; }
+          /* line 234, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .top-1 .cuenta .panelControl ul li {
             padding: 0; }
+            /* line 236, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .top-1 .cuenta .panelControl ul li a {
               color: white;
               font-size: 0.8em;
               padding: 0; }
+  /* line 246, ../sass/adminPerfumeria.scss */
   #admin-perfumeria #app .wrapper {
     background: white;
     display: block;
     padding: 0; }
+    /* line 251, ../sass/adminPerfumeria.scss */
     #admin-perfumeria #app .wrapper .menuAdmin {
       background: #2c2a31;
       color: #8c8598;
       min-height: 600px;
       padding: 0; }
+      /* line 256, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .menuAdmin .encabezado-1 {
         font-size: 0.7em;
         margin: 0;
         padding: 10px;
         background: #222026; }
+      /* line 262, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .menuAdmin .list-menu {
         list-style: none;
         margin: 0;
         padding: 0; }
+        /* line 266, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .wrapper .menuAdmin .list-menu li {
           cursor: pointer;
           padding: 2px 10px;
           transition: all 0.7s ease; }
+          /* line 270, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .menuAdmin .list-menu li:hover {
             background: #3b75f6; }
+          /* line 273, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .menuAdmin .list-menu li:hover a {
             color: white; }
+          /* line 276, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .menuAdmin .list-menu li .ico {
             background: #222026;
             display: inline-block;
             height: 20px;
             width: 20px; }
+          /* line 282, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .menuAdmin .list-menu li a {
             color: #8c8598;
             font-size: 0.9em; }
+    /* line 291, ../sass/adminPerfumeria.scss */
     #admin-perfumeria #app .wrapper .listado {
       border-right: 1px solid #dbd7e3;
       border-bottom: 1px solid #dbd7e3;
       padding: 0; }
+      /* line 295, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .listado .encabezado-1 {
         color: #2c2a31;
         background: #f2f6f7;
         height: 33px;
         padding: 0; }
+        /* line 300, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .wrapper .listado .encabezado-1 h2 {
           margin: 0;
           font-size: 0.8em;
           padding: 10px 7px 0; }
+      /* line 306, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .listado .box-solicitud {
         list-style: none;
         margin: 0;
         padding: 0;
         height: 566px;
         overflow: scroll; }
+        /* line 312, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .wrapper .listado .box-solicitud li {
           border-bottom: 1px solid #dad5e2;
           cursor: pointer; }
+          /* line 315, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .listado .box-solicitud li .fecha {
             background: #dad5e2;
             border-top: 1px solid #dbd7e3;
             border-bottom: 1px solid #dbd7e3;
             height: 25px;
             padding: 0; }
+            /* line 321, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .fecha .dia {
               color: #8c8598;
               float: right;
               font-size: 0.7em;
               padding: 5px 10px; }
+          /* line 328, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud {
             cursor: pointer;
             position: relative;
             width: 100%;
             transition: all 0.7s ease; }
+            /* line 334, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud:hover {
               background: #1f0830; }
+            /* line 337, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud:hover .data-1 {
               color: #be9bcd; }
+            /* line 340, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud:hover .mail {
               color: #be9bcd; }
+            /* line 343, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud::before {
               content: "";
               background: white;
@@ -264,30 +331,39 @@ body {
               -webkit-transform: rotate(-50deg);
               -moz-transform: rotate(-50deg);
               -o-transform: rotate(-50deg); }
+            /* line 357, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud td {
               padding: 2px 5px; }
+            /* line 360, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud .nombre {
               color: #c2347c;
               font-size: 1em;
               font-weight: bold;
               padding-top: 5px; }
+            /* line 366, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud .id {
               color: #2c2a31;
               font-size: 0.8em;
               text-align: right; }
+            /* line 371, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud .mail {
               color: #2c2a31;
               font-size: 0.8em;
               width: 100%; }
+            /* line 376, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .cont-solicitud .data-1 {
               color: #2c2a31;
               font-size: 0.8em; }
+          /* line 381, ../sass/adminPerfumeria.scss */
           #admin-perfumeria #app .wrapper .listado .box-solicitud li .active {
             background: #1f0830; }
+            /* line 383, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .active .data-1 {
               color: #be9bcd; }
+            /* line 386, ../sass/adminPerfumeria.scss */
             #admin-perfumeria #app .wrapper .listado .box-solicitud li .active .mail {
               color: #be9bcd; }
+    /* line 394, ../sass/adminPerfumeria.scss */
     #admin-perfumeria #app .wrapper .cont-datos {
       background: white;
       border-right: 1px solid #dbd7e3;
@@ -296,65 +372,86 @@ body {
       display: block;
       height: 600px;
       overflow: scroll; }
+      /* line 402, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .fecha {
         font-size: 0.8em;
         padding: 10px;
         text-align: right; }
+      /* line 407, ../sass/adminPerfumeria.scss */
+      #admin-perfumeria #app .wrapper .cont-datos .box-photo {
+        margin-top: 30px; }
+        /* line 409, ../sass/adminPerfumeria.scss */
+        #admin-perfumeria #app .wrapper .cont-datos .box-photo img {
+          width: 100%; }
+      /* line 413, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .titu-2 {
         background: url("../images/admin/separator.png") repeat-x 0 5px;
         padding: 0; }
+        /* line 416, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .wrapper .cont-datos .titu-2 span {
           background: white;
           color: #c2347c;
           display: inline;
           font-weight: bold;
           padding: 0 20px; }
+      /* line 424, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .par-1 {
         margin: 20px 20px 7px;
         font-size: 0.9em; }
+      /* line 429, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .queEs .titu-3 {
         color: #1f0830;
         display: inline;
         font-weight: bold;
         padding: 0 20px;
         margin: 0; }
+      /* line 436, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .queEs .par-1 {
         margin-top: 0px;
         font-style: italic; }
+      /* line 441, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos section {
         margin-bottom: 10px; }
+      /* line 444, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .table-1 {
         margin: 10px 10px 10px 20px; }
+        /* line 447, ../sass/adminPerfumeria.scss */
         #admin-perfumeria #app .wrapper .cont-datos .table-1 tr td:nth-child(odd) {
           color: #1f0830;
           font-weight: bold;
           vertical-align: top; }
+      /* line 454, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .btn-2 {
         background: #dbd7e3;
         color: #2c2a31;
         text-align: center;
         padding: 10px 20px;
         margin: 10px 5px 0; }
+      /* line 461, ../sass/adminPerfumeria.scss */
       #admin-perfumeria #app .wrapper .cont-datos .btn-3 {
         color: white;
         background: #c2347c;
         text-align: center;
         padding: 10px 20px;
         margin: 10px 5px 0; }
+/* line 473, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-1 {
   color: #0a6f94;
   font-size: 0.8em;
   display: block; }
+/* line 479, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-2 {
   color: #0a6f94;
   font-size: 1em;
   font-weight: normal;
   margin: 0; }
+/* line 485, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-3 {
   color: #3b75f6;
   font-size: 1em;
   font-weight: normal;
   margin: 0 0 10px; }
+/* line 491, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-4 {
   color: black;
   font-size: 1em;
@@ -362,6 +459,7 @@ body {
   text-shadow: 0 0px 1px #fff;
   margin: 0;
   padding: 10px; }
+/* line 499, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-5 {
   background: #32ccb7;
   color: white;
@@ -369,6 +467,7 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 10px; }
+/* line 508, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .par-1 {
   font-size: 0.8em;
   line-height: 1.2em;
@@ -377,6 +476,7 @@ body {
   margin: 0 auto;
   padding-top: 10px;
   width: 90%; }
+/* line 518, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .label-Facebook {
   background: #3b5998;
   border: none;
@@ -385,6 +485,7 @@ body {
   margin-top: -10px;
   position: relative;
   top: 18px; }
+/* line 527, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .label-twee {
   background: #9ae4e8;
   border: none;
@@ -393,6 +494,7 @@ body {
   margin-top: -10px;
   position: relative;
   top: 18px; }
+/* line 536, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .label-youtube {
   background: #b50505;
   border: none;
@@ -401,21 +503,26 @@ body {
   margin-top: -10px;
   position: relative;
   top: 18px; }
+/* line 546, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .img1 {
   padding: 10px 0; }
+  /* line 548, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .img1 img {
     width: 100%; }
+/* line 553, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .input-1 {
   border: none;
   margin: 10px;
   padding: 5px;
   width: 35%; }
+/* line 559, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .input-2 {
   display: inline-block;
   border: 1px solid #dde7ec;
   color: #0a6f94;
   font-size: 0.9em;
   margin: 20px 0; }
+/* line 566, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .textarea-1 {
   display: block;
   height: 150px;
@@ -433,30 +540,36 @@ body {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   width: 100%; }
+/* line 584, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-form {
   display: inline-block;
   color: #0a6f94;
   padding: 0 20px;
   width: 130px; }
+/* line 590, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .titu-form-2 {
   display: inline-block;
   color: #0a6f94;
   padding: 0 20px;
   width: auto; }
+/* line 596, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .select-1 {
   border: 1px solid #dde7ec;
   color: #0a6f94;
   font-size: 0.9em;
   margin: 20px 0; }
+/* line 602, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .btn-1 {
   margin: 0 0 0 100px;
   width: 12%; }
+/* line 606, ../sass/adminPerfumeria.scss */
 #admin-perfumeria label.error {
   color: #8e05fa;
   display: block;
   font-size: 0.9em;
   font-weight: normal;
   margin: -10px 0 0 18px; }
+/* line 614, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .select-1 {
   display: inline-block;
   height: 34px;
@@ -473,18 +586,23 @@ body {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+/* line 632, ../sass/adminPerfumeria.scss */
 #admin-perfumeria #contReporte {
   display: none; }
+/* line 635, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .cont-filtros {
   background: #dad5e2;
   padding: 10px 0;
   margin-top: 30px; }
+  /* line 639, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .cont-filtros .filtros {
     margin: 10px 40px 0; }
+/* line 643, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .box-cont {
   padding: 0;
   margin: 0 5px;
   width: 19%; }
+/* line 648, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .box-post {
   border: 1px solid #f2f6f7;
   box-shadow: 0 2px 3px #f2f6f7;
@@ -492,8 +610,10 @@ body {
   padding: 10px;
   position: relative;
   overflow: hidden; }
+  /* line 655, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .box-post .aprobado {
     margin: 0 0 10px; }
+  /* line 658, ../sass/adminPerfumeria.scss */
   #admin-perfumeria .box-post .msnRepor {
     background: white;
     padding: 10px;
@@ -501,36 +621,49 @@ body {
     top: -179px;
     left: 0;
     z-index: 20; }
+    /* line 665, ../sass/adminPerfumeria.scss */
     #admin-perfumeria .box-post .msnRepor .box-msn {
       height: 100px;
       width: 100%; }
+/* line 673, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .eFacebook .msnRepor {
   border-bottom: 2px solid #3b5998; }
+/* line 680, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .eTwee .msnRepor {
   border-bottom: 2px solid #9ae4e8; }
+/* line 687, ../sass/adminPerfumeria.scss */
 #admin-perfumeria .eYoutube .msnRepor {
   border-bottom: 2px solid #b50505; }
 
 @media (max-width: 1046px) {
+  /* line 697, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont {
     width: 32%; }
+  /* line 701, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont:nth-last-child(1) {
     width: 48.5%; }
+  /* line 704, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont:nth-last-child(2) {
     width: 48.5%; } }
 @media (max-width: 800px) {
+  /* line 714, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont {
     width: 48.5%; }
+  /* line 718, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont:nth-last-child(1) {
     width: 98%; } }
 @media (max-width: 768px) {
+  /* line 727, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont {
     width: 98%; }
+  /* line 730, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont:nth-last-child(2) {
     width: 98%; }
+  /* line 733, ../sass/adminPerfumeria.scss */
   #cont-appMerk .box-cont:nth-last-child(1) {
     width: 98%; } }
 @media (min-width: 768px) {
+  /* line 740, ../sass/adminPerfumeria.scss */
   .main {
     padding-right: 40px;
     padding-left: 40px; } }

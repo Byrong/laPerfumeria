@@ -85,7 +85,7 @@ span{
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-          background: url('../images/bg-admin3.jpg');
+          background: url('../images/bg-admin.jpg');
           background-size: cover;
           padding-top: 10px;
 }
@@ -142,6 +142,15 @@ h2{
         margin:20px 0 0 20px;
 }
 }
+}
+.alerta{
+      color:#FF8200;
+      background: $cn;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 10px auto;
+      max-width: 400px;
+      width: 100%;
 }
 // ..................................................................................................................... [ Base ]
 #app{
@@ -394,6 +403,12 @@ td{
           font-size: 0.8em;
           padding: 10px;
           text-align: right;
+}
+.box-photo{
+        margin-top: 30px;
+ img{
+          width: 100%;
+}         
 }
 .titu-2{
            background: url('../images/admin/separator.png') repeat-x 0 5px;

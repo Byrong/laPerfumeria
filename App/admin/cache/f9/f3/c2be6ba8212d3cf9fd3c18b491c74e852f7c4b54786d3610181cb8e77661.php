@@ -344,26 +344,26 @@ class __TwigTemplate_f9f3c2be6ba8212d3cf9fd3c18b491c74e852f7c4b54786d3610181cb8e
                 // line 172
                 echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "aroma", array()), "html", null, true);
                 echo "</span></h2>
-     <div class=\"col-md-3 col-xs-6\">
-            <img src=\"";
+     <div class=\"col-md-3 col-xs-6 box-photo\">
+            <img src=\"../admin/imagenes/aromas/";
                 // line 174
                 echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "foto1", array()), "html", null, true);
-                echo "\" alt=\"\">
+                echo "\">
      </div>
-     <div class=\"col-md-3 col-xs-6\">
-            <img src=\"";
+     <div class=\"col-md-3 col-xs-6 box-photo\">
+            <img src=\"../admin/imagenes/aromas/";
                 // line 177
                 echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "foto2", array()), "html", null, true);
                 echo "\" alt=\"\">
      </div>
-     <div class=\"col-md-3 col-xs-6\">
-            <img src=\"";
+     <div class=\"col-md-3 col-xs-6 box-photo\">
+            <img src=\"../admin/imagenes/aromas/";
                 // line 180
                 echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "foto3", array()), "html", null, true);
                 echo "\" alt=\"\">
      </div>
-     <div class=\"col-md-3 col-xs-6\">
-            <img src=\"";
+     <div class=\"col-md-3 col-xs-6 box-photo\">
+            <img src=\"../admin/imagenes/aromas/";
                 // line 183
                 echo twig_escape_filter($this->env, $this->getAttribute($context["m"], "foto4", array()), "html", null, true);
                 echo "\" alt=\"\">

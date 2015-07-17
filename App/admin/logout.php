@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!empty($_SESSION['login_user']))
+if(!empty($_SESSION['usuario']))
 {
-$_SESSION['login_user']='';
+$_SESSION['usuario']='';
 session_destroy();
 }
 header("Location:index.php");

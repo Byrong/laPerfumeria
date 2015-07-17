@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(empty($_SESSION['usuario']))
+{
+  header('Location:index.php');
+}else{
   require_once '../Twig/Autoloader.php';
 
   Twig_Autoloader::register();
@@ -15,14 +20,14 @@ $template = $twig->loadTemplate('app.twig.html');
   mysql_set_charset('utf8');
 
 $consulta_Aroma    = "SELECT Aroma.idAroma, 
-			Aroma.nombre, 
-			Aroma.sexo, 
-			Aroma.celular, 
-			Aroma.correo, 
-			Aroma.ciudad, 
-			Aroma.registro, 
-			Aroma.estado
-		FROM Aroma WHERE Aroma.estado = 0";
+      Aroma.nombre, 
+      Aroma.sexo, 
+      Aroma.celular, 
+      Aroma.correo, 
+      Aroma.ciudad, 
+      Aroma.registro, 
+      Aroma.estado
+    FROM Aroma WHERE Aroma.estado = 0";
 
 $resultado  = mysql_query($consulta_Aroma , $conecion);
 
@@ -36,7 +41,7 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
   // Dentro de el bucle While recojemos la base de datos
   while ($fila= mysql_fetch_array($resultado )) {
   // Descomponemos nuestro Array en Objetos
-  			$datos[$cont] = new StdClass;
+        $datos[$cont] = new StdClass;
                               $datos [$cont]->id= $fila['idAroma'];
                               $datos [$cont]->nombre= $fila['nombre'];
                               $datos [$cont]->sexo= $fila['sexo'];
@@ -54,3 +59,5 @@ $resultado  = mysql_query($consulta_Aroma , $conecion);
 
 mysql_close($conecion);
 echo $template->render(array('datos' => $datos));
+}
+  
