@@ -154,6 +154,49 @@
  	Ingresar a web que no tienen tanta presentación profesional pero que cuentan con chica de grán pontencial, ofrecerle vincularse con la Perfumería Club ofreciendoles mejore presentación, mejores servicios y mejor estabilidad economica.
 
 
+**Trabaja con nosotros**
+
+Esta sección contara con un formularío de preinscripción donde la futura Aroma llenara varios datos para poder ser contactada y luego programar la cita para llevar a cabo el Casting, Filtro y toma de las fotos.
+
+Los datos a suministrar son:
+
++ Nombre
++ Correo
++ Sexo
++ Celular
++ Ciudad
++ Descripción Personal
++ Edad
++ Estatura
++ Ojos
++ Piel
++ Operaciones
++ Color Favoríto
++ Fecha de nacimiento
++ Peso
++ Senos
++ Cabello
++ Tatuajes
++ Experiencia
++ Tiempo
++ Actividadd Sexual
++ ¿Que es el sexo?
++ Sexo Oral
++ Sexo Anal
++ Servicio a Hombres
++ Servicio a Mujeres
++ Tríos
++ Tríos HMH
++ Tríos MHM
++ Masajes
++ Baila
++ LLuvía Dorada
++ Encuentros
++ Fuera de Servicio
+
+
+
+
 
 
 
