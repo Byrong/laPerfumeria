@@ -137,7 +137,7 @@ class __TwigTemplate_096b045f1fb7b8f6ea8200e29f2762a86bd1c4768bdbf45371841ffc693
     // line 4
     public function block_titulo($context, array $blocks = array())
     {
-        echo " La Perfumeria Club ee";
+        echo " La Perfumeria Club";
     }
 
     // line 19
