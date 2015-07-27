@@ -628,6 +628,70 @@ label.error {
                 -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
                 transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+// ..................................................................................................................... [ Trabaja con nosotros ]
+.cont-form{
+            width: 800px;
+            margin: 0 auto;
+header{
+          padding-top: 50px;
+h2{
+          color: $cb;
+          font-family: $f2;
+} 
+p{
+          color: $cb;
+} 
+}            
+#steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+#steps {
+li {
+  font-size:24px; float:left; padding:10px; color:#b0b1b3;
+span {
+    font-size:11px; display:block;
+}
+.current { color:#000;}
+}
+}
+#makeWizard { background-color:#b0232a; color:#fff; padding:5px 10px; text-decoration:none; font-size:18px;}
+#makeWizard:hover { background-color:#000;}
+.form-trabaja{
+                color:$cb;
+                
+fieldset{
+                border: none;
+}
+.form-group{
+                clear: both;
+                margin: 5px 0;
+}
+.prev, .next { background-color:#b0232a; padding:5px 10px; color:#fff; text-decoration:none;}
+.prev:hover, .next:hover { background-color:#000; text-decoration:none;}
+.prev { float:left;}
+.next { float:right;}
+fieldset { border:none}
+legend { font-size:18px; margin:0px; padding:10px 0px; color:$cb; font-weight:bold;}
+label { display:block; margin:15px 0 5px;}
+}
+#steps{
+          width: 50%;
+          position: relative;
+          left:65%;
+          top:40px;
+li{
+        background: $cg3;
+        border-radius:10px; 
+        color: $cg5;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 5px;
+        text-align: center;
+}
+.current{
+          background: $cr1;
+          color: $cb;
+}
+}
+}
 // ..................................................................................................................... [ Estructura ]
 #contReporte{
         display: none;

@@ -1,6 +1,6 @@
 <?php
 
-/* backend/mainAdmin.twig.html */
+/* mainAdmin.twig.html */
 class __TwigTemplate_fb52bcc0bec13eb3b4fa8b0525122f0a4a14b3622ee35da96e84894bf669c8de extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -85,7 +85,7 @@ class __TwigTemplate_fb52bcc0bec13eb3b4fa8b0525122f0a4a14b3622ee35da96e84894bf66
 
     public function getTemplateName()
     {
-        return "backend/mainAdmin.twig.html";
+        return "mainAdmin.twig.html";
     }
 
     public function getDebugInfo()

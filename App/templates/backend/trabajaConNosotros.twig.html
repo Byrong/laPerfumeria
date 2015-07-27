@@ -6,11 +6,16 @@
 {% block contenido %}
 <section class="row">
 	<div class="box-registro">
-		<header>
-	          <h2 class="titu-4">¿Quieres ser unas de nuestas Aromas? </h2>
-		</header>
 		<section class="cont-form">
-			<form class="form-horizontal">
+			<header>
+		          	<h2>¿Quieres ser unas de nuestras Aromas?</h2>
+		          	<p>
+		          		Te invitamos a llenar el siguiente formularío
+		          	</p>
+			</header>
+			<form id="SignupForm" class="form-trabaja">
+			 <fieldset>
+	            		<legend>Datos personales</legend>
 			    <div class="form-group">
 			        <label class="control-label col-xs-3">Nombre:</label>
 			        <div class="col-xs-9">
@@ -19,12 +24,10 @@
 			    </div>
 			    <div class="form-group">     
 			        <label class="control-label col-xs-3">Correo:</label>
-			        <div class="col-xs-9">
+			        <div class="col-xs-4">
 			            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Eres:</label>
+			         <label class="control-label col-xs-1">Sexo:</label>
 			        <div class="col-xs-2">
 			            <label class="radio-inline">
 			                <input type="radio" name="genderRadios" value="male"> Hombre
@@ -37,14 +40,15 @@
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3" >Celular:</label>
-			        <div class="col-xs-9">
-			            <input type="tel" class="form-control" placeholder="Tú Celular">
-			        </div>
+			       
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Ciudad:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-3" >Celular:</label>
+			        <div class="col-xs-3">
+			            <input type="tel" class="form-control" placeholder="Tú Celular">
+			        </div>
+			        <label class="control-label col-xs-1">Ciudad:</label>
+			        <div class="col-xs-4 col-md-4">
 			            <select class="form-control">
 			                <option value="">Selecciona tú ciudad</option>
 			                <option value="Bogotá">Bogotá</option>
@@ -56,16 +60,37 @@
 			        </div>
 			    </div>
 			    <div class="form-group">
+			        <label class="control-label col-xs-3">F. Nacimiento:</label>
+			        <div class="col-xs-2">
+			            <select class="form-control">
+			                <option>Dia</option>
+			            </select>
+			        </div>
+			        <div class="col-xs-2">
+			            <select class="form-control">
+			                <option>Mes</option>
+			            </select>
+			        </div>
+			        <div class="col-xs-2">
+			            <select class="form-control">
+			                <option>Año</option>
+			            </select>
+			        </div>
+			    </div>
+			    <div class="form-group">
 			        <label class="control-label col-xs-3">Descripción Personal:</label>
 			        <div class="col-xs-9">
 			            <textarea rows="3" class="form-control" placeholder="¿Como es tú personalidad?"></textarea>
 			        </div>
 			    </div>
+			   </fieldset>
+			   <fieldset>
+            			<legend>Tu Perfil</legend>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Edad:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Edad:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="edad" class="form-control">
-			                <option value="">Selecciona tú edad</option>
+			                <option value="">0</option>
 			                <option value="18">18</option>
 			                <option value="19">19</option>
 			                <option value="20">20</option>
@@ -74,10 +99,8 @@
 			                <option value="35">35</option>
 			            </select>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Estatura:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Estatura:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="estatura" class="form-control">
 			                <option value="">Selecciona tú estatura</option>
 			                <option value="150">1.50 Cm</option>
@@ -86,9 +109,10 @@
 			            </select>
 			        </div>
 			    </div>
+			    
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Color de Ojos:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Color de Ojos:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="ojos" class="form-control">
 			                <option value="">Selecciona tú color</option>
 			                <option value="cafe">Cafe</option>
@@ -99,10 +123,8 @@
 			                <option value="verdes">Verdes</option>
 			            </select>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Color de Píel:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Color de Píel:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="piel" class="form-control">
 			                <option value="">Selecciona tú color</option>
 			                <option value="cafe">Blanca</option>
@@ -113,55 +135,8 @@
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Operaciones:</label>
-			        <div class="col-xs-2">
-			            <label class="radio-inline">
-			                <input type="radio" name="operaciones" value="si"> Si
-			            </label>
-			        </div>
-			        <div class="col-xs-2">
-			            <label class="radio-inline">
-			                <input type="radio" name="operaciones" value="no"> No
-			            </label>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <div class="col-xs-offset-3 col-xs-9">
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="naríz"> Naríz
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="senos"> Senos
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="abdomen"> Abdomen
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="cola"> Cola
-			            </label>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">F. Nacimiento:</label>
-			        <div class="col-xs-3">
-			            <select class="form-control">
-			                <option>Dia</option>
-			            </select>
-			        </div>
-			        <div class="col-xs-3">
-			            <select class="form-control">
-			                <option>Mes</option>
-			            </select>
-			        </div>
-			        <div class="col-xs-3">
-			            <select class="form-control">
-			                <option>Año</option>
-			            </select>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Peso:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Peso:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="peso" class="form-control">
 			                <option value="">Selecciona tú peso</option>
 			                <option value="50">50 Kg</option>
@@ -175,10 +150,8 @@
 			                <option value="90">90 Kg</option>
 			            </select>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Senos:</label>
-			        <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Senos:</label>
+			        <div class="col-xs-2 col-md-2">
 			            <select name="seno" class="form-control">
 			                <option value="">Selecciona tú talla</option>
 			                <option value="30">30 Copa</option>
@@ -191,10 +164,10 @@
 			                <option value="60">60 Copa</option>
 			            </select>
 			        </div>
-			    </div>    
+			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Color de Cabello</label>
-			         <div class="col-xs-9 col-md-9">
+			        <label class="control-label col-xs-2">Color de Cabello</label>
+			         <div class="col-xs-2 col-md-2">
 			            <select name="ojos" class="form-control">
 			                <option value="">Selecciona tú color</option>
 			                <option value="mono">Mono</option>
@@ -206,18 +179,54 @@
 			     </div>
 			     </div>
 			     <div class="form-group">
-			        <label class="control-label col-xs-3">Tatuajes:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Operaciones:</label>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="operaciones" value="si"> Si
+			            </label>
+			        </div>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="operaciones" value="no"> No
+			            </label>
+			        </div>
+			        <label class="control-label col-xs-2">Tatuajes:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="tatuaje" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="tatuaje" value="no"> No
 			            </label>
 			        </div>
 			    </div>
+			    <div class="form-group">
+			         <div class="col-xs-2">
+		            	<label class="checkbox-inline">
+		               	 	<input name="operacion" type="checkbox" value="naríz"> Naríz
+		            	</label>
+			         </div>
+			         <div class="col-xs-2"> 	
+			            <label class="checkbox-inline">
+			                <input name="operacion" type="checkbox" value="senos"> Senos
+			            </label>
+			         	</div>
+			          <div class="col-xs-2"> 	
+			            <label class="checkbox-inline">
+			                <input name="operacion" type="checkbox" value="abdomen"> Abdomen
+			            </label>
+			          </div>
+			          <div class="col-xs-2"> 	
+			            <label class="checkbox-inline">
+			                <input name="operacion" type="checkbox" value="cola"> Cola
+			            </label>
+			          </div>
+			    </div>
+			    </fieldset>
+			    <fieldset>
+		   	   <legend>Tus Servicios</legend>
 			    <div class="form-group">
 			        <label class="control-label col-xs-3">¿Experiencia en servicio de Scorth?:</label>
 			        <div class="col-xs-2">
@@ -262,126 +271,126 @@
 			     	</div>
 			     </div>
 			     <div class="form-group">
-			        <label class="control-label col-xs-3">¿Qué esel sexo?</label>
+			        <label class="control-label col-xs-3">¿Qué es el sexo?</label>
 			        <div class="col-xs-9">
 			            <textarea rows="3" class="form-control" placeholder="Para ti que es tener sexo..."></textarea>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Sexo Oral:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Sexo Oral:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexOral" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexOral" value="no"> No
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Sexo Anal:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Sexo Anal:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexAnal" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexAnal" value="no"> No
 			            </label>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Servicio a Hombres:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Servicio a Hombres:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexHombre" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexHombre" value="no"> No
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Servicio a Mujeres:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Servicio a Mujeres:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexMujeres" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="sexMujeres" value="no"> No
 			            </label>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Tríos:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Tríos:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="trios" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="trios" value="no"> No
 			            </label>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <div class="col-xs-offset-3 col-xs-9">
+			         <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="HMH"> Trío HMH
 			            </label>
+			          </div>
+			           <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="MHM"> Trío MHM
 			            </label>
+			          </div>
+			           <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="MMM"> Trío MMM
 			            </label>
+			           </div>
+			            <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="HHH"> Trío HHH
 			            </label>
-			        </div>
+			           </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Masajes:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Masajes:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="masajes" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="masajes" value="no"> No
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-3">Bailas:</label>
-			        <div class="col-xs-2">
+			         <label class="control-label col-xs-2">Bailas:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="baila" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="baila" value="no"> No
 			            </label>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">Lluvía Dorada:</label>
-			        <div class="col-xs-2">
+			        <label class="control-label col-xs-2">Lluvía Dorada:</label>
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="lluviaDorada" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="lluviaDorada" value="no"> No
 			            </label>
@@ -435,12 +444,11 @@
 			            </label>
 			        </div>
 			    </div>
-			    <br>
+			     </fieldset>
 			    <div class="form-group">
-			        <div class="col-xs-offset-3 col-xs-9">
-			            <input type="submit" class="btn btn-primary" value="Enviar">
-			            <input type="reset" class="btn btn-default" value="Limpiar">
-			        </div>
+			    <p class="col-md-12">
+			         <input id="SaveAccount" class="btn-2" type="button" value="Submit form" />
+			    </p>
 			    </div>
 			</form>
 		</section>
@@ -450,44 +458,44 @@
 	</div>
 </section>
 {% endblock %}
-
 {% block scripts %}
+<script src="../js/formToWizard.js"></script>
 <script>
 	$(document).ready(function() 
-{
+	{
+	$("#SignupForm").formToWizard({ submitButton: 'SaveAccount' })
+	$('#login').click(function()
+	{
+	var username=$("#username").val();
+	var password=$("#password").val();
+	var dataString = 'nnombre='+username+'&npassword='+password;
+	if($.trim(username).length>0 && $.trim(password).length>0)
+	{
+		$.ajax({
+			type: "POST",
+			url: "ajaxLogin.php",
+			data: dataString,
+			cache: false,
+			beforeSend: function(){ $("#login").val('Connecting...');},
+			success: function(data){
+				if(data)
+				{
+					$("body").load("home.php").hide().fadeIn(1500).delay(6000);
+					//or window.location.href = "home.php";
 
-$('#login').click(function()
-{
-var username=$("#username").val();
-var password=$("#password").val();
-var dataString = 'nnombre='+username+'&npassword='+password;
-if($.trim(username).length>0 && $.trim(password).length>0)
-{
-	$.ajax({
-		type: "POST",
-		url: "ajaxLogin.php",
-		data: dataString,
-		cache: false,
-		beforeSend: function(){ $("#login").val('Connecting...');},
-		success: function(data){
-			if(data)
-			{
-				$("body").load("home.php").hide().fadeIn(1500).delay(6000);
-				//or window.location.href = "home.php";
+				}
+				else
+				{
+					$("#login").val('Login');
+					$("#error").html("<div class='alerta'><span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta</div>");
+				}
+			}
+		});
 
-			}
-			else
-			{
-				$("#login").val('Login');
-				$("#error").html("<div class='alerta'><span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta</div>");
-			}
-		}
+	}
+	return false;
 	});
 
-}
-return false;
-});
-
-});
+	});
 </script>
 {% endblock %}

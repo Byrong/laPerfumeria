@@ -40,11 +40,16 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
         // line 7
         echo "<section class=\"row\">
 \t<div class=\"box-registro\">
-\t\t<header>
-\t          <h2 class=\"titu-4\">¿Quieres ser unas de nuestas Aromas? </h2>
-\t\t</header>
 \t\t<section class=\"cont-form\">
-\t\t\t<form class=\"form-horizontal\">
+\t\t\t<header>
+\t\t          \t<h2>¿Quieres ser unas de nuestras Aromas?</h2>
+\t\t          \t<p>
+\t\t          \t\tTe invitamos a llenar el siguiente formularío
+\t\t          \t</p>
+\t\t\t</header>
+\t\t\t<form id=\"SignupForm\" class=\"form-trabaja\">
+\t\t\t <fieldset>
+\t            \t\t<legend>Datos personales</legend>
 \t\t\t    <div class=\"form-group\">
 \t\t\t        <label class=\"control-label col-xs-3\">Nombre:</label>
 \t\t\t        <div class=\"col-xs-9\">
@@ -53,12 +58,10 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">     
 \t\t\t        <label class=\"control-label col-xs-3\">Correo:</label>
-\t\t\t        <div class=\"col-xs-9\">
+\t\t\t        <div class=\"col-xs-4\">
 \t\t\t            <input type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\">
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Eres:</label>
+\t\t\t         <label class=\"control-label col-xs-1\">Sexo:</label>
 \t\t\t        <div class=\"col-xs-2\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"genderRadios\" value=\"male\"> Hombre
@@ -71,14 +74,15 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\" >Celular:</label>
-\t\t\t        <div class=\"col-xs-9\">
-\t\t\t            <input type=\"tel\" class=\"form-control\" placeholder=\"Tú Celular\">
-\t\t\t        </div>
+\t\t\t       
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Ciudad:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-3\" >Celular:</label>
+\t\t\t        <div class=\"col-xs-3\">
+\t\t\t            <input type=\"tel\" class=\"form-control\" placeholder=\"Tú Celular\">
+\t\t\t        </div>
+\t\t\t        <label class=\"control-label col-xs-1\">Ciudad:</label>
+\t\t\t        <div class=\"col-xs-4 col-md-4\">
 \t\t\t            <select class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú ciudad</option>
 \t\t\t                <option value=\"Bogotá\">Bogotá</option>
@@ -90,16 +94,37 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
+\t\t\t        <label class=\"control-label col-xs-3\">F. Nacimiento:</label>
+\t\t\t        <div class=\"col-xs-2\">
+\t\t\t            <select class=\"form-control\">
+\t\t\t                <option>Dia</option>
+\t\t\t            </select>
+\t\t\t        </div>
+\t\t\t        <div class=\"col-xs-2\">
+\t\t\t            <select class=\"form-control\">
+\t\t\t                <option>Mes</option>
+\t\t\t            </select>
+\t\t\t        </div>
+\t\t\t        <div class=\"col-xs-2\">
+\t\t\t            <select class=\"form-control\">
+\t\t\t                <option>Año</option>
+\t\t\t            </select>
+\t\t\t        </div>
+\t\t\t    </div>
+\t\t\t    <div class=\"form-group\">
 \t\t\t        <label class=\"control-label col-xs-3\">Descripción Personal:</label>
 \t\t\t        <div class=\"col-xs-9\">
 \t\t\t            <textarea rows=\"3\" class=\"form-control\" placeholder=\"¿Como es tú personalidad?\"></textarea>
 \t\t\t        </div>
 \t\t\t    </div>
+\t\t\t   </fieldset>
+\t\t\t   <fieldset>
+            \t\t\t<legend>Tu Perfil</legend>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Edad:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Edad:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"edad\" class=\"form-control\">
-\t\t\t                <option value=\"\">Selecciona tú edad</option>
+\t\t\t                <option value=\"\">0</option>
 \t\t\t                <option value=\"18\">18</option>
 \t\t\t                <option value=\"19\">19</option>
 \t\t\t                <option value=\"20\">20</option>
@@ -108,10 +133,8 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t                <option value=\"35\">35</option>
 \t\t\t            </select>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Estatura:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Estatura:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"estatura\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú estatura</option>
 \t\t\t                <option value=\"150\">1.50 Cm</option>
@@ -120,9 +143,10 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t            </select>
 \t\t\t        </div>
 \t\t\t    </div>
+\t\t\t    
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Color de Ojos:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Color de Ojos:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"ojos\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú color</option>
 \t\t\t                <option value=\"cafe\">Cafe</option>
@@ -133,10 +157,8 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t                <option value=\"verdes\">Verdes</option>
 \t\t\t            </select>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Color de Píel:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Color de Píel:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"piel\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú color</option>
 \t\t\t                <option value=\"cafe\">Blanca</option>
@@ -147,55 +169,8 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Operaciones:</label>
-\t\t\t        <div class=\"col-xs-2\">
-\t\t\t            <label class=\"radio-inline\">
-\t\t\t                <input type=\"radio\" name=\"operaciones\" value=\"si\"> Si
-\t\t\t            </label>
-\t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
-\t\t\t            <label class=\"radio-inline\">
-\t\t\t                <input type=\"radio\" name=\"operaciones\" value=\"no\"> No
-\t\t\t            </label>
-\t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <div class=\"col-xs-offset-3 col-xs-9\">
-\t\t\t            <label class=\"checkbox-inline\">
-\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"naríz\"> Naríz
-\t\t\t            </label>
-\t\t\t            <label class=\"checkbox-inline\">
-\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"senos\"> Senos
-\t\t\t            </label>
-\t\t\t            <label class=\"checkbox-inline\">
-\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"abdomen\"> Abdomen
-\t\t\t            </label>
-\t\t\t            <label class=\"checkbox-inline\">
-\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"cola\"> Cola
-\t\t\t            </label>
-\t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">F. Nacimiento:</label>
-\t\t\t        <div class=\"col-xs-3\">
-\t\t\t            <select class=\"form-control\">
-\t\t\t                <option>Dia</option>
-\t\t\t            </select>
-\t\t\t        </div>
-\t\t\t        <div class=\"col-xs-3\">
-\t\t\t            <select class=\"form-control\">
-\t\t\t                <option>Mes</option>
-\t\t\t            </select>
-\t\t\t        </div>
-\t\t\t        <div class=\"col-xs-3\">
-\t\t\t            <select class=\"form-control\">
-\t\t\t                <option>Año</option>
-\t\t\t            </select>
-\t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Peso:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Peso:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"peso\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú peso</option>
 \t\t\t                <option value=\"50\">50 Kg</option>
@@ -209,10 +184,8 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t                <option value=\"90\">90 Kg</option>
 \t\t\t            </select>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Senos:</label>
-\t\t\t        <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Senos:</label>
+\t\t\t        <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"seno\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú talla</option>
 \t\t\t                <option value=\"30\">30 Copa</option>
@@ -225,10 +198,10 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t                <option value=\"60\">60 Copa</option>
 \t\t\t            </select>
 \t\t\t        </div>
-\t\t\t    </div>    
+\t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Color de Cabello</label>
-\t\t\t         <div class=\"col-xs-9 col-md-9\">
+\t\t\t        <label class=\"control-label col-xs-2\">Color de Cabello</label>
+\t\t\t         <div class=\"col-xs-2 col-md-2\">
 \t\t\t            <select name=\"ojos\" class=\"form-control\">
 \t\t\t                <option value=\"\">Selecciona tú color</option>
 \t\t\t                <option value=\"mono\">Mono</option>
@@ -240,18 +213,54 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t     </div>
 \t\t\t     </div>
 \t\t\t     <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Tatuajes:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Operaciones:</label>
+\t\t\t        <div class=\"col-xs-1\">
+\t\t\t            <label class=\"radio-inline\">
+\t\t\t                <input type=\"radio\" name=\"operaciones\" value=\"si\"> Si
+\t\t\t            </label>
+\t\t\t        </div>
+\t\t\t        <div class=\"col-xs-1\">
+\t\t\t            <label class=\"radio-inline\">
+\t\t\t                <input type=\"radio\" name=\"operaciones\" value=\"no\"> No
+\t\t\t            </label>
+\t\t\t        </div>
+\t\t\t        <label class=\"control-label col-xs-2\">Tatuajes:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"tatuaje\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"tatuaje\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
+\t\t\t    <div class=\"form-group\">
+\t\t\t         <div class=\"col-xs-2\">
+\t\t            \t<label class=\"checkbox-inline\">
+\t\t               \t \t<input name=\"operacion\" type=\"checkbox\" value=\"naríz\"> Naríz
+\t\t            \t</label>
+\t\t\t         </div>
+\t\t\t         <div class=\"col-xs-2\"> \t
+\t\t\t            <label class=\"checkbox-inline\">
+\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"senos\"> Senos
+\t\t\t            </label>
+\t\t\t         \t</div>
+\t\t\t          <div class=\"col-xs-2\"> \t
+\t\t\t            <label class=\"checkbox-inline\">
+\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"abdomen\"> Abdomen
+\t\t\t            </label>
+\t\t\t          </div>
+\t\t\t          <div class=\"col-xs-2\"> \t
+\t\t\t            <label class=\"checkbox-inline\">
+\t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"cola\"> Cola
+\t\t\t            </label>
+\t\t\t          </div>
+\t\t\t    </div>
+\t\t\t    </fieldset>
+\t\t\t    <fieldset>
+\t\t   \t   <legend>Tus Servicios</legend>
 \t\t\t    <div class=\"form-group\">
 \t\t\t        <label class=\"control-label col-xs-3\">¿Experiencia en servicio de Scorth?:</label>
 \t\t\t        <div class=\"col-xs-2\">
@@ -296,126 +305,126 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t     \t</div>
 \t\t\t     </div>
 \t\t\t     <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">¿Qué esel sexo?</label>
+\t\t\t        <label class=\"control-label col-xs-3\">¿Qué es el sexo?</label>
 \t\t\t        <div class=\"col-xs-9\">
 \t\t\t            <textarea rows=\"3\" class=\"form-control\" placeholder=\"Para ti que es tener sexo...\"></textarea>
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Sexo Oral:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Sexo Oral:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexOral\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexOral\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Sexo Anal:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Sexo Anal:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexAnal\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexAnal\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Servicio a Hombres:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Servicio a Hombres:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexHombre\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexHombre\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Servicio a Mujeres:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Servicio a Mujeres:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexMujeres\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"sexMujeres\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Tríos:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Tríos:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"trios\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"trios\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <div class=\"col-xs-offset-3 col-xs-9\">
+\t\t\t         <div class=\"col-xs-2\">
 \t\t\t            <label class=\"checkbox-inline\">
 \t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"HMH\"> Trío HMH
 \t\t\t            </label>
+\t\t\t          </div>
+\t\t\t           <div class=\"col-xs-2\">
 \t\t\t            <label class=\"checkbox-inline\">
 \t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"MHM\"> Trío MHM
 \t\t\t            </label>
+\t\t\t          </div>
+\t\t\t           <div class=\"col-xs-2\">
 \t\t\t            <label class=\"checkbox-inline\">
 \t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"MMM\"> Trío MMM
 \t\t\t            </label>
+\t\t\t           </div>
+\t\t\t            <div class=\"col-xs-2\">
 \t\t\t            <label class=\"checkbox-inline\">
 \t\t\t                <input name=\"operacion\" type=\"checkbox\" value=\"HHH\"> Trío HHH
 \t\t\t            </label>
-\t\t\t        </div>
+\t\t\t           </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Masajes:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Masajes:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"masajes\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"masajes\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Bailas:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t         <label class=\"control-label col-xs-2\">Bailas:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"baila\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"baila\" value=\"no\"> No
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <label class=\"control-label col-xs-3\">Lluvía Dorada:</label>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <label class=\"control-label col-xs-2\">Lluvía Dorada:</label>
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"lluviaDorada\" value=\"si\"> Si
 \t\t\t            </label>
 \t\t\t        </div>
-\t\t\t        <div class=\"col-xs-2\">
+\t\t\t        <div class=\"col-xs-1\">
 \t\t\t            <label class=\"radio-inline\">
 \t\t\t                <input type=\"radio\" name=\"lluviaDorada\" value=\"no\"> No
 \t\t\t            </label>
@@ -469,12 +478,11 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 \t\t\t            </label>
 \t\t\t        </div>
 \t\t\t    </div>
-\t\t\t    <br>
+\t\t\t     </fieldset>
 \t\t\t    <div class=\"form-group\">
-\t\t\t        <div class=\"col-xs-offset-3 col-xs-9\">
-\t\t\t            <input type=\"submit\" class=\"btn btn-primary\" value=\"Enviar\">
-\t\t\t            <input type=\"reset\" class=\"btn btn-default\" value=\"Limpiar\">
-\t\t\t        </div>
+\t\t\t    <p class=\"col-md-12\">
+\t\t\t         <input id=\"SaveAccount\" class=\"btn-2\" type=\"button\" value=\"Submit form\" />
+\t\t\t    </p>
 \t\t\t    </div>
 \t\t\t</form>
 \t\t</section>
@@ -486,47 +494,48 @@ class __TwigTemplate_61953f7c3a4fc636e39f5ae313d6ca29b67b7b6b8be0c3faed5f10d4608
 ";
     }
 
-    // line 454
+    // line 461
     public function block_scripts($context, array $blocks = array())
     {
-        // line 455
-        echo "<script>
+        // line 462
+        echo "<script src=\"../js/formToWizard.js\"></script>
+<script>
 \t\$(document).ready(function() 
-{
+\t{
+\t\$(\"#SignupForm\").formToWizard({ submitButton: 'SaveAccount' })
+\t\$('#login').click(function()
+\t{
+\tvar username=\$(\"#username\").val();
+\tvar password=\$(\"#password\").val();
+\tvar dataString = 'nnombre='+username+'&npassword='+password;
+\tif(\$.trim(username).length>0 && \$.trim(password).length>0)
+\t{
+\t\t\$.ajax({
+\t\t\ttype: \"POST\",
+\t\t\turl: \"ajaxLogin.php\",
+\t\t\tdata: dataString,
+\t\t\tcache: false,
+\t\t\tbeforeSend: function(){ \$(\"#login\").val('Connecting...');},
+\t\t\tsuccess: function(data){
+\t\t\t\tif(data)
+\t\t\t\t{
+\t\t\t\t\t\$(\"body\").load(\"home.php\").hide().fadeIn(1500).delay(6000);
+\t\t\t\t\t//or window.location.href = \"home.php\";
 
-\$('#login').click(function()
-{
-var username=\$(\"#username\").val();
-var password=\$(\"#password\").val();
-var dataString = 'nnombre='+username+'&npassword='+password;
-if(\$.trim(username).length>0 && \$.trim(password).length>0)
-{
-\t\$.ajax({
-\t\ttype: \"POST\",
-\t\turl: \"ajaxLogin.php\",
-\t\tdata: dataString,
-\t\tcache: false,
-\t\tbeforeSend: function(){ \$(\"#login\").val('Connecting...');},
-\t\tsuccess: function(data){
-\t\t\tif(data)
-\t\t\t{
-\t\t\t\t\$(\"body\").load(\"home.php\").hide().fadeIn(1500).delay(6000);
-\t\t\t\t//or window.location.href = \"home.php\";
+\t\t\t\t}
+\t\t\t\telse
+\t\t\t\t{
+\t\t\t\t\t\$(\"#login\").val('Login');
+\t\t\t\t\t\$(\"#error\").html(\"<div class='alerta'><span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta</div>\");
+\t\t\t\t}
+\t\t\t}
+\t\t});
 
-\t\t\t}
-\t\t\telse
-\t\t\t{
-\t\t\t\t\$(\"#login\").val('Login');
-\t\t\t\t\$(\"#error\").html(\"<div class='alerta'><span style='color:#cc0000'>Error:</span> Usuario y/ó contraseña incorrecta</div>\");
-\t\t\t}
-\t\t}
+\t}
+\treturn false;
 \t});
 
-}
-return false;
-});
-
-});
+\t});
 </script>
 ";
     }
@@ -543,6 +552,6 @@ return false;
 
     public function getDebugInfo()
     {
-        return array (  493 => 455,  490 => 454,  41 => 7,  38 => 6,  33 => 4,  30 => 3,);
+        return array (  501 => 462,  498 => 461,  41 => 7,  38 => 6,  33 => 4,  30 => 3,);
     }
 }
