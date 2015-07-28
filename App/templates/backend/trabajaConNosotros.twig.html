@@ -5,7 +5,6 @@
 {% endblock %}
 {% block contenido %}
 <section class="row">
-	<div class="box-registro">
 		<section class="cont-form">
 			<header>
 		          	<h2>¿Quieres ser unas de nuestras Aromas?</h2>
@@ -14,6 +13,7 @@
 		          	</p>
 			</header>
 			<form id="SignupForm" class="form-trabaja">
+<!-- [Paso1] .....................................................  -->
 			 <fieldset>
 	            		<legend>Datos personales</legend>
 			    <div class="form-group">
@@ -38,9 +38,6 @@
 			                <input type="radio" name="genderRadios" value="female"> Mujer
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			       
 			    </div>
 			    <div class="form-group">
 			        <label class="control-label col-xs-3" >Celular:</label>
@@ -84,6 +81,7 @@
 			        </div>
 			    </div>
 			   </fieldset>
+<!-- [Paso2] .....................................................  -->
 			   <fieldset>
             			<legend>Tu Perfil</legend>
 			    <div class="form-group">
@@ -102,43 +100,16 @@
 			        <label class="control-label col-xs-2">Estatura:</label>
 			        <div class="col-xs-2 col-md-2">
 			            <select name="estatura" class="form-control">
-			                <option value="">Selecciona tú estatura</option>
+			                <option value="">0</option>
 			                <option value="150">1.50 Cm</option>
 			                <option value="152">1.52 Cm</option>
 			                <option value="154">1.54 Cm</option>
 			            </select>
 			        </div>
-			    </div>
-			    
-			    <div class="form-group">
-			        <label class="control-label col-xs-2">Color de Ojos:</label>
-			        <div class="col-xs-2 col-md-2">
-			            <select name="ojos" class="form-control">
-			                <option value="">Selecciona tú color</option>
-			                <option value="cafe">Cafe</option>
-			                <option value="marrones">Marrones</option>
-			                <option value="miel">Míel</option>
-			                <option value="negros">Negros</option>
-			                <option value="azules">Azules</option>
-			                <option value="verdes">Verdes</option>
-			            </select>
-			        </div>
-			        <label class="control-label col-xs-2">Color de Píel:</label>
-			        <div class="col-xs-2 col-md-2">
-			            <select name="piel" class="form-control">
-			                <option value="">Selecciona tú color</option>
-			                <option value="cafe">Blanca</option>
-			                <option value="marrones">Morena</option>
-			                <option value="miel">Trigeña</option>
-			                <option value="negros">Negra</option>
-			            </select>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-2">Peso:</label>
+			        <label class="control-label col-xs-1">Peso:</label>
 			        <div class="col-xs-2 col-md-2">
 			            <select name="peso" class="form-control">
-			                <option value="">Selecciona tú peso</option>
+			                <option value="">0</option>
 			                <option value="50">50 Kg</option>
 			                <option value="55">55 Kg</option>
 			                <option value="60">60 Kg</option>
@@ -150,10 +121,34 @@
 			                <option value="90">90 Kg</option>
 			            </select>
 			        </div>
-			        <label class="control-label col-xs-2">Senos:</label>
+			    </div>
+			    <div class="form-group">
+			        <label class="control-label col-xs-2">Color de Ojos:</label>
+			        <div class="col-xs-2 col-md-2">
+			            <select name="ojos" class="form-control">
+			                <option value="">&nbsp;</option>
+			                <option value="cafe">Cafe</option>
+			                <option value="marrones">Marrones</option>
+			                <option value="miel">Míel</option>
+			                <option value="negros">Negros</option>
+			                <option value="azules">Azules</option>
+			                <option value="verdes">Verdes</option>
+			            </select>
+			        </div>
+			        <label class="control-label col-xs-2">Color de Píel:</label>
+			        <div class="col-xs-2 col-md-2">
+			            <select name="piel" class="form-control">
+			                <option value="">&nbsp;</option>
+			                <option value="cafe">Blanca</option>
+			                <option value="marrones">Morena</option>
+			                <option value="miel">Trigeña</option>
+			                <option value="negros">Negra</option>
+			            </select>
+			        </div>
+			        <label class="control-label col-xs-1">Senos:</label>
 			        <div class="col-xs-2 col-md-2">
 			            <select name="seno" class="form-control">
-			                <option value="">Selecciona tú talla</option>
+			                <option value="">0</option>
 			                <option value="30">30 Copa</option>
 			                <option value="35">35 Copa</option>
 			                <option value="38">38 Copa</option>
@@ -169,7 +164,7 @@
 			        <label class="control-label col-xs-2">Color de Cabello</label>
 			         <div class="col-xs-2 col-md-2">
 			            <select name="ojos" class="form-control">
-			                <option value="">Selecciona tú color</option>
+			                <option value="">&nbsp;</option>
 			                <option value="mono">Mono</option>
 			                <option value="marron">Marron</option>
 			                <option value="castaño">Castaño</option>
@@ -177,9 +172,7 @@
 			                <option value="rojo">Rojo</option>
 			            </select>
 			     </div>
-			     </div>
-			     <div class="form-group">
-			        <label class="control-label col-xs-2">Operaciones:</label>
+			     <label class="control-label col-xs-2">Operaciones:</label>
 			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="operaciones" value="si"> Si
@@ -190,7 +183,7 @@
 			                <input type="radio" name="operaciones" value="no"> No
 			            </label>
 			        </div>
-			        <label class="control-label col-xs-2">Tatuajes:</label>
+			        <label class="control-label col-xs-1">Tatuajes:</label>
 			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="tatuaje" value="si"> Si
@@ -201,9 +194,9 @@
 			                <input type="radio" name="tatuaje" value="no"> No
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			         <div class="col-xs-2">
+			     </div>
+			    <div class="form-group grup-1">
+			         <div class="col-xs-2 col-md-offset-4">
 		            	<label class="checkbox-inline">
 		               	 	<input name="operacion" type="checkbox" value="naríz"> Naríz
 		            	</label>
@@ -225,26 +218,25 @@
 			          </div>
 			    </div>
 			    </fieldset>
+<!-- [Paso3] .....................................................  -->
 			    <fieldset>
 		   	   <legend>Tus Servicios</legend>
 			    <div class="form-group">
 			        <label class="control-label col-xs-3">¿Experiencia en servicio de Scorth?:</label>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="experiencia" value="si"> Si
 			            </label>
 			        </div>
-			        <div class="col-xs-2">
+			        <div class="col-xs-1">
 			            <label class="radio-inline">
 			                <input type="radio" name="experiencia" value="no"> No
 			            </label>
 			        </div>
-			    </div>
-			    <div class="form-group">
 			        <label class="control-label col-xs-3">Tiempo de experiencia</label>
-			         <div class="col-xs-9 col-md-9">
+			         <div class="col-xs-4 col-md-4">
 			            <select name="tiemExperiencia" class="form-control">
-			                <option value="">Selecciona el tiempo</option>
+			                <option value="">0</option>
 			                <option value="1">1 año</option>
 			                <option value="2">2 años</option>
 			                <option value="3">3 años</option>
@@ -254,7 +246,7 @@
 			                <option value="5">Más de 5 años</option>
 			            </select>
 			     	</div>
-			     </div>
+			    </div>
 			     <div class="form-group">
 			        <label class="control-label col-xs-3">Actividad Sexual</label>
 			         <div class="col-xs-9 col-md-9">
@@ -299,6 +291,17 @@
 			                <input type="radio" name="sexAnal" value="no"> No
 			            </label>
 			        </div>
+			         <label class="control-label col-xs-2">Masajes:</label>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="masajes" value="si"> Si
+			            </label>
+			        </div>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="masajes" value="no"> No
+			            </label>
+			        </div>
 			    </div>
 			    <div class="form-group">
 			        <label class="control-label col-xs-2">Servicio a Hombres:</label>
@@ -323,6 +326,17 @@
 			                <input type="radio" name="sexMujeres" value="no"> No
 			            </label>
 			        </div>
+			        <label class="control-label col-xs-2">Bailas:</label>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="baila" value="si"> Si
+			            </label>
+			        </div>
+			         <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="baila" value="no"> No
+			            </label>
+			        </div>
 			    </div>
 			    <div class="form-group">
 			        <label class="control-label col-xs-2">Tríos:</label>
@@ -336,8 +350,19 @@
 			                <input type="radio" name="trios" value="no"> No
 			            </label>
 			        </div>
+			         <label class="control-label col-xs-2">Lluvía Dorada:</label>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="lluviaDorada" value="si"> Si
+			            </label>
+			        </div>
+			        <div class="col-xs-1">
+			            <label class="radio-inline">
+			                <input type="radio" name="lluviaDorada" value="no"> No
+			            </label>
+			        </div>
 			    </div>
-			    <div class="form-group">
+			    <div class="form-group grup-1">
 			         <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="HMH"> Trío HMH
@@ -359,100 +384,75 @@
 			            </label>
 			           </div>
 			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-2">Masajes:</label>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="masajes" value="si"> Si
-			            </label>
-			        </div>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="masajes" value="no"> No
-			            </label>
-			        </div>
-			         <label class="control-label col-xs-2">Bailas:</label>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="baila" value="si"> Si
-			            </label>
-			        </div>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="baila" value="no"> No
-			            </label>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <label class="control-label col-xs-2">Lluvía Dorada:</label>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="lluviaDorada" value="si"> Si
-			            </label>
-			        </div>
-			        <div class="col-xs-1">
-			            <label class="radio-inline">
-			                <input type="radio" name="lluviaDorada" value="no"> No
-			            </label>
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <div class="col-xs-offset-3 col-xs-9">
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="apartamento"> Apartamento
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="hotel"> Hotel
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="casa"> Casa
-			            </label>
-			            <label class="checkbox-inline">
-			                <input name="operacion" type="checkbox" value="fíncas"> Fíncas
-			            </label>
+			    <div class="form-group grup-1">
+			     <label class="control-label col-xs-2">Lugar de encuentro:</label>
+			           <div class="col-xs-3">
+				            <label class="checkbox-inline">
+				                <input name="operacion" type="checkbox" value="hotel"> Hotel
+				            </label>
+				             <label class="checkbox-inline">
+				                <input name="operacion" type="checkbox" value="apartamento"> Apartamento
+				            </label>
+			            </div>
+			            <div class="col-xs-2">
+				            <label class="checkbox-inline">
+				                <input name="operacion" type="checkbox" value="casa"> Casa
+				            </label>
+				            <label class="checkbox-inline">
+				                <input name="operacion" type="checkbox" value="fíncas"> Fíncas
+				            </label>
+			            </div>
+			            <div class="col-xs-2">
 			            <label class="checkbox-inline">
 			                <input name="operacion" type="checkbox" value="empresa"> Empresa
 			            </label>
-			        </div>
+			            </div>
 			    </div>
-			    <div class="form-group">
+			    <div class="form-group grup-1">
 			        <label class="control-label col-xs-3">Fuera de servicio:</label>
-			        <div class="col-xs-3">
+			        <div class="col-xs-1">
+			        	<label class="checkbox-inline">
+			            Del
+			          </label>
+			        </div>
+			        <div class="col-xs-2">
 			            <select class="form-control">
-			                <option>Del</option>
+			                <option>0</option>
+			                <option>1</option>
+			            </select>
+			        </div>
+			         <div class="col-xs-1">
+			         <label class="checkbox-inline">
+			           Al
+			           </label>
+			        </div>
+			        <div class="col-xs-2">
+			            <select class="form-control">
+			                 <option>0</option>
+			                <option>1</option>
 			            </select>
 			        </div>
 			        <div class="col-xs-3">
-			            <select class="form-control">
-			                <option>Al</option>
-			            </select>
-			        </div>
-			        <div class="col-xs-3">
+			        <label class="checkbox-inline">
 			        de cada mes
+			        </label>
 			        </div>
 			    </div>
 			    <div class="form-group">
-			        <label class="control-label col-xs-3">P:</label>
-			        <div class="col-xs-9">
-			            <input type="text" class="form-control" placeholder="Nombre">
-			        </div>
-			    </div>
-			    <div class="form-group">
-			        <div class="col-xs-offset-3 col-xs-9">
+			        <div class="col-md-12 col-xs-12">
 			            <label class="checkbox-inline">
-			                <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+			                <input type="checkbox" value="agree"> Acepto <a href="#">Terminos y condiciones</a>.
 			            </label>
 			        </div>
 			    </div>
 			     </fieldset>
 			    <div class="form-group">
 			    <p class="col-md-12">
-			         <input id="SaveAccount" class="btn-2" type="button" value="Submit form" />
+			         <input id="SaveAccount" class="btn-2" type="button" value="Quiero ser una Aroma" />
 			    </p>
 			    </div>
 			</form>
 		</section>
-	</div>
 	<div id="error">
 			
 	</div>

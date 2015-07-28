@@ -655,7 +655,9 @@ span {
 #makeWizard { background-color:#b0232a; color:#fff; padding:5px 10px; text-decoration:none; font-size:18px;}
 #makeWizard:hover { background-color:#000;}
 .form-trabaja{
+                background: rgba(27, 27, 27, 0.24);
                 color:$cb;
+                padding: 20px;
                 
 fieldset{
                 border: none;
@@ -664,19 +666,33 @@ fieldset{
                 clear: both;
                 margin: 5px 0;
 }
+.grup-1{
+                    background: rgba(0, 232, 255, 0.17);
+                    border-radius: 6px;
+                    display: block;
+                    overflow: hidden;
+}
 .prev, .next { background-color:#b0232a; padding:5px 10px; color:#fff; text-decoration:none;}
 .prev:hover, .next:hover { background-color:#000; text-decoration:none;}
-.prev { float:left;}
-.next { float:right;}
+.prev { background:$cr1;border-radius:7px;float:left;margin-top: 18px;}
+.next { background:$cr1;border-radius:7px;float:right;margin:20px;}
 fieldset { border:none}
-legend { font-size:18px; margin:0px; padding:10px 0px; color:$cb; font-weight:bold;}
+legend { border:0;color:$cb;font-size:18px;font-weight:bold;margin:0px; padding:10px 0px;}
 label { display:block; margin:15px 0 5px;}
+.btn-2{
+          background: $cn;
+          border-radius:10px;
+          float: right;
+          font-size: 0.9em;
+          padding:10px 20px;
+          margin-top: -40px;
+}
 }
 #steps{
-          width: 50%;
-          position: relative;
-          left:65%;
-          top:40px;
+              left: 63%;
+              position: relative;
+              top: 0;
+              width: 50%;
 li{
         background: $cg3;
         border-radius:10px; 

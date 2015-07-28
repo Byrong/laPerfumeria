@@ -520,12 +520,19 @@ body {
   #admin-perfumeria .cont-form #makeWizard:hover {
     background-color: #000; }
   #admin-perfumeria .cont-form .form-trabaja {
-    color: white; }
+    background: rgba(27, 27, 27, 0.24);
+    color: white;
+    padding: 20px; }
     #admin-perfumeria .cont-form .form-trabaja fieldset {
       border: none; }
     #admin-perfumeria .cont-form .form-trabaja .form-group {
       clear: both;
       margin: 5px 0; }
+    #admin-perfumeria .cont-form .form-trabaja .grup-1 {
+      background: rgba(0, 232, 255, 0.17);
+      border-radius: 6px;
+      display: block;
+      overflow: hidden; }
     #admin-perfumeria .cont-form .form-trabaja .prev, #admin-perfumeria .cont-form .form-trabaja .next {
       background-color: #b0232a;
       padding: 5px 10px;
@@ -535,25 +542,39 @@ body {
       background-color: #000;
       text-decoration: none; }
     #admin-perfumeria .cont-form .form-trabaja .prev {
-      float: left; }
+      background: #c2347c;
+      border-radius: 7px;
+      float: left;
+      margin-top: 18px; }
     #admin-perfumeria .cont-form .form-trabaja .next {
-      float: right; }
+      background: #c2347c;
+      border-radius: 7px;
+      float: right;
+      margin: 20px; }
     #admin-perfumeria .cont-form .form-trabaja fieldset {
       border: none; }
     #admin-perfumeria .cont-form .form-trabaja legend {
-      font-size: 18px;
-      margin: 0px;
-      padding: 10px 0px;
+      border: 0;
       color: white;
-      font-weight: bold; }
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0px;
+      padding: 10px 0px; }
     #admin-perfumeria .cont-form .form-trabaja label {
       display: block;
       margin: 15px 0 5px; }
+    #admin-perfumeria .cont-form .form-trabaja .btn-2 {
+      background: black;
+      border-radius: 10px;
+      float: right;
+      font-size: 0.9em;
+      padding: 10px 20px;
+      margin-top: -40px; }
   #admin-perfumeria .cont-form #steps {
-    width: 50%;
+    left: 63%;
     position: relative;
-    left: 65%;
-    top: 40px; }
+    top: 0;
+    width: 50%; }
     #admin-perfumeria .cont-form #steps li {
       background: #969696;
       border-radius: 10px;
