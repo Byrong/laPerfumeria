@@ -1,6 +1,8 @@
 
 ** :: Arquitectura La Perfumería Club **
 
+*Add relation*
+
 `Organización de los archivos app `  
 
 
@@ -9,7 +11,7 @@
 	+ aroma.php
 	+ aromas.php
 	+ aromaSeleccionada.php
-	+ **css/** 
+	+ **css/**
 		+ adminPerfumeria.css
 		+ **fonts/**
 		+ **images/**
@@ -29,7 +31,7 @@
 			+ solicitudesAroma.twig.html
 			+ datosSolicitudes.twig.html
 			+ contSolicitudes.twig.html
-	+ **admin/** `Archivos del backend`	
+	+ **admin/** `Archivos del backend`
 		+ admin.php
 		+ cargarSolicitud.php
 		+ filtroSolicitud.php `(Aceptar ó Rechazar Solicitud)`
@@ -49,6 +51,6 @@
 		+ jquery.viewport.mini.js
 		+ owl.carousel.min.js
 		+ SmoothScroll.js
-	+ **Images/** 
+	+ **Images/**
 		+ **admin/** `Imagenes del backend`
 	+ **Twig/** `Modelo Template`
