@@ -162,6 +162,41 @@ mysql_close($conecion);
              <div id="cReportes" data-dimension="150" data-text="1 reporte" data-info="Estadisticas" data-width="30" data-fontsize="16" data-percent="30" data-fgcolor="#E49A39" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
             </div>
           </div>
+
+          <!--  Add new section -->
+          <div id="contReporte" class="row placeholders col-sm-offset-1">
+      <!-- Reporte Graficos -->
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <div id="cFace" data-dimension="150" data-text="50 post" data-info="Facebook" data-width="30" data-fontsize="16" data-percent="45" data-fgcolor="#3b5998" data-bgcolor="#dfe3ee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <div id="cTwee" data-dimension="150" data-text="140 post" data-info="Twitter" data-width="30" data-fontsize="16" data-percent="75" data-fgcolor="#9AE4E8" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <div id="cYoutube" data-dimension="150" data-text="1 video" data-info="Youtube" data-width="30" data-fontsize="16" data-percent="50" data-fgcolor="#B50505" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <div id="cReportes" data-dimension="150" data-text="1 reporte" data-info="Estadisticas" data-width="30" data-fontsize="16" data-percent="30" data-fgcolor="#E49A39" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+          </div>
+
+          <!-- This section is for show the last news -->
+          <div id="contReporte" class="row placeholders col-sm-offset-1">
+      <!-- Reporte Graficos -->
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <div id="cFace" data-dimension="150" data-text="50 post" data-info="Facebook" data-width="30" data-fontsize="16" data-percent="45" data-fgcolor="#3b5998" data-bgcolor="#dfe3ee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <div id="cTwee" data-dimension="150" data-text="140 post" data-info="Twitter" data-width="30" data-fontsize="16" data-percent="75" data-fgcolor="#9AE4E8" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <div id="cYoutube" data-dimension="150" data-text="1 video" data-info="Youtube" data-width="30" data-fontsize="16" data-percent="50" data-fgcolor="#B50505" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <div id="cReportes" data-dimension="150" data-text="1 reporte" data-info="Estadisticas" data-width="30" data-fontsize="16" data-percent="30" data-fgcolor="#E49A39" data-bgcolor="#eee" data-type="half" data-fill="#fff"></div>
+            </div>
+          </div>
+          
         <div class="row">
           <header class="col-sm-12 cont-filtros">
                           <h2 class="titu-2 col-sm-3"><span class="glyphicon glyphicon-calendar"></span> Programación 14/11/2014 al 19/11/2014</h2>
