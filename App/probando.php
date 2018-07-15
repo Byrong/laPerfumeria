@@ -1,3 +1,4 @@
+<h2>Nueva prueba</h2>
 <?php
 $conecion = mysql_connect('localhost','root','root') or die ("Problemas en la conexion");
 
